@@ -177,8 +177,24 @@ td,
 th {
   padding: 0;
 }
+/* Micro ClearFix Mixin */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
