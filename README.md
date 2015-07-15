@@ -2,4 +2,5 @@
 
 ## Links to pages
 
-* [vasa_01index_00](vasa_01index_00.html)
+* [All links list](http://fatuk.github.io/vasa/public/index.html)
+* [vasa_01index_00](http://fatuk.github.io/vasa/public/vasa_01index_00.html)
