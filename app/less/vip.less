@@ -1,0 +1,18 @@
+@vip-text-color: #FFED18;
+@vip-hover-color: #FF6562;
+.vip {
+	position: absolute;
+	top: 0;
+	transform: translateY(-100%);
+	padding: 0 @base/2;
+	padding-bottom: @base/2;
+	&__text {
+		color: @vip-text-color;
+		font-size: 18px;
+	}
+	&:hover {
+		.vip__text {
+			color: @vip-hover-color;
+		}
+	}
+}

@@ -25,7 +25,6 @@ gulp.task('default', [
 	'copyAssets',
 	'browser-sync',
 	'handlebars',
-	'pluginsConcat',
 	'jsConcat',
 	'less',
 	'watch'
@@ -48,9 +47,9 @@ gulp.task('build', [
 gulp.task('copyAssets', function () {
 	'use strict';
 	gulp.src([
-		'assets/**/*.*',
-		'!assets/**/*.less'
-	])
+			'assets/**/*.*',
+			'!assets/**/*.less'
+		])
 		.pipe(gulp.dest('public'));
 });
 
@@ -82,6 +81,7 @@ gulp.task('handlebars', function () {
  ******************************/
 gulp.task('pluginsConcat', function () {
 	gulp.src(bowerFiles)
+		.pipe(plumber())
 		.pipe(concat('plugins.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('public/js'));

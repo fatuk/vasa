@@ -1,0 +1,45 @@
+@main-menu-bg-color: #3E4EB8;
+@main-menu-active-color: #2F3BA2;
+.main-menu {
+	background: @main-menu-bg-color;
+	&__list {
+		position: relative;
+		list-style: none;
+		padding: 0;
+		padding: @base*1.5 0;
+		margin: 0;
+		float: right;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		margin-right: 32px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		padding: @base @base*2;
+		border-radius: 5px;
+		.clearfix();
+		&.active {
+			background: @main-menu-active-color;
+		}
+	}
+	&__text {
+		font-size: 18px;
+		color: #fff;
+		border-color: rgba(255,255,255,.3);
+		float: left;
+	}
+	&__count {
+		font-size: 11px;
+		color: #fff;
+		opacity: .5;
+		font-style: italic;
+		float: left;
+		clear: both;
+		margin-top: @base/2;
+	}
+}

@@ -1,0 +1,39 @@
+@login-text-color: #B0EBF3;
+@login-hover-color: #DFF400;
+@login-border-color: rgba(255,255,255,.2);
+.login {
+	float: right;
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		position: relative;
+		&:last-child {
+			&:after {
+				background: none;
+			}
+		}
+		&:after {
+			content: '';
+			width: 1px;
+			height: 19px;
+			position: absolute;
+			right: 0;
+			bottom: -2px;
+			background: @login-border-color;;
+		}
+	}
+	&__link {
+		color: @login-text-color;
+		display: inline-block;
+		font-size: 16px;
+		padding: 0 @base*1.5;
+		&:hover {
+			color: @login-hover-color;
+		}
+	}
+}
