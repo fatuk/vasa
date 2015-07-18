@@ -1,0 +1,78 @@
+@how-to-text-color: #3E4EB8;
+@how-to-bg-color: #FFED18;
+.how-to {
+	&__title {
+		color: @how-to-text-color;
+		font-size: 40px;
+		font-weight: @light;
+		text-align: center;
+		margin: 0;
+		padding-top: 46px;
+		padding-bottom: 40px;
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		padding-top: @base*3;
+		padding-bottom: @base*8;
+		margin: 0;
+		text-align: center;
+	}
+	&__item {
+		display: inline-block;
+		margin: 0 12px;
+		transition: margin .3s;
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			margin: 0 30px;
+			.how-to__number {
+				transform: scale(1.7);
+				background: @how-to-bg-color;
+				color: @how-to-text-color;
+			}
+			.how-to__item-title {
+				display: block;
+			}
+		}
+	}
+	&__item-title {
+		display: none;
+		color: @how-to-text-color;
+		margin: 0;
+		width: @base*17;
+		font-size: 24px;
+		font-weight: @bold;
+		line-height: 20px;
+		position: absolute;
+		left: 50%;
+		bottom: -@base*2;
+		transform: translate(-50%, 100%);
+	}
+	&__text {
+		margin: 0;
+		color: #000;
+		font-size: 15px;
+		line-height: 22px;
+		padding: @base*3.5 @base*19.5;
+	}
+	&__number {
+		font-size: 26px;
+		color: @how-to-text-color;
+		font-weight: @black;
+		border: solid @base/2 @how-to-text-color;
+		border-radius: 50%;
+		width: @base*5;
+		height: @base*5;
+		line-height: @base*4;
+		display: inline-block;
+		cursor: pointer;
+		transition: background .3s, color .3s, transform .3s;
+		&:hover {
+			background: @how-to-text-color;
+			color: #fff;
+		}
+	}
+}

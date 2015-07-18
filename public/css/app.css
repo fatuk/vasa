@@ -215,6 +215,7 @@ a {
 .features {
   background: url('../img/features-bg.jpg') bottom;
   background-size: cover;
+  padding-bottom: 30px;
 }
 .features__title {
   font-size: 40px;
@@ -266,6 +267,86 @@ a {
   width: 122px;
   height: 122px;
   margin-bottom: 2px;
+}
+.how-to__title {
+  color: #3e4eb8;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding-top: 46px;
+  padding-bottom: 40px;
+}
+.how-to__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin: 0;
+  text-align: center;
+}
+.how-to__item {
+  display: inline-block;
+  margin: 0 12px;
+  -webkit-transition: margin .3s;
+  transition: margin .3s;
+  position: relative;
+}
+.how-to__item:last-child {
+  margin-right: 0;
+}
+.how-to__item.active {
+  margin: 0 30px;
+}
+.how-to__item.active .how-to__number {
+  -webkit-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  transform: scale(1.7);
+  background: #ffed18;
+  color: #3e4eb8;
+}
+.how-to__item.active .how-to__item-title {
+  display: block;
+}
+.how-to__item-title {
+  display: none;
+  color: #3e4eb8;
+  margin: 0;
+  width: 170px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
+}
+.how-to__text {
+  margin: 0;
+  color: #000;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 35px 195px;
+}
+.how-to__number {
+  font-size: 26px;
+  color: #3e4eb8;
+  font-weight: 900;
+  border: solid 5px #3e4eb8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: background .3s, color .3s, -webkit-transform .3s;
+  transition: background .3s, color .3s, transform .3s;
+}
+.how-to__number:hover {
+  background: #3e4eb8;
+  color: #fff;
 }
 .vip {
   position: absolute;
