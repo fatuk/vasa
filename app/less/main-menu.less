@@ -1,5 +1,6 @@
 @main-menu-bg-color: #3E4EB8;
 @main-menu-active-color: #2F3BA2;
+@main-menu-hover-color: #AAE3EF;
 .main-menu {
 	background: @main-menu-bg-color;
 	&__list {
@@ -17,14 +18,24 @@
 		&:last-child {
 			margin-right: 0;
 		}
+		&.active {
+			.main-menu__link {
+				background: @main-menu-active-color;
+			}
+		}
 	}
 	&__link {
 		display: inline-block;
 		padding: @base @base*2;
 		border-radius: 5px;
 		.clearfix();
-		&.active {
-			background: @main-menu-active-color;
+		&:hover {
+			.main-menu__text {
+				color: @main-menu-hover-color;
+			}
+			.main-menu__count {
+				opacity: .8;
+			}
 		}
 	}
 	&__text {

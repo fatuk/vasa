@@ -3,6 +3,7 @@
 @login-border-color: rgba(255,255,255,.2);
 .login {
 	float: right;
+	// padding: 0 @base;
 	&__list {
 		list-style: none;
 		padding: 0;
@@ -15,6 +16,9 @@
 		&:last-child {
 			&:after {
 				background: none;
+			}
+			.login__link {
+				padding-right: @base*2;
 			}
 		}
 		&:after {
