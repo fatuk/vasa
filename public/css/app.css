@@ -560,7 +560,14 @@ select:focus {
   margin-right: 2px;
 }
 .link {
-  border-bottom: solid 1px;
+  border-bottom: solid 1px rgba(176, 235, 243, 0.4);
+  color: #b0ebf3;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.link:hover {
+  color: #dff400;
+  border-color: rgba(223, 244, 0, 0.4);
 }
 .symlink {
   border-bottom: dashed 1px;
@@ -747,6 +754,8 @@ select:focus {
   border-radius: 3px;
   line-height: 56px;
   height: 56px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
 }
 .btn_green {
   background: #89c541;
@@ -756,6 +765,12 @@ select:focus {
 }
 .btn_wide {
   width: 100%;
+}
+.btn:hover.btn_green {
+  background: #a1e84c;
+}
+.btn:hover.btn_blue {
+  background: #399dff;
 }
 .overlay {
   position: fixed;

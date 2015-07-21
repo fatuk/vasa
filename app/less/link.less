@@ -1,5 +1,13 @@
+@link-color: #B0EBF3;
+@link-hover: #DFF400;
 .link {
-	border-bottom: solid 1px;
+	border-bottom: solid 1px rgba(red(@link-color),green(@link-color),blue(@link-color),.4);
+	color: @link-color;
+	transition: color .3s;
+	&:hover {
+		color: @link-hover;
+		border-color: rgba(red(@link-hover),green(@link-hover),blue(@link-hover),.4)
+	}
 }
 .symlink {
 	border-bottom: dashed 1px;
