@@ -248,6 +248,7 @@ a {
   background: url('../img/features-bg.jpg') bottom;
   background-size: cover;
   padding-bottom: 30px;
+  min-width: 1000px;
 }
 .features__title {
   font-size: 40px;
@@ -421,6 +422,7 @@ a {
 }
 .site-footer {
   background: #3e4eb8;
+  min-width: 1000px;
 }
 .site-footer__container {
   zoom: 1;
@@ -478,6 +480,7 @@ a {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   padding: 0 5px;
+  padding-left: 0;
   padding-bottom: 5px;
 }
 .vip__text {
@@ -496,6 +499,7 @@ a {
 }
 .auth {
   background: #2f3ba2;
+  min-width: 1000px;
   padding: 5px 0;
 }
 .login {
@@ -557,6 +561,7 @@ a {
 }
 .main-menu {
   background: #3e4eb8;
+  min-width: 1000px;
 }
 .main-menu__list {
   position: relative;
