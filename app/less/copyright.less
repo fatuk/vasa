@@ -1,0 +1,27 @@
+@copyright-link-color: #95E2FF;
+@copyright-link-hover: #DFF400;
+.copyright {
+	&__list {
+		list-style: none;
+		padding: 0;
+		padding-top: 45px;
+		padding-bottom: 47px;
+		margin: 0;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		margin-right: @base*3.5;
+	}
+	&__text {
+		font-size: 13px;
+		color: #fff;
+	}
+	&__link {
+		color: @copyright-link-color;
+		transition: color .3s;
+		&:hover {
+			color: @copyright-link-hover;
+		}
+	}
+}

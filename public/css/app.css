@@ -212,6 +212,38 @@ a {
 .container:after {
   clear: both;
 }
+.copyright__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 47px;
+  margin: 0;
+  zoom: 1;
+}
+.copyright__list:before,
+.copyright__list:after {
+  content: "";
+  display: table;
+}
+.copyright__list:after {
+  clear: both;
+}
+.copyright__item {
+  float: left;
+  margin-right: 35px;
+}
+.copyright__text {
+  font-size: 13px;
+  color: #fff;
+}
+.copyright__link {
+  color: #95e2ff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.copyright__link:hover {
+  color: #dff400;
+}
 .features {
   background: url('../img/features-bg.jpg') bottom;
   background-size: cover;
@@ -267,6 +299,44 @@ a {
   width: 122px;
   height: 122px;
   margin-bottom: 2px;
+}
+.horizontal-menu {
+  float: left;
+}
+.horizontal-menu__list {
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 48px;
+  list-style: none;
+  margin: 0;
+  zoom: 1;
+}
+.horizontal-menu__list:before,
+.horizontal-menu__list:after {
+  content: "";
+  display: table;
+}
+.horizontal-menu__list:after {
+  clear: both;
+}
+.horizontal-menu__item {
+  float: left;
+  margin-right: 32px;
+}
+.horizontal-menu__item:last-child {
+  margin-right: 0;
+}
+.horizontal-menu__link {
+  display: inline-block;
+  color: #95e2ff;
+  font-size: 13px;
+  border-bottom: solid 1px rgba(149, 226, 255, 0.3);
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+.horizontal-menu__link:hover {
+  color: #dff400;
+  border-color: rgba(223, 244, 0, 0.3);
 }
 .how-to__title {
   color: #3e4eb8;
@@ -329,6 +399,7 @@ a {
   font-size: 15px;
   line-height: 22px;
   padding: 35px 195px;
+  padding-bottom: 106px;
 }
 .how-to__number {
   font-size: 26px;
@@ -348,6 +419,57 @@ a {
   background: #3e4eb8;
   color: #fff;
 }
+.site-footer {
+  background: #3e4eb8;
+}
+.site-footer__container {
+  zoom: 1;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+.site-footer__container:before,
+.site-footer__container:after {
+  content: "";
+  display: table;
+}
+.site-footer__container:after {
+  clear: both;
+}
+.site-footer .container {
+  padding: 0 30px;
+}
+.social {
+  float: right;
+}
+.social__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+  zoom: 1;
+}
+.social__list:before,
+.social__list:after {
+  content: "";
+  display: table;
+}
+.social__list:after {
+  clear: both;
+}
+.social__item {
+  float: left;
+  margin-right: 10px;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.social__link {
+  display: inline-block;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.social__link:hover {
+  opacity: .8;
+}
 .vip {
   position: absolute;
   left: 20px;
@@ -361,9 +483,16 @@ a {
 .vip__text {
   color: #ffed18;
   font-size: 18px;
+  margin-left: 5px;
 }
 .vip:hover .vip__text {
   color: #ff6562;
+}
+.vip:hover .icon {
+  background: url('../img/crown_hover.png');
+}
+.vip .icon {
+  margin-top: -2px;
 }
 .auth {
   background: #2f3ba2;
@@ -413,6 +542,12 @@ a {
 }
 .login__link:hover {
   color: #dff400;
+}
+.login__link:hover .icon-enter {
+  background: url('../img/enter_hover.png');
+}
+.login .icon-enter {
+  margin-right: 2px;
 }
 .link {
   border-bottom: solid 1px;
@@ -475,6 +610,8 @@ a {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.3);
   float: left;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 .main-menu__count {
   font-size: 11px;
@@ -484,6 +621,8 @@ a {
   float: left;
   clear: both;
   margin-top: 5px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
 }
 .logo {
   float: left;
@@ -493,6 +632,40 @@ a {
 .logo__link {
   padding: 28px 0;
   display: inline-block;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-crown {
+  background: url('../img/crown.png');
+  width: 23px;
+  height: 16px;
+}
+.icon-enter {
+  background: url('../img/enter.png');
+  width: 17px;
+  height: 17px;
+}
+.icon-vk {
+  background: url('../img/vk.png');
+  width: 35px;
+  height: 34px;
+}
+.icon-ok {
+  background: url('../img/ok.png');
+  width: 34px;
+  height: 34px;
+}
+.icon-tw {
+  background: url('../img/tw.png');
+  width: 34px;
+  height: 34px;
+}
+.icon-fb {
+  background: url('../img/fb.png');
+  width: 34px;
+  height: 34px;
 }
 
 /*# sourceMappingURL=../css/app.css.map */

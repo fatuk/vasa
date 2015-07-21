@@ -1,0 +1,24 @@
+.social {
+	float: right;
+	&__list {
+		list-style: none;
+		padding: 0;
+		padding-top: @base*4;
+		margin: 0;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		margin-right: @base;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		transition: opacity .3s;
+		&:hover {
+			opacity: .8;
+		}
+	}
+}

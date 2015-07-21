@@ -1,0 +1,30 @@
+.img(@img) {
+	@abs-img-path: '/home/fatuk/www/VASA/public/img/';
+	@img-path: '../img/';
+	background: url('@{img-path}@{img}');
+	width: image-width('@{abs-img-path}@{img}');
+	height: image-height('@{abs-img-path}@{img}');
+}
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.icon-crown {
+	.img('crown.png');
+}
+.icon-enter {
+	.img('enter.png');
+}
+// Social
+.icon-vk {
+	.img('vk.png');
+}
+.icon-ok {
+	.img('ok.png');
+}
+.icon-tw {
+	.img('tw.png');
+}
+.icon-fb {
+	.img('fb.png');
+}
