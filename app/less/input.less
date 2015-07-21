@@ -1,0 +1,37 @@
+@placeholder-color: #000;
+@placeholder-size: 18px;
+@placeholder-height: @base*5;
+@placeholder-opacity: .4;
+.input {
+	line-height: @placeholder-height;
+	padding: 0 @base*2;
+	border: none;
+	border-radius: 3px;
+	&_wide {
+		width: 100%;
+	}
+}
+::-webkit-input-placeholder {
+	color:@placeholder-color;
+	line-height: @placeholder-height;
+	font-size: @placeholder-size;
+	opacity: @placeholder-opacity;
+}
+::-moz-placeholder {
+	color:@placeholder-color;
+	line-height: @placeholder-height;
+	font-size: @placeholder-size;
+	opacity: @placeholder-opacity;
+	}/* Firefox 19+ */
+:-moz-placeholder {
+	color:@placeholder-color;
+	line-height: @placeholder-height;
+	font-size: @placeholder-size;
+	opacity: @placeholder-opacity;
+	}/* Firefox 18- */
+:-ms-input-placeholder {
+	color:@placeholder-color;
+	line-height: @placeholder-height;
+	font-size: @placeholder-size;
+	opacity: @placeholder-opacity;
+}

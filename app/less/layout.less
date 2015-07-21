@@ -7,6 +7,14 @@ body {
 a {
 	text-decoration: none;
 }
+a,
+input,
+button,
+select {
+	&:focus {
+		outline: none;
+	}
+}
 .container {
 	width: @container-width;
 	margin: 0 auto;

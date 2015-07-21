@@ -1,0 +1,58 @@
+@modal-blue: #373A9F;
+@modal-link-color: #B0EBF3;
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	&__container {
+		border-radius: 3px;
+		&_blue {
+			background: @modal-blue;
+			text-align: center;
+			padding-left: @base*4;
+			padding-right: @base*4;
+			.modal__title {
+				color: #fff;
+			}
+			.modal__link {
+				display: inline-block;
+				margin-top: @base*2;
+				margin-bottom: @base*2.5;
+			}
+			.btn {
+				letter-spacing: 1px;
+			}
+		}
+		&_registration {
+			text-align: center;
+			.modal__text {
+				padding-top: @base*3;
+				padding-bottom: 17px;
+			}
+			.btn {
+				font-size: 20px;
+				letter-spacing: .8px;
+			}
+		}
+	}
+	&__title {
+		margin: 0;
+		font-size: 32px;
+		font-weight: @medium;
+		padding-top: @base*2.5;
+		padding-bottom: @base*3.5;
+	}
+	&__link {
+		font-size: 15px;
+		color: @modal-link-color;
+	}
+	&__text {
+		font-size: 20px;
+		color: #000;
+	}
+	&_auth {
+		width: @base*42;
+	}
+}
