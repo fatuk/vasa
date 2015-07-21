@@ -743,6 +743,27 @@ select:focus {
   top: 44%;
   width: 420px;
 }
+.modal_restore-pass {
+  top: 44%;
+  width: 420px;
+}
+.modal_restore-pass .modal__title {
+  font-size: 29px;
+  padding-bottom: 0;
+}
+.modal_restore-pass .modal__text {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.modal_restore-pass .modal__container {
+  padding-bottom: 40px;
+}
+.modal_restore-pass .btn {
+  font-size: 20px;
+  letter-spacing: .6px;
+}
 .btn {
   display: inline-block;
   font-size: 22px;
@@ -763,6 +784,10 @@ select:focus {
 .btn_blue {
   background: #2b6df6;
 }
+.btn_yellow {
+  background: #ffd200;
+  color: #2f3ba2;
+}
 .btn_wide {
   width: 100%;
 }
@@ -771,6 +796,19 @@ select:focus {
 }
 .btn:hover.btn_blue {
   background: #399dff;
+}
+.btn:hover.btn_yellow {
+  background: #ffed18;
+}
+.btn:active.btn_green {
+  background: #75a737;
+}
+.btn:active.btn_blue {
+  background: #254dcf;
+}
+.btn:active.btn_yellow {
+  background: #ffc100;
+  color: #b38300;
 }
 .overlay {
   position: fixed;

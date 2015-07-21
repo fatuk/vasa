@@ -1,7 +1,14 @@
 @btn-green: #89C541;
 @btn-green-hover: #A1E84C;
+@btn-green-active: #75A737;
 @btn-blue: #2B6DF6;
 @btn-blue-hover: #399DFF;
+@btn-blue-active: #254DCF;
+@btn-yellow: #FFD200;
+@btn-yellow-text: #2F3BA2;
+@btn-yellow-hover: #FFED18;
+@btn-yellow-active: #FFC100;
+@btn-yellow-active-text: #B38300;
 .btn {
 	display: inline-block;
 	font-size: 22px;
@@ -20,6 +27,10 @@
 	&_blue {
 		background: @btn-blue;
 	}
+	&_yellow {
+		background: @btn-yellow;
+		color: @btn-yellow-text;
+	}
 	&_wide {
 		width: 100%;
 	}
@@ -29,6 +40,21 @@
 		}
 		&.btn_blue {
 			background: @btn-blue-hover;
+		}
+		&.btn_yellow {
+			background: @btn-yellow-hover;
+		}
+	}
+	&:active {
+		&.btn_green {
+			background: @btn-green-active;
+		}
+		&.btn_blue {
+			background: @btn-blue-active;
+		}
+		&.btn_yellow {
+			background: @btn-yellow-active;
+			color: @btn-yellow-active-text;
 		}
 	}
 }
