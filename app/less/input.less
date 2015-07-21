@@ -1,9 +1,10 @@
-@placeholder-color: #000;
+@placeholder-color: rgba(0,0,0,.4);
 @placeholder-size: 18px;
 @placeholder-height: @base*5;
 @placeholder-opacity: .4;
 .input {
 	line-height: @placeholder-height;
+	height: @placeholder-height;
 	padding: 0 @base*2;
 	border: none;
 	border-radius: 3px;
@@ -11,27 +12,27 @@
 		width: 100%;
 	}
 }
+input[type="password"]
+{
+  -webkit-text-security: disc;
+}
 ::-webkit-input-placeholder {
 	color:@placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	opacity: @placeholder-opacity;
 }
 ::-moz-placeholder {
 	color:@placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	opacity: @placeholder-opacity;
 	}/* Firefox 19+ */
 :-moz-placeholder {
 	color:@placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	opacity: @placeholder-opacity;
 	}/* Firefox 18- */
 :-ms-input-placeholder {
 	color:@placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	opacity: @placeholder-opacity;
 }

@@ -769,6 +769,7 @@ select:focus {
 }
 .input {
   line-height: 50px;
+  height: 50px;
   padding: 0 20px;
   border: none;
   border-radius: 3px;
@@ -776,31 +777,30 @@ select:focus {
 .input_wide {
   width: 100%;
 }
+input[type="password"] {
+  -webkit-text-security: disc;
+}
 ::-webkit-input-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 50px;
   font-size: 18px;
-  opacity: 0.4;
 }
 ::-moz-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 50px;
   font-size: 18px;
-  opacity: 0.4;
 }
 /* Firefox 19+ */
 :-moz-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 50px;
   font-size: 18px;
-  opacity: 0.4;
 }
 /* Firefox 18- */
 :-ms-input-placeholder {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 50px;
   font-size: 18px;
-  opacity: 0.4;
 }
 .field {
   position: relative;
