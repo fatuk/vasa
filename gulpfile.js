@@ -58,6 +58,7 @@ gulp.task('copyAssets', function () {
  ******************************/
 gulp.task('handlebars', function () {
 	gulp.src('app/templates/*.handlebars')
+		.pipe(plumber())
 		.pipe(handlebars(templateData, {
 			ignorePartials: true, //ignores the unknown partials
 			partials: {
