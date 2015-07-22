@@ -9,3 +9,38 @@
 		clear: both;
 	}
 }
+// Sticky footer
+.sticky-footer(@height, @wrapper: ~"> div:first-child") {
+
+	.push () {
+		height: @height;
+		width: 100%;
+		display: block;
+		background: transparent;
+		content: '';
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+
+	    .@{wrapper} {
+			min-height: 100%;
+			margin-bottom: -@height;
+
+			&:after {
+				.push();
+			}
+		}
+
+		> footer {
+			height: @height;
+		}
+	}
+}
+
+.no-break() {
+	white-space: nowrap;
+}

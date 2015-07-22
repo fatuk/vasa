@@ -218,6 +218,24 @@ select:focus {
 .container:after {
   clear: both;
 }
+html,
+body {
+  height: 100%;
+}
+body .wrapper {
+  min-height: 100%;
+  margin-bottom: -220px;
+}
+body .wrapper:after {
+  height: 220px;
+  width: 100%;
+  display: block;
+  background: transparent;
+  content: '';
+}
+body > footer {
+  height: 220px;
+}
 .copyright__list {
   list-style: none;
   padding: 0;
