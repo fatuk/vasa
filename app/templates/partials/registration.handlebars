@@ -1,153 +1,155 @@
 <div class="registration">
 	<div class="form form_registration">
-		<div class="container">
-			<!-- Title -->
-			<div class="form__row">
-				<div class="form__cell form__cell_right">
-					<h2 class="form__title">
-						Регистрация
-					</h2>
-				</div>
-			</div>
-			<!-- Type row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<div class="form__label">
-						Я:
+		<form action="#">
+			<div class="container">
+				<!-- Title -->
+				<div class="form__row">
+					<div class="form__cell form__cell_right">
+						<h2 class="form__title">
+							Регистрация
+						</h2>
 					</div>
 				</div>
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<label class="radio">
-							<input type="radio" class="input" name="radio" checked="checked">
-							<span class="radio__dot"></span>
-							<span class="radio__label">
-								Покупатель (куплю или сниму)
-							</span>
+				<!-- Type row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<div class="form__label">
+							Я:
+						</div>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<label class="radio">
+								<input type="radio" class="input" name="radio" checked="checked">
+								<span class="radio__dot"></span>
+								<span class="radio__label">
+									Покупатель (куплю или сниму)
+								</span>
+							</label>
+						</div>
+						<div class="field">
+							<label class="radio">
+								<input type="radio" class="input" name="radio">
+								<span class="radio__dot"></span>
+								<span class="radio__label">
+									Продавец (продам или сдам в аренду)
+								</span>
+							</label>
+						</div>
+						<div class="field">
+							<label class="radio">
+								<input type="radio" class="input" name="radio">
+								<span class="radio__dot"></span>
+								<span class="radio__label">
+									Риэлтор (продам или сдам в аренду)
+								</span>
+							</label>
+						</div>
+						<div class="field">
+							<label class="radio">
+								<input type="radio" class="input" name="radio">
+								<span class="radio__dot"></span>
+								<span class="radio__label">
+									Строительная компания
+								</span>
+							</label>
+						</div>
+						<!-- Description -->
+						<p class="form__description">
+							В независимости от выбранной категории можно будет бесплатно оставлять объявления о покупке или съеме недвижимости
+						</p>
+					</div>
+				</div>
+				<!-- Email row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="email" class="form__label form__label_v-center">
+							Электронная почта
 						</label>
 					</div>
-					<div class="field">
-						<label class="radio">
-							<input type="radio" class="input" name="radio">
-							<span class="radio__dot"></span>
-							<span class="radio__label">
-								Продавец (продам или сдам в аренду)
-							</span>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="email" id="email" class="input input_border input_wide" placeholder="name@email.com">
+						</div>
+					</div>
+				</div>
+				<!-- Phone row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="phone" class="form__label form__label_v-center">
+							Телефон
 						</label>
 					</div>
-					<div class="field">
-						<label class="radio">
-							<input type="radio" class="input" name="radio">
-							<span class="radio__dot"></span>
-							<span class="radio__label">
-								Риэлтор (продам или сдам в аренду)
-							</span>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="phone" id="phone" class="input input_border input_wide" placeholder="+7 (___) ___-__-__">
+						</div>
+					</div>
+				</div>
+				<!-- Password row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="pass" class="form__label form__label_v-center">
+							Пароль
 						</label>
 					</div>
-					<div class="field">
-						<label class="radio">
-							<input type="radio" class="input" name="radio">
-							<span class="radio__dot"></span>
-							<span class="radio__label">
-								Строительная компания
-							</span>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="password" id="pass" class="input input_border input_wide">
+						</div>
+					</div>
+				</div>
+				<!-- Re-Password row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="pass2" class="form__label form__label_v-center">
+							Повторите пароль
 						</label>
 					</div>
-					<!-- Description -->
-					<p class="form__description">
-						В независимости от выбранной категории можно будет бесплатно оставлять объявления о покупке или съеме недвижимости
-					</p>
-				</div>
-			</div>
-			<!-- Email row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<label for="email" class="form__label form__label_v-center">
-						Электронная почта
-					</label>
-				</div>
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<input type="email" id="email" class="input input_border input_wide" placeholder="name@email.com">
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="password" id="pass2" class="input input_border">
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- Phone row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<label for="phone" class="form__label form__label_v-center">
-						Телефон
-					</label>
-				</div>
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<input type="phone" id="phone" class="input input_border input_wide" placeholder="+7 (___) ___-__-__">
-					</div>
-				</div>
-			</div>
-			<!-- Password row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<label for="pass" class="form__label form__label_v-center">
-						Пароль
-					</label>
-				</div>
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<input type="password" id="pass" class="input input_border input_wide">
-					</div>
-				</div>
-			</div>
-			<!-- Re-Password row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<label for="pass2" class="form__label form__label_v-center">
-						Повторите пароль
-					</label>
-				</div>
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<input type="password" id="pass2" class="input input_border">
-					</div>
-				</div>
-			</div>
-			<!-- Captcha row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_left">
-					<label for="captcha" class="form__label form__label_v-center">
-						Защитный код
-					</label>
-				</div>
-				<div class="form__cell form__cell_right">
-					<!-- Captcha -->
-					<div class="captcha">
-						<img src="img/captcha.jpg" alt="" class="captcha__img">
-						<input type="text" id="captcha" class="input input_border">
-					</div>
-				</div>
-			</div>
-			<!-- Agreement row -->
-			<div class="form__row form__row_padding">
-				<div class="form__cell form__cell_right">
-					<div class="field">
-						<label class="checkbox">
-							<input type="checkbox" checked="checked">
-							<span class="checkbox__check">
-								<i class="icon icon-check"></i>
-							</span>
-							<span class="checkbox__label">
-								Я соглашаюсь с <a href="#" class="link">правилами пользования</a> сайтом
-							</span>
+				<!-- Captcha row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="captcha" class="form__label form__label_v-center">
+							Защитный код
 						</label>
 					</div>
+					<div class="form__cell form__cell_right">
+						<!-- Captcha -->
+						<div class="captcha">
+							<img src="img/captcha.jpg" alt="" class="captcha__img">
+							<input type="text" id="captcha" class="input input_border">
+						</div>
+					</div>
+				</div>
+				<!-- Agreement row -->
+				<div class="form__row form__row_padding">
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<label class="checkbox">
+								<input type="checkbox" checked="checked">
+								<span class="checkbox__check">
+									<i class="icon icon-check"></i>
+								</span>
+								<span class="checkbox__label">
+									Я соглашаюсь с <a href="#" class="link">правилами пользования</a> сайтом
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- Button row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_right">
+						<input type="submit" value="Зарегистрироваться" class="btn btn_blue">
+					</div>
 				</div>
 			</div>
-			<!-- Button row -->
-			<div class="form__row">
-				<div class="form__cell form__cell_right">
-					<input type="submit" value="Зарегистрироваться" class="btn btn_blue">
-				</div>
-			</div>
-		</div>
+		</form>
 	</div>
 </div>
