@@ -2,6 +2,7 @@
 @placeholder-size: 18px;
 @placeholder-height: @base*5;
 @placeholder-opacity: .4;
+@input-border-color: #B7B7B7;
 .input {
 	line-height: @placeholder-height;
 	height: @placeholder-height;
@@ -10,6 +11,9 @@
 	border-radius: 3px;
 	&_wide {
 		width: 100%;
+	}
+	&_border {
+		border: solid 1px @input-border-color;
 	}
 }
 input[type="password"]

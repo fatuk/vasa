@@ -1,0 +1,64 @@
+.form {
+	padding-bottom: @base*7.5;
+	&__title {
+		font-size: 32px;
+		font-weight: @medium;
+		margin: 0;
+		margin-top: 47px;
+		margin-bottom: @base*3.5;
+	}
+	&__row {
+		.clearfix();
+		margin-bottom: @base;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&_padding {
+			padding-top: 12px;
+			padding-bottom: 15px;
+		}
+	}
+	&__cell {
+		&_left {
+			float: left;
+			width: 100%/3;
+			text-align: right;
+			padding-right: @base*2;
+		}
+		&_right {
+			float: right;
+			width: 100%/3*2;
+		}
+	}
+	&__label {
+		font-size: 18px;
+		&_v-center {
+			line-height: @placeholder-height;
+		}
+	}
+	&__description {
+		font-size: 13px;
+		color: #000;
+		opacity: .7;
+		padding: @base*2 @base*3;
+		margin: 0;
+	}
+	.field {
+		margin-bottom: @base*3;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	&_registration {
+		.input {
+			width: @base*36;
+		}
+		.btn {
+			width: @base*36;
+			font-weight: @bold;
+		}
+		.container {
+			padding-right: 33px;
+		}
+	}
+}
