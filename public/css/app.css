@@ -937,6 +937,9 @@ input[type="password"] {
 .field.error .input {
   border: solid 3px #ef443b;
 }
+.field.error .checkbox__check {
+  border: solid 3px #ef443b;
+}
 .form__title {
   font-size: 32px;
   font-weight: 500;
@@ -998,7 +1001,7 @@ input[type="password"] {
 .form_registration {
   padding-bottom: 75px;
 }
-.form_registration .input {
+.form_registration .field {
   width: 360px;
 }
 .form_registration .btn {
@@ -1170,7 +1173,7 @@ input[type="password"] {
   text-align: left;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
-  width: 80%;
+  width: 90%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1186,14 +1189,14 @@ input[type="password"] {
   background: #feffa8;
   padding: 20px;
   position: absolute;
-  top: 0;
+  top: -3.33333333px;
   right: -10px;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
   z-index: 5;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
 }
 .tooltip__text {
   font-size: 18px;

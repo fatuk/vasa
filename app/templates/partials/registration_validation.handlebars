@@ -68,7 +68,7 @@
 						</label>
 					</div>
 					<div class="form__cell form__cell_right">
-						<div class="field">
+						<div class="field error">
 							<input type="email" id="email" class="input input_border input_wide" placeholder="name@email.com">
 							{{>tooltip text="Адрес электронной почты указан неверно"}}
 						</div>
@@ -82,9 +82,10 @@
 						</label>
 					</div>
 					<div class="form__cell form__cell_right">
-						<div class="field">
+						<div class="field error">
 							<input type="phone" id="phone" class="input input_border input_wide" placeholder="+7 (___) ___-__-__">
 						</div>
+						{{>tooltip text="Номер телефона указан неверно"}}
 					</div>
 				</div>
 				<!-- Password row -->
@@ -95,7 +96,7 @@
 						</label>
 					</div>
 					<div class="form__cell form__cell_right">
-						<div class="field">
+						<div class="field error">
 							<input type="password" id="pass" class="input input_border input_wide">
 						</div>
 					</div>
@@ -108,9 +109,10 @@
 						</label>
 					</div>
 					<div class="form__cell form__cell_right">
-						<div class="field">
-							<input type="password" id="pass2" class="input input_border">
+						<div class="field error">
+							<input type="password" id="pass2" class="input input_border input_wide">
 						</div>
+						{{>tooltip text="Пароли не совпадают"}}
 					</div>
 				</div>
 				<!-- Captcha row -->
@@ -121,19 +123,20 @@
 						</label>
 					</div>
 					<div class="form__cell form__cell_right">
-						<div class="field">
+						<div class="field error">
 							<!-- Captcha -->
 							<div class="captcha">
 								<img src="img/captcha.jpg" alt="" class="captcha__img">
 								<input type="text" id="captcha" class="input input_border">
 							</div>
+							{{>tooltip text="Неверный код"}}
 						</div>
 					</div>
 				</div>
 				<!-- Agreement row -->
 				<div class="form__row form__row_padding">
 					<div class="form__cell form__cell_right">
-						<div class="field">
+						<div class="field error">
 							<label class="checkbox">
 								<input type="checkbox" checked="checked">
 								<span class="checkbox__check">
@@ -143,6 +146,7 @@
 									Я соглашаюсь с <a href="#" class="link">правилами пользования</a> сайтом
 								</span>
 							</label>
+							{{>tooltip text="Необходимо изучить правила пользования"}}
 						</div>
 					</div>
 				</div>
