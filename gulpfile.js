@@ -13,7 +13,9 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	plumber = require('gulp-plumber'),
 	notify = require('gulp-notify'),
-	templateData = require('./app/data/data.json');
+	templateData = require('./app/data/data.json'),
+	sprity = require('sprity'),
+	gulpif = require('gulp-if');
 
 console.info('********** Bower Files **********');
 console.info(bowerFiles);
@@ -42,13 +44,33 @@ gulp.task('build', [
 ]);
 
 /******************************
+ * Sprite task
+ ******************************/
+gulp.task('sprites', function () {
+	return sprity.src({
+			src: './assets/img/icons/*.{png, jpg}',
+			style: './icons.less',
+			cssPath: '../img',
+			template: './app/less/sprity-template.handlebars'
+				// ... other optional options
+				// for example if you want to generate scss instead of css
+				//processor: 'sass', // make sure you have installed sprity-sass
+		})
+		.pipe(gulpif(
+			'*.png',
+			gulp.dest('./public/img/'),
+			gulp.dest('./app/less/')));
+});
+
+/******************************
  * Copy assets to public
  ******************************/
 gulp.task('copyAssets', function () {
 	'use strict';
 	gulp.src([
 			'assets/**/*.*',
-			'!assets/**/*.less'
+			'!assets/**/*.less',
+			'!assets/img/icons/*.png'
 		])
 		.pipe(gulp.dest('public'));
 });

@@ -9,19 +9,19 @@
 	padding-left: 0;
 	padding-bottom: @base/2;
 	&__text {
-		color: @vip-text-color;
 		font-size: 18px;
 		margin-left: @base/2;
+		.link(@vip-text-color);
 	}
 	&:hover {
 		.vip__text {
-			color: @vip-hover-color;
+			.link(@vip-hover-color);
 		}
 		.icon {
-			background: url('../img/crown_hover.png');
+			&:extend(.icon-crown_hover);
 		}
 	}
 	.icon {
-		margin-top: -2px;
+		margin-top: -3px;
 	}
 }

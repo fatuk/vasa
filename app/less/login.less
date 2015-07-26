@@ -27,7 +27,7 @@
 			height: 19px;
 			position: absolute;
 			right: 0;
-			bottom: -2px;
+			bottom: 2px;
 			background: @login-border-color;;
 		}
 	}
@@ -36,12 +36,28 @@
 		display: inline-block;
 		font-size: 16px;
 		padding: 0 @base*1.5;
+		line-height: 25px;
 		&:hover {
-			color: @login-hover-color;
+			.login__text {
+				.link(@login-hover-color);
+			}
 			.icon-enter {
-				background: url('../img/enter_hover.png');
+				&:extend(.icon-enter_hover);
 			}
 		}
+		&_symlink {
+			.login__text {
+				.symlink(@login-text-color);
+			}
+			&:hover {
+				.login__text {
+					.symlink(@login-hover-color);
+				}
+			}
+		}
+	}
+	&__text {
+		.link(@login-text-color);
 	}
 	.icon-enter {
 		margin-right: 2px;

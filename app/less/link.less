@@ -1,17 +1,12 @@
 @link-color: #B0EBF3;
 @link-hover: #DFF400;
-.link(@color, @hover) {
+.link(@color) {
 	border-bottom: solid 1px rgba(red(@color),green(@color),blue(@color),.4);
 	color: @color;
 	transition: color @animation-time;
-	&:hover {
-		color: @hover;
-		border-color: rgba(red(@hover),green(@hover),blue(@hover),.4)
-	}
 }
-.link {
-	.link(@link-color, @link-hover);
-}
-.symlink {
-	border-bottom: dashed 1px;
+.symlink(@color) {
+	border-bottom: dashed 1px rgba(red(@color),green(@color),blue(@color),.4);
+	color: @color;
+	transition: color @animation-time;
 }

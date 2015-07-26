@@ -32,7 +32,7 @@
 		.clearfix();
 		&:hover {
 			.main-menu__text {
-				color: @main-menu-hover-color;
+				.link(@main-menu-hover-color);
 			}
 			.main-menu__count {
 				opacity: .8;
@@ -41,10 +41,9 @@
 	}
 	&__text {
 		font-size: 18px;
-		color: #fff;
-		border-color: rgba(255,255,255,.3);
 		float: left;
 		transition: color @animation-time;
+		.link(#fff);
 	}
 	&__count {
 		font-size: 11px;

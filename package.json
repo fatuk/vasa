@@ -13,6 +13,8 @@
 		"gulp-watch": "4.2.4",
 		"gulp-plumber": "0.6.6",
 		"gulp-notify": "2.2.0",
-		"main-bower-files": "2.8.0"
+		"main-bower-files": "2.8.0",
+		"sprity": "1.0.6",
+		"gulp-if": "1.2.5"
 	}
 }

@@ -1,30 +1,47 @@
-.img(@img) {
-	@abs-img-path: '/home/fatuk/www/VASA/public/img/';
-	@img-path: '../img/';
-	background: url('@{img-path}@{img}');
-	width: image-width('@{abs-img-path}@{img}');
-	height: image-height('@{abs-img-path}@{img}');
-}
-.icon {
-	display: inline-block;
-	vertical-align: middle;
-}
-.icon-crown {
-	.img('crown.png');
-}
-.icon-enter {
-	.img('enter.png');
-}
-// Social
-.icon-vk {
-	.img('vk.png');
-}
-.icon-ok {
-	.img('ok.png');
-}
-.icon-tw {
-	.img('tw.png');
-}
-.icon-fb {
-	.img('fb.png');
-}
+
+		.icon {
+			background-image: url('../img/sprite.png');
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+	.icon-crown {
+		background-position: -0px -0px;
+		width: 31px;
+		height: 24px;
+	}
+	.icon-crown_hover {
+		background-position: -0px -24px;
+		width: 31px;
+		height: 24px;
+	}
+	.icon-enter {
+		background-position: -0px -48px;
+		width: 25px;
+		height: 25px;
+	}
+	.icon-enter_hover {
+		background-position: -0px -73px;
+		width: 25px;
+		height: 25px;
+	}
+	.icon-fb {
+		background-position: -0px -98px;
+		width: 42px;
+		height: 42px;
+	}
+	.icon-ok {
+		background-position: -0px -140px;
+		width: 42px;
+		height: 42px;
+	}
+	.icon-tw {
+		background-position: -0px -182px;
+		width: 42px;
+		height: 42px;
+	}
+	.icon-vk {
+		background-position: -0px -224px;
+		width: 43px;
+		height: 42px;
+	}
