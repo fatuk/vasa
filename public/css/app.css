@@ -920,6 +920,7 @@ input[type="password"] {
 .field {
   position: relative;
   margin-bottom: 10px;
+  display: inline-block;
   zoom: 1;
 }
 .field:before,
@@ -929,6 +930,12 @@ input[type="password"] {
 }
 .field:after {
   clear: both;
+}
+.field_wide {
+  width: 100%;
+}
+.field.error .input {
+  border: solid 3px #ef443b;
 }
 .form__title {
   font-size: 32px;
@@ -1174,6 +1181,23 @@ input[type="password"] {
   color: #006ca8;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
+}
+.tooltip {
+  background: #feffa8;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  z-index: 5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.tooltip__text {
+  font-size: 18px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=../css/app.css.map */

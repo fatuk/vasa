@@ -1,0 +1,16 @@
+@tooltip-color: #FEFFA8;
+.tooltip {
+	background: @tooltip-color;
+	padding: @base*2;
+	position: absolute;
+	top: 0;
+	right: -@base;
+	transform: translateX(100%);
+	z-index: 5;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	border-radius: 5px;
+	&__text {
+		font-size: 18px;
+		margin: 0;
+	}
+}
