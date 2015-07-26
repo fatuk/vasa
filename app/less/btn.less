@@ -20,7 +20,7 @@
 	border-radius: 3px;
 	line-height: 56px;
 	height: 56px;
-	transition: background .3s;
+	transition: background @animation-time, padding @animation-time;
 	&_green {
 		background: @btn-green;
 	}
@@ -46,6 +46,7 @@
 		}
 	}
 	&:active {
+		padding-top: 2px;
 		&.btn_green {
 			background: @btn-green-active;
 		}

@@ -1,5 +1,4 @@
 .form {
-	padding-bottom: @base*7.5;
 	&__title {
 		font-size: 32px;
 		font-weight: @medium;
@@ -47,9 +46,13 @@
 		margin-bottom: @base*3;
 		&:last-of-type {
 			margin-bottom: 0;
+			& + .btn {
+				margin-top: @base*3;
+			}
 		}
 	}
 	&_registration {
+		padding-bottom: @base*7.5;
 		.input {
 			width: @base*36;
 		}

@@ -3,7 +3,7 @@
 .link(@color, @hover) {
 	border-bottom: solid 1px rgba(red(@color),green(@color),blue(@color),.4);
 	color: @color;
-	transition: color .3s;
+	transition: color @animation-time;
 	&:hover {
 		color: @hover;
 		border-color: rgba(red(@hover),green(@hover),blue(@hover),.4)

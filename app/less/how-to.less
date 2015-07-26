@@ -21,7 +21,7 @@
 	&__item {
 		display: inline-block;
 		margin: 0 12px;
-		transition: margin .3s;
+		transition: margin @animation-time;
 		position: relative;
 		&:last-child {
 			margin-right: 0;
@@ -70,7 +70,7 @@
 		line-height: @base*4;
 		display: inline-block;
 		cursor: pointer;
-		transition: background .3s, color .3s, transform .3s;
+		transition: background @animation-time, color @animation-time, transform @animation-time;
 		&:hover {
 			background: @how-to-text-color;
 			color: #fff;
