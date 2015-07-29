@@ -772,7 +772,8 @@ body > footer {
   width: 25px;
   height: 25px;
 }
-.icon-eye_open {
+.icon-eye_open,
+.password__btn.open .icon {
   background-position: -520px -609px;
   width: 44px;
   height: 28px;
@@ -1475,6 +1476,26 @@ input[type="password"] {
   padding-right: 38px;
   margin-top: 33px;
   letter-spacing: 1.1px;
+}
+.password {
+  position: relative;
+}
+.password__btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.password__btn .icon {
+  margin-top: 11px;
+}
+.password__btn.open .icon {
+  margin-top: 0;
+}
+.password .input {
+  padding-right: 60px;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
