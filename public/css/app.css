@@ -728,7 +728,8 @@ body > footer {
   width: 23px;
   height: 23px;
 }
-.icon-close_hover {
+.icon-close_hover,
+.modal__close:hover .icon {
   background-position: -650px -276px;
   width: 23px;
   height: 23px;
