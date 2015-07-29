@@ -1,5 +1,6 @@
 @login-text-color: #B0EBF3;
 @login-hover-color: #DFF400;
+@login-active-color: #5B6CE9;
 @login-border-color: rgba(255,255,255,.2);
 .login {
 	float: right;
@@ -28,7 +29,7 @@
 			position: absolute;
 			right: 0;
 			bottom: 2px;
-			background: @login-border-color;;
+			background: @login-border-color;
 		}
 	}
 	&__link {
@@ -37,6 +38,11 @@
 		font-size: 16px;
 		padding: 0 @base*1.5;
 		line-height: 25px;
+		&.active {
+			.login__text {
+				.link(@login-active-color);
+			}
+		}
 		&:hover {
 			.login__text {
 				.link(@login-hover-color);
@@ -46,6 +52,11 @@
 			}
 		}
 		&_symlink {
+			&.active {
+				.login__text {
+					.symlink(@login-active-color);
+				}
+			}
 			.login__text {
 				.symlink(@login-text-color);
 			}
