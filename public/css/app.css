@@ -1003,6 +1003,12 @@ body > footer {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.modal__link:hover {
+  border-bottom: solid 1px rgba(223, 244, 0, 0.4);
+  color: #dff400;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
 .modal__text {
   font-size: 20px;
   color: #000;
@@ -1204,6 +1210,18 @@ input[type="password"] {
   opacity: .7;
   padding: 16px 30px;
   margin: 0;
+}
+.form__link {
+  border-bottom: solid 1px rgba(0, 108, 168, 0.4);
+  color: #006ca8;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.form__link:hover {
+  border-bottom: solid 1px rgba(9, 165, 252, 0.4);
+  color: #09a5fc;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 .form_registration {
   padding-bottom: 75px;

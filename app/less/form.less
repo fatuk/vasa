@@ -1,3 +1,5 @@
+@form-link-color: #006CA8;
+@form-hover-color: #09A5FC;
 .form {
 	&__title {
 		font-size: 32px;
@@ -41,6 +43,12 @@
 		opacity: .7;
 		padding: 16px @base*3;
 		margin: 0;
+	}
+	&__link {
+		.link(@form-link-color);
+		&:hover {
+			.link(@form-hover-color);
+		}
 	}
 	.field {
 

@@ -1,5 +1,6 @@
 @modal-blue: #373A9F;
 @modal-link-color: #B0EBF3;
+@modal-hover-color: #DFF400;
 .modal {
 	position: fixed;
 	left: 50%;
@@ -56,6 +57,9 @@
 	&__link {
 		font-size: 15px;
 		.link(@modal-link-color);
+		&:hover {
+			.link(@modal-hover-color);
+		}
 	}
 	&__text {
 		font-size: 20px;
