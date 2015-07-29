@@ -1302,6 +1302,7 @@ input[type="password"] {
 .checkbox__check {
   background-color: #fff;
   border: solid 1px #b7b7b7;
+  border-radius: 3px;
   float: left;
   height: 18px;
   margin: 0;
