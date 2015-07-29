@@ -28,6 +28,7 @@ gulp.task('default', [
 	'browser-sync',
 	'handlebars',
 	'jsConcat',
+	'sprites',
 	'less',
 	'watch'
 ]);
@@ -51,6 +52,7 @@ gulp.task('sprites', function () {
 			src: './assets/img/icons/*.{png, jpg}',
 			style: './icons.less',
 			cssPath: '../img',
+			orientation: 'binary-tree',
 			template: './app/less/sprity-template.handlebars'
 				// ... other optional options
 				// for example if you want to generate scss instead of css
@@ -148,6 +150,7 @@ gulp.task('browser-sync', function () {
  * Watch
  ******************************/
 gulp.task('watch', function () {
+	gulp.watch('app/img/icons/*.png', ['sprites']);
 	gulp.watch('app/less/*.less', ['less']);
 	gulp.watch('app/js/**/*.js', ['jsConcat']);
 	gulp.watch('app/templates/**/*.handlebars', ['handlebars']);
