@@ -314,6 +314,10 @@ body > footer {
   text-align: center;
   padding-top: 27.5px;
   padding-bottom: 27.5px;
+  cursor: pointer;
+}
+.features__item:hover .features__item-title {
+  color: #89c541;
 }
 .features__item-title {
   font-size: 24px;
@@ -323,6 +327,8 @@ body > footer {
   display: inline-block;
   margin: 0;
   margin-bottom: 7px;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 .features__item-text {
   font-size: 16px;
@@ -716,7 +722,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-crown-circle_hover {
+.icon-crown-circle_hover,
+.features__item:hover .icon-crown-circle {
   background-position: 0px -130px;
   width: 130px;
   height: 130px;
@@ -768,7 +775,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-hammer-circle_hover {
+.icon-hammer-circle_hover,
+.features__item:hover .icon-hammer-circle {
   background-position: 0px -390px;
   width: 130px;
   height: 130px;
@@ -778,7 +786,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-hands-circle_hover {
+.icon-hands-circle_hover,
+.features__item:hover .icon-hands-circle {
   background-position: -130px 0px;
   width: 130px;
   height: 130px;
@@ -788,7 +797,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-house-circle_hover {
+.icon-house-circle_hover,
+.features__item:hover .icon-house-circle {
   background-position: -260px -390px;
   width: 130px;
   height: 130px;
@@ -798,7 +808,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-offer-circle_hover {
+.icon-offer-circle_hover,
+.features__item:hover .icon-offer-circle {
   background-position: -390px 0px;
   width: 130px;
   height: 130px;
@@ -818,7 +829,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-pig-circle_hover {
+.icon-pig-circle_hover,
+.features__item:hover .icon-pig-circle {
   background-position: -130px -260px;
   width: 130px;
   height: 130px;
@@ -828,7 +840,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-smile-circle_hover {
+.icon-smile-circle_hover,
+.features__item:hover .icon-smile-circle {
   background-position: -260px -130px;
   width: 130px;
   height: 130px;
@@ -848,7 +861,8 @@ body > footer {
   width: 130px;
   height: 130px;
 }
-.icon-vasa-circle_hover {
+.icon-vasa-circle_hover,
+.features__item:hover .icon-vasa-circle {
   background-position: -130px -130px;
   width: 130px;
   height: 130px;

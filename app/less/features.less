@@ -1,4 +1,5 @@
 @features-color: #FFED18;
+@features-hover: #89C541;
 .features {
 	background: url('../img/features-bg.jpg') bottom;
 	background-size: cover;
@@ -26,6 +27,36 @@
 		text-align: center;
 		padding-top: @base*2.75;
 		padding-bottom: @base*2.75;
+		cursor: pointer;
+		&:hover {
+			.icon-vasa-circle {
+				&:extend(.icon-vasa-circle_hover);
+			}
+			.icon-hammer-circle {
+				&:extend(.icon-hammer-circle_hover);
+			}
+			.icon-hands-circle {
+				&:extend(.icon-hands-circle_hover);
+			}
+			.icon-pig-circle {
+				&:extend(.icon-pig-circle_hover);
+			}
+			.icon-smile-circle {
+				&:extend(.icon-smile-circle_hover);
+			}
+			.icon-offer-circle {
+				&:extend(.icon-offer-circle_hover);
+			}
+			.icon-house-circle {
+				&:extend(.icon-house-circle_hover);
+			}
+			.icon-crown-circle {
+				&:extend(.icon-crown-circle_hover);
+			}
+			.features__item-title {
+				color: @features-hover;
+			}
+		}
 	}
 	&__container {
 
@@ -38,6 +69,7 @@
 		display: inline-block;
 		margin: 0;
 		margin-bottom: 7px;
+		transition: color @animation-time;
 	}
 	&__item-text {
 		font-size: 16px;
