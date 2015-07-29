@@ -1373,5 +1373,57 @@ input[type="password"] {
   margin: 0;
   width: 235px;
 }
+.success {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 136px;
+}
+.success__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.success__title strong {
+  font-size: 32px;
+  font-weight: 500;
+}
+.success__img {
+  width: 249px;
+  height: 249px;
+  margin-bottom: 18px;
+}
+.success__text {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 500px;
+  display: inline-block;
+}
+.success__text:last-of-type {
+  margin-bottom: 0;
+}
+.success__link {
+  font-size: 15px;
+  border-bottom: solid 1px rgba(0, 108, 168, 0.4);
+  color: #006ca8;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  margin: 25px 0;
+  display: inline-block;
+}
+.success__link:hover {
+  border-bottom: solid 1px rgba(0, 166, 255, 0.4);
+  color: #00a6ff;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.success .btn {
+  font-size: 18px;
+  padding-left: 38px;
+  padding-right: 38px;
+  margin-top: 33px;
+  letter-spacing: 1.1px;
+}
 
 /*# sourceMappingURL=../css/app.css.map */
