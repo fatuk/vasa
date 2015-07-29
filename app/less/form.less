@@ -14,7 +14,7 @@
 		}
 		&_padding {
 			padding-top: 12px;
-			padding-bottom: 15px;
+			padding-bottom: 11px;
 		}
 	}
 	&__cell {
@@ -39,29 +39,37 @@
 		font-size: 13px;
 		color: #000;
 		opacity: .7;
-		padding: @base*2 @base*3;
+		padding: 16px @base*3;
 		margin: 0;
 	}
 	.field {
-		margin-bottom: @base*3;
-		&:last-of-type {
-			margin-bottom: 0;
-			& + .btn {
-				margin-top: @base*3;
-			}
-		}
+
 	}
 	&_registration {
 		padding-bottom: @base*7.5;
 		.field {
 			width: @base*36;
+			margin-bottom: 26px;
+			&:last-of-type {
+				// margin-bottom: 0;
+				& + .btn {
+					margin-top: @base*3;
+				}
+			}
 		}
 		.btn {
 			width: @base*36;
 			font-weight: @bold;
 		}
 		.container {
-			padding-right: 33px;
+			padding-left: 35px;
+		}
+		.form__cell_right {
+			.field {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }

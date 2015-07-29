@@ -951,6 +951,11 @@ body > footer {
   transform: translate(-50%, -50%);
   z-index: 100;
 }
+.modal__close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
 .modal__container {
   border-radius: 3px;
 }
@@ -1137,7 +1142,7 @@ input[type="password"] {
   clear: both;
 }
 .field_wide {
-  width: 100%;
+  width: 100% !important;
 }
 .field.error .tooltip {
   display: block;
@@ -1172,7 +1177,7 @@ input[type="password"] {
 }
 .form__row_padding {
   padding-top: 12px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
 }
 .form__cell_left {
   float: left;
@@ -1194,30 +1199,28 @@ input[type="password"] {
   font-size: 13px;
   color: #000;
   opacity: .7;
-  padding: 20px 30px;
+  padding: 16px 30px;
   margin: 0;
-}
-.form .field {
-  margin-bottom: 30px;
-}
-.form .field:last-of-type {
-  margin-bottom: 0;
-}
-.form .field:last-of-type + .btn {
-  margin-top: 30px;
 }
 .form_registration {
   padding-bottom: 75px;
 }
 .form_registration .field {
   width: 360px;
+  margin-bottom: 26px;
+}
+.form_registration .field:last-of-type + .btn {
+  margin-top: 30px;
 }
 .form_registration .btn {
   width: 360px;
   font-weight: 700;
 }
 .form_registration .container {
-  padding-right: 33px;
+  padding-left: 35px;
+}
+.form_registration .form__cell_right .field:last-of-type {
+  margin-bottom: 0;
 }
 .radio {
   zoom: 1;
