@@ -509,9 +509,6 @@ body > footer {
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
 }
-.social__link:hover {
-  opacity: .8;
-}
 .vip {
   position: absolute;
   left: 20px;
@@ -765,7 +762,8 @@ body > footer {
   width: 42px;
   height: 42px;
 }
-.icon-fb_hover {
+.icon-fb_hover,
+.social__link:hover .icon-fb {
   background-position: -520px -84px;
   width: 42px;
   height: 42px;
@@ -819,7 +817,8 @@ body > footer {
   width: 42px;
   height: 42px;
 }
-.icon-ok_hover {
+.icon-ok_hover,
+.social__link:hover .icon-ok {
   background-position: -520px -168px;
   width: 42px;
   height: 42px;
@@ -851,7 +850,8 @@ body > footer {
   width: 42px;
   height: 42px;
 }
-.icon-tw_hover {
+.icon-tw_hover,
+.social__link:hover .icon-tw {
   background-position: -520px -294px;
   width: 42px;
   height: 42px;
@@ -872,7 +872,8 @@ body > footer {
   width: 43px;
   height: 42px;
 }
-.icon-vk_hover {
+.icon-vk_hover,
+.social__link:hover .icon-vk {
   background-position: -520px -42px;
   width: 43px;
   height: 42px;

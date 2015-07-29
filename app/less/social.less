@@ -18,7 +18,18 @@
 		display: inline-block;
 		transition: opacity @animation-time;
 		&:hover {
-			opacity: .8;
+			.icon-vk {
+				&:extend(.icon-vk_hover);
+			}
+			.icon-fb {
+				&:extend(.icon-fb_hover);
+			}
+			.icon-ok {
+				&:extend(.icon-ok_hover);
+			}
+			.icon-tw {
+				&:extend(.icon-tw_hover);
+			}
 		}
 	}
 }
