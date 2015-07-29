@@ -260,7 +260,7 @@ body > footer {
 }
 .copyright__item {
   float: left;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 .copyright__text {
   font-size: 13px;
@@ -346,8 +346,8 @@ body > footer {
 }
 .horizontal-menu__list {
   padding: 0;
-  padding-top: 45px;
-  padding-bottom: 48px;
+  padding-top: 42px;
+  padding-bottom: 46px;
   list-style: none;
   margin: 0;
   zoom: 1;
@@ -485,7 +485,7 @@ body > footer {
 .social__list {
   list-style: none;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 33px;
   margin: 0;
   zoom: 1;
 }
@@ -499,10 +499,6 @@ body > footer {
 }
 .social__item {
   float: left;
-  margin-right: 10px;
-}
-.social__item:last-child {
-  margin-right: 0;
 }
 .social__link {
   display: inline-block;
