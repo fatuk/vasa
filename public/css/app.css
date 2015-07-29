@@ -706,23 +706,24 @@ body > footer {
   padding: 28px 0;
   display: inline-block;
 }
-.icon {
+.icon,
+.tooltip:before {
   background-image: url('../img/sprite.png');
   display: inline-block;
   vertical-align: middle;
 }
 .icon-close {
-  background-position: -520px -480px;
+  background-position: -563px -23px;
   width: 23px;
   height: 23px;
 }
 .icon-close_active {
-  background-position: -520px -434px;
+  background-position: -520px -481px;
   width: 23px;
   height: 23px;
 }
 .icon-close_hover {
-  background-position: -520px -457px;
+  background-position: -563px 0px;
   width: 23px;
   height: 23px;
 }
@@ -738,24 +739,24 @@ body > footer {
   height: 130px;
 }
 .icon-crown {
-  background-position: -520px -336px;
+  background-position: -520px -383px;
   width: 31px;
   height: 24px;
 }
 .icon-crown_hover,
 .vip:hover .icon {
-  background-position: -520px -360px;
+  background-position: -520px -407px;
   width: 31px;
   height: 24px;
 }
 .icon-enter {
-  background-position: -520px -384px;
+  background-position: -520px -431px;
   width: 25px;
   height: 25px;
 }
 .icon-enter_hover,
 .login__link:hover .icon-enter {
-  background-position: -520px -409px;
+  background-position: -520px -456px;
   width: 25px;
   height: 25px;
 }
@@ -770,13 +771,13 @@ body > footer {
   height: 21px;
 }
 .icon-fb {
-  background-position: -520px -210px;
+  background-position: -520px -215px;
   width: 42px;
   height: 42px;
 }
 .icon-fb_hover,
 .social__link:hover .icon-fb {
-  background-position: -520px -84px;
+  background-position: -520px -131px;
   width: 42px;
   height: 42px;
 }
@@ -798,73 +799,79 @@ body > footer {
 }
 .icon-hands-circle_hover,
 .features__item:hover .icon-hands-circle {
-  background-position: -130px 0px;
+  background-position: -260px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-house-circle {
-  background-position: -390px -390px;
+  background-position: -130px 0px;
   width: 130px;
   height: 130px;
 }
 .icon-house-circle_hover,
 .features__item:hover .icon-house-circle {
-  background-position: -260px -390px;
+  background-position: -390px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-offer-circle {
-  background-position: -390px -130px;
+  background-position: -260px -130px;
   width: 130px;
   height: 130px;
 }
 .icon-offer-circle_hover,
 .features__item:hover .icon-offer-circle {
-  background-position: -390px 0px;
+  background-position: -390px -130px;
   width: 130px;
   height: 130px;
 }
 .icon-ok {
-  background-position: -520px -126px;
+  background-position: -520px -257px;
   width: 42px;
   height: 42px;
 }
 .icon-ok_hover,
 .social__link:hover .icon-ok {
-  background-position: -520px -168px;
+  background-position: -520px -173px;
   width: 42px;
   height: 42px;
 }
 .icon-pig-circle {
-  background-position: 0px 0px;
+  background-position: -390px 0px;
   width: 130px;
   height: 130px;
 }
 .icon-pig-circle_hover,
 .features__item:hover .icon-pig-circle {
-  background-position: -130px -260px;
+  background-position: 0px 0px;
   width: 130px;
   height: 130px;
 }
 .icon-smile-circle {
-  background-position: 0px -260px;
+  background-position: -130px -260px;
   width: 130px;
   height: 130px;
 }
 .icon-smile-circle_hover,
 .features__item:hover .icon-smile-circle {
-  background-position: -260px -130px;
+  background-position: 0px -260px;
   width: 130px;
   height: 130px;
 }
+.icon-tooltip-triangle,
+.tooltip:before {
+  background-position: -520px 0px;
+  width: 43px;
+  height: 47px;
+}
 .icon-tw {
-  background-position: -520px -252px;
+  background-position: -520px -299px;
   width: 42px;
   height: 42px;
 }
 .icon-tw_hover,
 .social__link:hover .icon-tw {
-  background-position: -520px -294px;
+  background-position: -520px -341px;
   width: 42px;
   height: 42px;
 }
@@ -880,13 +887,13 @@ body > footer {
   height: 130px;
 }
 .icon-vk {
-  background-position: -520px 0px;
+  background-position: -520px -89px;
   width: 43px;
   height: 42px;
 }
 .icon-vk_hover,
 .social__link:hover .icon-vk {
-  background-position: -520px -42px;
+  background-position: -520px -47px;
   width: 43px;
   height: 42px;
 }
@@ -1085,6 +1092,9 @@ input[type="password"] {
 }
 .field_wide {
   width: 100%;
+}
+.field.error .tooltip {
+  display: block;
 }
 .field.error .input {
   border: solid 3px #ef443b;
@@ -1338,8 +1348,9 @@ input[type="password"] {
   transition: color 0.1s;
 }
 .tooltip {
+  display: none;
   background: #feffa8;
-  padding: 20px;
+  padding: 11px 18px;
   position: absolute;
   top: -3.33333333px;
   right: -10px;
@@ -1350,9 +1361,16 @@ input[type="password"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
+.tooltip:before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -39px;
+}
 .tooltip__text {
   font-size: 18px;
   margin: 0;
+  width: 235px;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
