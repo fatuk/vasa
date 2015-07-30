@@ -1,25 +1,33 @@
 {
-  "name": "gulp-frontend-boilerplate",
-  "version": "0.1.1",
-  "homepage": "https://github.com/fatuk/gulp-frontend-boilerplate",
-  "authors": [
-    "fatuk <fatukk@gmail.com>"
-  ],
-  "moduleType": [
-    "amd"
-  ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "overrides": {},
-  "dependencies": {
-    "jquery": "~2.1.1",
-    "normalize-less": "*"
-  }
+	"name": "gulp-frontend-boilerplate",
+	"version": "0.1.1",
+	"homepage": "https://github.com/fatuk/gulp-frontend-boilerplate",
+	"authors": [
+		"fatuk <fatukk@gmail.com>"
+	],
+	"moduleType": [
+		"amd"
+	],
+	"license": "MIT",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"overrides": {
+		"owl-carousel": {
+			"main": "owl-carousel/owl.carousel.js"
+		},
+		"normalize-less": {
+			"ignore": "normalize.less"
+		}
+	},
+	"dependencies": {
+		"jquery": "2.1.1",
+		"normalize-less": "*",
+		"owl-carousel": "1.3.2"
+	}
 }

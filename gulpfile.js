@@ -28,6 +28,7 @@ gulp.task('default', [
 	'browser-sync',
 	'handlebars',
 	'jsConcat',
+	'pluginsConcat',
 	'sprites',
 	'less',
 	'watch'

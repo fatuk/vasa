@@ -13,6 +13,8 @@
 		margin: 0;
 		padding: @base*6 @base*2;
 		padding-bottom: @base*2;
+		position: relative;
+		z-index: 10;
 	}
 	&__list {
 		list-style: none;
@@ -27,7 +29,8 @@
 		text-align: center;
 		padding-top: @base*2.75;
 		padding-bottom: @base*2.75;
-		cursor: pointer;
+	}
+	&__link {
 		&:hover {
 			.icon-vasa-circle {
 				&:extend(.icon-vasa-circle_hover);

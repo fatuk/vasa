@@ -1,2 +1,2 @@
-$(function(){});
+$(function(){var i=$(".js-slider").owlCarousel({navigation:!1,slideSpeed:300,pagination:!1,paginationSpeed:400,autoHeight:!0,singleItem:!0});$(".js-sliderPrev").on("click",function(){i.trigger("owl.prev")}),$(".js-sliderNext").on("click",function(){i.trigger("owl.next")})});
 //# sourceMappingURL=../js/app.js.map

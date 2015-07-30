@@ -15,6 +15,16 @@
 				&:extend(.icon-close_hover);
 			}
 		}
+		&_blue {
+			.icon {
+				&:extend(.icon-close-blue);
+			}
+			&:hover {
+				.icon {
+					&:extend(.icon-close-blue_hover);
+				}
+			}
+		}
 	}
 	&__container {
 		border-radius: 3px;
@@ -89,6 +99,18 @@
 		.btn {
 			font-size: 20px;
 			letter-spacing: .6px;
+		}
+	}
+	&_features {
+		position: absolute;
+		top: 150px;
+		background: #fff;
+		border-radius: 5px;
+		width: @base*64;
+		transform: translateX(-50%);
+		.modal__title {
+			margin: 0;
+			padding: 0;
 		}
 	}
 }
