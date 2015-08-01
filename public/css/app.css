@@ -363,7 +363,7 @@ body > footer {
 }
 .horizontal-menu__item {
   float: left;
-  margin-right: 32px;
+  margin-right: 24px;
 }
 .horizontal-menu__item:last-child {
   margin-right: 0;
@@ -849,18 +849,18 @@ body > footer {
   height: 130px;
 }
 .icon-offer-circle-bg {
-  background-position: -130px 0px;
+  background-position: -130px -260px;
   width: 130px;
   height: 130px;
 }
 .icon-offer-circle {
-  background-position: -390px -520px;
+  background-position: -130px 0px;
   width: 130px;
   height: 130px;
 }
 .icon-offer-circle_hover,
 .features__link:hover .icon-offer-circle {
-  background-position: -130px -260px;
+  background-position: -390px -520px;
   width: 130px;
   height: 130px;
 }
@@ -914,18 +914,18 @@ body > footer {
 }
 .icon-shevron-left_hover,
 .slider__btn_prev:hover .icon {
-  background-position: -650px -270px;
+  background-position: -650px -222px;
   width: 31px;
   height: 48px;
 }
 .icon-shevron-right {
-  background-position: -650px -174px;
+  background-position: -650px -270px;
   width: 31px;
   height: 48px;
 }
 .icon-shevron-right_hover,
 .slider__btn_next:hover .icon {
-  background-position: -650px -222px;
+  background-position: -650px -174px;
   width: 31px;
   height: 48px;
 }
@@ -961,6 +961,17 @@ body > footer {
   background-position: -650px 0px;
   width: 42px;
   height: 42px;
+}
+.icon-user {
+  background-position: -650px -621px;
+  width: 20px;
+  height: 24px;
+}
+.icon-user_hover,
+.login__link:hover .icon-user {
+  background-position: -670px -621px;
+  width: 20px;
+  height: 24px;
 }
 .icon-vasa-circle-bg {
   background-position: 0px -260px;

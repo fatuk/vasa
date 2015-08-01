@@ -4,6 +4,27 @@
 	<div class="auth">
 		<div class="container">
 			<!-- Login -->
+			{{#authorized}}
+			<div class="login">
+				<ul class="login__list">
+					<li class="login__item">
+						<a href="vasa_02auth.html" class="login__link">
+							<i class="icon icon-user"></i>
+							<span class="login__text">
+								531805
+							</span>
+						</a>
+					</li>
+					<li class="login__item">
+						<a href="vasa_04registration.html" class="login__link">
+							<span class="login__text">
+								Выйти
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			{{else}}
 			<div class="login">
 				<ul class="login__list">
 					<li class="login__item">
@@ -31,6 +52,7 @@
 					</li>
 				</ul>
 			</div>
+			{{/authorized}}
 		</div>
 	</div>
 	<!-- Main menu -->
