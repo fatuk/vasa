@@ -151,10 +151,18 @@ gulp.task('browser-sync', function () {
  * Watch
  ******************************/
 gulp.task('watch', function () {
-	gulp.watch('app/img/icons/*.png', ['sprites']);
-	gulp.watch('app/less/*.less', ['less']);
-	gulp.watch('app/js/**/*.js', ['jsConcat']);
-	gulp.watch('app/templates/**/*.handlebars', ['handlebars']);
+	watch('app/img/icons/*.png', function () {
+		gulp.start('sprites');
+	});
+	watch('app/less/*.less', function () {
+		gulp.start('less');
+	});
+	watch('app/js/**/*.js', function () {
+		gulp.start('jsConcat');
+	});
+	watch('app/templates/**/*.handlebars', function () {
+		gulp.start('handlebars');
+	});
 });
 
 /******************************
