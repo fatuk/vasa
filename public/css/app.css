@@ -717,29 +717,29 @@ body > footer {
 }
 .icon-close-blue,
 .modal__close_blue .icon {
-  background-position: -650px -452px;
+  background-position: -650px -476px;
   width: 26px;
   height: 26px;
 }
 .icon-close-blue_hover,
 .modal__close_blue:hover .icon {
-  background-position: -650px -426px;
+  background-position: -650px -450px;
   width: 26px;
   height: 26px;
 }
 .icon-close {
-  background-position: -650px -598px;
+  background-position: -650px -576px;
   width: 23px;
   height: 23px;
 }
 .icon-close_active {
-  background-position: -650px -575px;
+  background-position: -650px -599px;
   width: 23px;
   height: 23px;
 }
 .icon-close_hover,
 .modal__close:hover .icon {
-  background-position: -650px -552px;
+  background-position: -650px -622px;
   width: 23px;
   height: 23px;
 }
@@ -759,6 +759,11 @@ body > footer {
   width: 130px;
   height: 130px;
 }
+.icon-crown-red {
+  background-position: -650px -402px;
+  width: 31px;
+  height: 24px;
+}
 .icon-crown {
   background-position: -650px -378px;
   width: 31px;
@@ -766,18 +771,18 @@ body > footer {
 }
 .icon-crown_hover,
 .vip:hover .icon {
-  background-position: -650px -402px;
+  background-position: -650px -426px;
   width: 31px;
   height: 24px;
 }
 .icon-enter {
-  background-position: -650px -478px;
+  background-position: -650px -502px;
   width: 25px;
   height: 25px;
 }
 .icon-enter_hover,
 .login__link:hover .icon-enter {
-  background-position: -650px -503px;
+  background-position: -650px -527px;
   width: 25px;
   height: 25px;
 }
@@ -793,7 +798,7 @@ body > footer {
   height: 21px;
 }
 .icon-fb {
-  background-position: -562px -567px;
+  background-position: -650px 0px;
   width: 42px;
   height: 42px;
 }
@@ -804,60 +809,60 @@ body > footer {
   height: 42px;
 }
 .icon-hammer-circle-bg {
-  background-position: -260px -390px;
+  background-position: -390px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle {
-  background-position: -390px -390px;
+  background-position: -520px 0px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle_hover,
 .features__link:hover .icon-hammer-circle {
-  background-position: -520px 0px;
-  width: 130px;
-  height: 130px;
-}
-.icon-hands-circle-bg {
   background-position: -520px -130px;
   width: 130px;
   height: 130px;
 }
-.icon-hands-circle {
+.icon-hands-circle-bg {
   background-position: -520px -260px;
+  width: 130px;
+  height: 130px;
+}
+.icon-hands-circle {
+  background-position: -520px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-hands-circle_hover,
 .features__link:hover .icon-hands-circle {
-  background-position: -520px -390px;
-  width: 130px;
-  height: 130px;
-}
-.icon-house-circle-bg {
   background-position: 0px -520px;
   width: 130px;
   height: 130px;
 }
-.icon-house-circle {
+.icon-house-circle-bg {
   background-position: -130px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-house-circle {
+  background-position: -260px -520px;
   width: 130px;
   height: 130px;
 }
 .icon-house-circle_hover,
 .features__link:hover .icon-house-circle {
-  background-position: -260px -520px;
-  width: 130px;
-  height: 130px;
-}
-.icon-offer-circle-bg {
   background-position: -130px -260px;
   width: 130px;
   height: 130px;
 }
-.icon-offer-circle {
+.icon-offer-circle-bg {
   background-position: -390px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-offer-circle {
+  background-position: -260px -390px;
   width: 130px;
   height: 130px;
 }
@@ -868,13 +873,13 @@ body > footer {
   height: 130px;
 }
 .icon-ok {
-  background-position: -650px 0px;
+  background-position: -562px -567px;
   width: 42px;
   height: 42px;
 }
 .icon-ok_hover,
 .social__link:hover .icon-ok {
-  background-position: -650px -84px;
+  background-position: -604px -567px;
   width: 42px;
   height: 42px;
 }
@@ -895,40 +900,50 @@ body > footer {
   height: 130px;
 }
 .icon-plus {
-  background-position: -650px -528px;
+  background-position: -650px -552px;
   width: 24px;
   height: 24px;
 }
 .icon-question-circle {
-  background-position: -650px -348px;
+  background-position: -650px -318px;
   width: 30px;
   height: 30px;
 }
 .icon-question-circle_hover,
 .new-buildings__link:hover .icon-question-circle {
-  background-position: -650px -318px;
+  background-position: -650px -348px;
   width: 30px;
   height: 30px;
 }
+.icon-shevron-left-small-black {
+  background-position: -676px -476px;
+  width: 16px;
+  height: 22px;
+}
 .icon-shevron-left {
-  background-position: -650px -126px;
+  background-position: -650px -270px;
   width: 31px;
   height: 48px;
 }
 .icon-shevron-left_hover,
 .slider__btn_prev:hover .icon {
-  background-position: -650px -270px;
+  background-position: -650px -222px;
   width: 31px;
   height: 48px;
 }
+.icon-shevron-right-small-black {
+  background-position: -676px -450px;
+  width: 16px;
+  height: 22px;
+}
 .icon-shevron-right-small,
 .breadcrumbs__item:before {
-  background-position: -676px -426px;
+  background-position: -675px -502px;
   width: 16px;
   height: 21px;
 }
 .icon-shevron-right {
-  background-position: -650px -222px;
+  background-position: -650px -126px;
   width: 31px;
   height: 48px;
 }
@@ -961,7 +976,7 @@ body > footer {
   height: 47px;
 }
 .icon-tw {
-  background-position: -604px -567px;
+  background-position: -650px -84px;
   width: 42px;
   height: 42px;
 }
@@ -972,13 +987,13 @@ body > footer {
   height: 42px;
 }
 .icon-user {
-  background-position: -650px -621px;
+  background-position: 0px -650px;
   width: 20px;
   height: 24px;
 }
 .icon-user_hover,
 .login__link:hover .icon-user {
-  background-position: -670px -621px;
+  background-position: -20px -650px;
   width: 20px;
   height: 24px;
 }
@@ -2126,6 +2141,7 @@ input[type="password"] {
 }
 .building__container {
   padding: 26px 20px;
+  padding-bottom: 0;
   zoom: 1;
 }
 .building__container:before,
@@ -2176,7 +2192,80 @@ input[type="password"] {
   width: 100%;
   height: 230px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+}
+.offers__header {
+  padding: 20px 0;
+  zoom: 1;
+}
+.offers__header:before,
+.offers__header:after {
+  content: "";
+  display: table;
+}
+.offers__header:after {
+  clear: both;
+}
+.offers__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  float: left;
+  line-height: 56px;
+  margin-left: 20px;
+}
+.offers .btn {
+  float: right;
+  font-size: 18px;
+  padding-left: 56px;
+  padding-right: 56px;
+  margin-right: 20px;
+  letter-spacing: 0.65px;
+}
+.offers__column:first-of-type {
+  float: left;
+  width: 700px;
+}
+.offers__column:last-of-type {
+  float: right;
+  width: 240px;
+}
+.pagination {
+  display: inline-block;
+  width: 100%;
+}
+.offers-list {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+.offers-list__inner {
+  width: 100%;
+}
+.offers-list__inner td {
+  padding: 12px 10px;
+  height: 49px;
+}
+.offers-list__text {
+  font-size: 15px;
+  border-bottom: solid 1px #ccc;
+  width: 250px;
+}
+.offers-list__price {
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: solid 1px #ccc;
+  width: 190px;
+}
+.offers-list__date {
+  font-size: 15px;
+  border-bottom: solid 1px #ccc;
+}
+.offers-list__status {
+  font-size: 16px;
+  border-bottom: solid 1px #ccc;
+  text-align: right;
+  color: #f7412d;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
