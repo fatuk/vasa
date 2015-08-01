@@ -2162,7 +2162,7 @@ input[type="password"] {
   font-weight: 700;
 }
 .building__img {
-  width: 350px;
+  width: 100%;
   height: 230px;
   display: inline-block;
 }
@@ -2173,7 +2173,7 @@ input[type="password"] {
   transition: color 0.1s;
 }
 .building .map {
-  width: 350px;
+  width: 100%;
   height: 230px;
   margin-top: 20px;
   margin-bottom: 30px;
