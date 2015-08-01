@@ -59,6 +59,11 @@ $(function () {
 				}));
 			}
 
+			// TODO: Remove, it's just for testing
+			pinsCollection.events.add('click', function (e) {
+				window.location = 'vasa_11novostroiki_list_of_proposals.html';
+			});
+
 			this.map.geoObjects.add(pinsCollection);
 		};
 
