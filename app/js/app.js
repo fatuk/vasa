@@ -23,7 +23,8 @@ $(function () {
 		var self = this,
 			id = params.id || 'map',
 			zoom = params.zoom || 10,
-			location = params.location || [55.76, 37.64];
+			location = params.location || [55.76, 37.64],
+			center = params.center || [55.76, 37.64];
 
 		this.init = function () {
 			console.log('map init');
@@ -31,7 +32,8 @@ $(function () {
 			this.map = new ymaps.Map(id, {
 				center: location,
 				zoom: zoom,
-				controls: []
+				controls: [],
+				center: center
 			});
 
 			this.map.behaviors.disable(['scrollZoom', 'dblClickZoom']);
@@ -65,16 +67,32 @@ $(function () {
 		});
 	};
 
-	var newBuildingsMap = new map({
-		id: 'newBuildingsMap',
-		zoom: 15,
-		pins: [{
-			location: [55.76, 37.64],
-			content: 'Test pin'
-		}, {
-			location: [55.765, 37.645],
-			content: 'Test pin'
-		}]
-	});
+	// New building map init
+	if ($('#newBuildingsMap').length > 0) {
+		var newBuildingsMap = new map({
+			id: 'newBuildingsMap',
+			zoom: 15,
+			pins: [{
+				location: [55.76, 37.64],
+				content: 'Test pin'
+			}, {
+				location: [55.765, 37.645],
+				content: 'Test pin'
+			}]
+		});
+	}
+
+	// Building 1 map init
+	if ($('#buildingMap1').length > 0) {
+		var newBuildingsMap = new map({
+			id: 'buildingMap1',
+			zoom: 17,
+			center: [55.76, 37.64],
+			pins: [{
+				location: [55.76, 37.64],
+				content: 'Test pin'
+			}]
+		});
+	}
 
 });
