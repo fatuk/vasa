@@ -121,7 +121,7 @@ gulp.task('jsConcat', function () {
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.on('error', notify.onError(function (error) {
 			return '\nAn error occurred while uglifying js.\nLook in the console for details.\n' + error;
 		}))
