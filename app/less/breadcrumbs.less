@@ -1,0 +1,33 @@
+@breadcrumbs-link: #006CA8;
+.breadcrumbs {
+	padding: 23px @base;
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		margin-right: 23px;
+		position: relative;
+		&:before {
+			content: '';
+			&:extend(.icon);
+			&:extend(.icon-shevron-right-small);
+			position: absolute;
+			top: 1px;
+			right: -21px;
+		}
+		&:last-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		.link(@breadcrumbs-link);
+		font-size: 15px;
+	}
+}
