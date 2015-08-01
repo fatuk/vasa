@@ -1,4 +1,93 @@
+@pagination-active: #AFC3ED;
+@pagination-hover: #3E4EB8;
 .pagination {
 	display: inline-block;
 	width: 100%;
+	text-align: center;
+	margin-top: @base*3;
+	margin-bottom: 25px;
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		border: solid 1px #ccc;
+		border-right: none;
+		transition: background @animation-time;
+		&:first-child {
+			border-radius: 3px 0 0 3px;
+			&:hover {
+				.icon {
+					opacity: 1;
+					&:extend(.icon-shevron-left-small-white);
+				}
+			}
+		}
+		&:last-child {
+			border-right: solid 1px #ccc;
+			border-radius: 0 3px 3px 0;
+			&:hover {
+				.icon {
+					opacity: 1;
+					&:extend(.icon-shevron-right-small-white);
+				}
+			}
+		}
+		&:hover {
+			background: @pagination-hover;
+			.pagination__link {
+				color: #fff;
+				opacity: 1;
+			}
+		}
+		&.active {
+			background: @pagination-active;
+			.pagination__link {
+				font-weight: @bold;
+				color: #000;
+			}
+		}
+		&.disabled {
+			background: none;
+			&:first-child {
+				&:hover {
+					.icon {
+						opacity: .2;
+						&:extend(.icon-shevron-left-small-black);
+					}
+				}
+			}
+			&:last-child {
+				&:hover {
+					.icon {
+						opacity: .2;
+						&:extend(.icon-shevron-right-small-black);
+					}
+				}
+			}
+			.pagination__link {
+				cursor: not-allowed;
+			}
+			.icon {
+				opacity: .2;
+			}
+		}
+		.icon {
+			margin-bottom: 1px;
+			opacity: .6;
+		}
+	}
+	&__link {
+		display: inline-block;
+		width: @base*4;
+		line-height: @base*4-1px;
+		font-size: 16px;
+		opacity: .8;
+		color: #000;
+		transition: color @animation-time, opacity @animation-time;
+	}
 }
