@@ -151,7 +151,7 @@ gulp.task('browser-sync', function () {
  * Watch
  ******************************/
 gulp.task('watch', function () {
-	watch('app/img/icons/*.png', function () {
+	watch('app/assets/img/icons/*.png', function () {
 		gulp.start('sprites');
 	});
 	watch('app/less/*.less', function () {
