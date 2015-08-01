@@ -163,6 +163,9 @@ gulp.task('watch', function () {
 	watch('app/templates/**/*.handlebars', function () {
 		gulp.start('handlebars');
 	});
+	watch('assets/**/*.*', function () {
+		gulp.start('copyAssets');
+	});
 });
 
 /******************************
