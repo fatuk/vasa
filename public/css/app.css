@@ -2406,6 +2406,7 @@ input[type="password"] {
   text-align: center;
   padding: 30px;
   position: relative;
+  cursor: pointer;
 }
 .upload-image__placeholder {
   margin-bottom: 10px;
