@@ -59,7 +59,6 @@
 			width: @base*36;
 			margin-bottom: 26px;
 			&:last-of-type {
-				// margin-bottom: 0;
 				& + .btn {
 					margin-top: @base*3;
 				}
@@ -78,6 +77,32 @@
 					margin-bottom: 0;
 				}
 			}
+		}
+	}
+	&_new-object {
+		padding-bottom: 64px;
+		.form__title {
+			margin-top: 0;
+			margin-bottom: 16px;
+		}
+		.field {
+			width: @base*36;
+			margin-bottom: 5px;
+			&:last-of-type {
+				& + .btn {
+					margin-top: @base*3;
+				}
+			}
+		}
+		.upload-image {
+			margin-bottom: 8px;
+		}
+		.btn {
+			width: @base*36;
+			font-size: 20px;
+			letter-spacing: 0.6px;
+			font-weight: @bold;
+			margin-top: 13px;
 		}
 	}
 }

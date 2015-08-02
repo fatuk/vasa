@@ -1,0 +1,210 @@
+<!-- Add new object -->
+<div class="new-object">
+	<div class="container">
+		{{>breadcrumbs}}
+	</div>
+	<div class="form form_new-object">
+		<form action="vasa_04registration_success.html">
+			<div class="container">
+				<!-- Title -->
+				<div class="form__row">
+					<div class="form__cell form__cell_right">
+						<h2 class="form__title">
+							Новый объект
+						</h2>
+					</div>
+				</div>
+				<!-- Load image row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_right">
+						<div class="field hide">
+							<!-- Uploaded image -->
+							<div class="uploaded-image">
+								<img src="img/loaded-img.jpg" alt="" class="uploaded-image__img">
+								<a href="#" class="uploaded-image__btn">
+									<span class="uploaded-image__btn-text">
+										Обновить фото
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="field">
+							<!-- Upload image -->
+							<label class="upload-image">
+								<img src="img/image-holder.png" alt="" class="upload-image__placeholder">
+								<span class="upload-image__text">
+									Загрузить изображение
+								</span>
+								<input type="file" class="upload-image__input">
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- Object row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="object" class="form__label form__label_v-center">
+							Строительный объект:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="object" class="input input_border input_wide">
+						</div>
+					</div>
+				</div>
+				<!-- Building company row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="building-company" class="form__label form__label_v-center">
+							Застройщик
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="building-company" class="input input_border input_wide">
+						</div>
+					</div>
+				</div>
+				<!-- Email row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="email" class="form__label form__label_v-center">
+							Электронная почта:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="email" id="email" class="input input_border input_wide" placeholder="name@email.com">
+						</div>
+					</div>
+				</div>
+				<!-- Site row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="site" class="form__label form__label_v-center">
+							Сайт:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="url" id="site" class="input input_border input_wide">
+						</div>
+					</div>
+				</div>
+				<!-- Address row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="address" class="form__label form__label_v-center">
+							Адрес объекта:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<div class="address">
+								<input type="text" id="address" class="input input_border input_wide">
+								<div class="address__map" id="addressMap"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Square row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="square" class="form__label form__label_v-center">
+							Площадь:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<!-- Measure input -->
+							<div class="measure-input">
+								<input type="text" id="square" class="input input_border input_wide">
+								<span class="measure-input__text">
+									м<sup>2</sup>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Material row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="material" class="form__label form__label_v-center">
+							Материал:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="material" class="input input_border input_wide">
+							<p class="field__description">
+								Например, монолитный каркас с фасадом, выполненным из облицовочного кирпича
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Description row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="description" class="form__label form__label_v-center">
+							Описание:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<textarea id="description" class="textarea"></textarea>
+						</div>
+					</div>
+				</div>
+				<!-- Floor row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="floor" class="form__label form__label_v-center">
+							Этаж:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="floor" class="input input_border input_narrow">
+							<p class="field__description">
+								Например, 12-17 этаж
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Price row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="price" class="form__label form__label_v-center">
+							Цена:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="price" class="input input_border input_wide">
+						</div>
+					</div>
+				</div>
+				<!-- Date row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_left">
+						<label for="price" class="form__label form__label_v-center">
+							Срок сдачи:
+						</label>
+					</div>
+					<div class="form__cell form__cell_right">
+						<div class="field">
+							<input type="text" id="price" class="input input_border input_wide" placeholder="IV квартал 2015">
+						</div>
+					</div>
+				</div>
+				<!-- Button row -->
+				<div class="form__row">
+					<div class="form__cell form__cell_right">
+						<input type="submit" value="Сохранить" class="btn btn_blue">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

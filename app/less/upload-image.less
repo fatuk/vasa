@@ -1,0 +1,31 @@
+@upload-image-bg: #EAEEF9;
+@upload-text: #3E4EB8;
+@upload-size: 175px;
+@upload-image-border: #C7C7C7;
+@upload-image-btn: #006CA8;
+.upload-image {
+	background: @upload-image-bg;
+	width: @upload-size;
+	height: @upload-size;
+	display: inline-block;
+	text-align: center;
+	padding: @base*3;
+	position: relative;
+	&__placeholder {
+		margin-bottom: 10px;
+	}
+	&__text {
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		color: @upload-text
+	}
+	&__input {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+}
