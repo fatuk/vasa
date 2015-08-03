@@ -53,7 +53,7 @@ $(function () {
 				}, {
 					// Options
 					iconLayout: 'default#image',
-					iconImageHref: '../img/placemark.png',
+					iconImageHref: '../public/img/placemark.png',
 					iconImageSize: [47, 42],
 					iconImageOffset: [-5, -37]
 				}));
