@@ -23,11 +23,15 @@
 		},
 		"normalize-less": {
 			"ignore": "normalize.less"
+		},
+		"select2": {
+			"main": "dist/js/select2.full.js"
 		}
 	},
 	"dependencies": {
 		"jquery": "2.1.1",
 		"normalize-less": "*",
-		"owl-carousel": "1.3.2"
+		"owl-carousel": "1.3.2",
+		"select2": "4.0.0"
 	}
 }

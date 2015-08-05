@@ -108,4 +108,11 @@ $(function () {
 		});
 	}
 
+	// Select2
+	$.fn.select2.defaults.set('theme', 'classic');
+	$('.js-selectPriceType').select2({
+		minimumResultsForSearch: Infinity,
+		width: 'width'
+	});
+
 });
