@@ -1,0 +1,36 @@
+@cluster-info-title-bg: rgba(197,201,234,.6);
+.cluster-info {
+	padding: @base;
+	&__title {
+		font-size: 18px;
+		font-weight: @normal;
+		margin: 0;
+		margin-bottom: 27px;
+		background: @cluster-info-title-bg;
+		padding: 12px 20px;
+	}
+	&__container {
+		.clearfix();
+		margin-bottom: 35px;
+	}
+	&__column {
+		float: left;
+		width: 100%/2;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
+		margin-bottom: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.map {
+		width: @base*45;
+		height: @base*24;
+		background: #ccc;
+	}
+}

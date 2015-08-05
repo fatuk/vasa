@@ -1,4 +1,5 @@
 @modal-blue: #373A9F;
+@modal-header-bg: #3E4EB8;
 @modal-link-color: #B0EBF3;
 @modal-hover-color: #DFF400;
 .modal {
@@ -6,12 +7,30 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 100;
+	&__header {
+		background: @modal-header-bg;
+		text-align: center;
+		position: relative;
+		.modal__title {
+			color: #fff;
+			font-size: 24px;
+			font-weight: @bold;
+			padding: 0;
+			line-height: 60px;
+		}
+		.modal__close {
+			position: absolute;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 	&__close {
 		position: absolute;
 		top: 6px;
 		right: 8px;
 		&:hover {
-			.icon {
+			.icon-close {
 				&:extend(.icon-close_hover);
 			}
 		}
@@ -28,6 +47,9 @@
 	}
 	&__container {
 		border-radius: 3px;
+		&_white {
+			background: #fff;
+		}
 		&_blue {
 			background: @modal-blue;
 			text-align: center;
@@ -111,6 +133,22 @@
 		.modal__title {
 			margin: 0;
 			padding: 0;
+		}
+	}
+	&_wide {
+		top: 34px;
+		width: @base*94;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+	&_shadow {
+		box-shadow: 0 10px 50px rgba(0,0,0,.5);
+	}
+	&_cluster-info {
+		.cluster-info__container {
+			&:last-child {
+				margin-bottom: 17px;
+			}
 		}
 	}
 }
