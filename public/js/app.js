@@ -87,9 +87,17 @@ $(function () {
 		});
 	}
 
+	// Clusters map init
+	if ($('#clustersMap').length > 0) {
+		var clustersMap = new map({
+			id: 'clustersMap',
+			zoom: 15
+		});
+	}
+
 	// Building 1 map init
 	if ($('#buildingMap1').length > 0) {
-		var newBuildingsMap = new map({
+		var buildingMap1 = new map({
 			id: 'buildingMap1',
 			zoom: 17,
 			center: [55.76, 37.64],
