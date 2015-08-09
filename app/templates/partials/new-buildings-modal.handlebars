@@ -1,0 +1,58 @@
+<!-- Cluster map info -->
+<div class="modal modal_wide modal_shadow modal_cluster-info">
+	<header class="modal__header">
+		<!-- Close btn -->
+		<a href="#" class="modal__close">
+			<i class="icon icon-close-white-big"></i>
+		</a>
+		<!-- Title -->
+		<h2 class="modal__title">
+			ЖК «Элит»
+		</h2>
+	</header>
+	<div class="modal__container modal__container_white">
+		<!-- Building info -->
+		<div class="building">
+			<div class="building__container building__container_small-padding">
+				<div class="building__column building__column_50">
+					<!-- Subtitle -->
+					<h3 class="building__subtitle">
+						Информация об объекте
+					</h3>
+					<!-- Image -->
+					<img src="img/building1.jpg" alt="" class="building__img">
+					<!-- Address -->
+					<div class="building__address">
+						Некрасовский переулок, 7
+					</div>
+					<div class="building__company">
+						<span class="building__company-text">Застройщик:</span><a href="#" class="building__link">Tekta Group</a>, <a href="mailto:info@tektagroup.ru" class="building__link">info@tektagroup.ru</a>
+					</div>
+					<p class="building__info-text">
+						Жилой комплекс «Элит» (застройщик «Тekta Group») находится в экологически чисто районе. Комплекс представляет собой трехсекционный монолитно-кирпичный жилой дом высотой девять этажей. Территория комплекса огорожена, во дворе расположены автостоянка и детская площадка.
+					</p>
+					<!-- Map -->
+					<div class="map" id="buildingMap1"></div>
+				</div>
+				<div class="building__column building__column_50">
+					<!-- Subtitle -->
+					<h3 class="building__subtitle">
+						Предложения (59)
+					</h3>
+					<a href="#" class="btn btn_green">
+						Сделать предложение
+					</a>
+					<!-- Offers -->
+					{{>offers-list-for-modal}}
+					<div class="building__more">
+						<a href="vasa_11novostroiki_list_of_proposals.html" class="building__link">
+							Смотреть все предложения
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div class="overlay overlay_absolute"></div>

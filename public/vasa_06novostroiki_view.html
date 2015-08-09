@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VaSa - vasa_06novostroiki_view</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,400italic,100,300,700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/app.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		<header class="site-header">
+			<!-- Auth -->
+			<div class="auth">
+				<div class="container">
+					<!-- Login -->
+					<div class="login">
+						<ul class="login__list">
+							<li class="login__item">
+								<a href="vasa_02auth.html" class="login__link login__link_symlink">
+									<i class="icon icon-enter"></i>
+									<span class="login__text">
+										Войти
+									</span>
+								</a>
+							</li>
+							<li class="login__item">
+								<a href="vasa_04registration.html" class="login__link">
+									<span class="login__text">
+										Регистрация
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Main menu -->
+			<div class="main-menu">
+				<div class="container">
+					<!-- Logo -->
+					<h1 class="logo">
+						<a href="vasa_01index_00.html" class="logo__link">
+							<img src="img/logo.png" alt="Logo" class="logo__img">
+						</a>
+					</h1>
+					<!-- Navigation -->
+					<nav class="main-menu__list">
+						<!-- VIP -->
+						<a href="#" class="vip">
+							<i class="icon icon-crown"></i>
+							<span class="vip__text">
+								VIP-Клиенты
+							</span>
+						</a>
+						<li class="main-menu__item active">
+							<a href="vasa_05novostroiki_map.html" class="main-menu__link">
+								<span class="main-menu__text">
+									Новостройки
+								</span>
+								<span class="main-menu__count">
+									643
+								</span>
+							</a>
+						</li>
+						<li class="main-menu__item ">
+							<a href="vasa_12buy.html" class="main-menu__link">
+								<span class="main-menu__text">
+									Куплю
+								</span>
+								<span class="main-menu__count">
+									11 546
+								</span>
+							</a>
+						</li>
+						<li class="main-menu__item ">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__text">
+									Продам
+								</span>
+								<span class="main-menu__count">
+									11 546
+								</span>
+							</a>
+						</li>
+						<li class="main-menu__item ">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__text">
+									Сниму
+								</span>
+								<span class="main-menu__count">
+									25 612
+								</span>
+							</a>
+						</li>
+						<li class="main-menu__item ">
+							<a href="#" class="main-menu__link">
+								<span class="main-menu__text">
+									Сдам
+								</span>
+								<span class="main-menu__count">
+									14 669
+								</span>
+							</a>
+						</li>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="new-buildings">
+				<!-- Map -->
+				<div class="map" id="newBuildingsMap"></div>
+				<div class="container">
+					<div class="new-buildings__controlls">
+						<!-- Open info -->
+						<a href="#" class="new-buildings__link">
+							<i class="icon icon-question-circle"></i>
+							Как работать с картой
+						</a>
+						<!-- Add building -->
+						<a href="vasa_11novostroiki_newobject.html" class="btn btn_green">
+							<i class="icon icon-plus"></i>
+							Добавить новый объект недвижимости
+						</a>
+					</div>
+					<!-- Info -->
+					<div class="new-buildings__info">
+						<h2 class="new-buildings__info-title">
+							Инструкция по работе с картой
+						</h2>
+						<p class="new-buildings__info-text">
+							С целью удобства работы на сайте посетителю сайта рекомендуется зарегистрироваться. На этапе регистрации пользователю необходимо указать основные сведения о себе, в том числе и роль на сайте (покупатель, продавец, строительная компания или риелтор), которая и определит возможности пользователя на сайте.
+						</p>
+						<p class="new-buildings__info-text">
+							Результатом успешности заполнения формы будет являться письмо со ссылкой для подтверждения регистрации. После подтверждения полученной ссылки пользователю предоставляются основные функции для работы с системой, соответствующие выбранной роли. Следующим шагом работы с системой является знакомство с предложениями рынка недвижимости, для этого предназначены основные разделы сайта.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Cluster map info -->
+			<div class="modal modal_wide modal_shadow modal_cluster-info">
+				<header class="modal__header">
+					<!-- Close btn -->
+					<a href="#" class="modal__close">
+						<i class="icon icon-close-white-big"></i>
+					</a>
+					<!-- Title -->
+					<h2 class="modal__title">
+						ЖК «Элит»
+					</h2>
+				</header>
+				<div class="modal__container modal__container_white">
+					<!-- Building info -->
+					<div class="building">
+						<div class="building__container building__container_small-padding">
+							<div class="building__column building__column_50">
+								<!-- Subtitle -->
+								<h3 class="building__subtitle">
+									Информация об объекте
+								</h3>
+								<!-- Image -->
+								<img src="img/building1.jpg" alt="" class="building__img">
+								<!-- Address -->
+								<div class="building__address">
+									Некрасовский переулок, 7
+								</div>
+								<div class="building__company">
+									<span class="building__company-text">Застройщик:</span><a href="#" class="building__link">Tekta Group</a>, <a href="mailto:info@tektagroup.ru" class="building__link">info@tektagroup.ru</a>
+								</div>
+								<p class="building__info-text">
+									Жилой комплекс «Элит» (застройщик «Тekta Group») находится в экологически чисто районе. Комплекс представляет собой трехсекционный монолитно-кирпичный жилой дом высотой девять этажей. Территория комплекса огорожена, во дворе расположены автостоянка и детская площадка.
+								</p>
+								<!-- Map -->
+								<div class="map" id="buildingMap1"></div>
+							</div>
+							<div class="building__column building__column_50">
+								<!-- Subtitle -->
+								<h3 class="building__subtitle">
+									Предложения (59)
+								</h3>
+								<a href="#" class="btn btn_green">
+									Сделать предложение
+								</a>
+								<!-- Offers -->
+								<!-- Offers list -->
+								<div class="offers-list offers-list_narrow">
+									<table class="offers-list__inner">
+										<tbody>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 2км. квартиру
+												</td>
+												<td class="offers-list__status">
+													<i class="icon icon-crown-red"></i>
+													VIP
+												</td>
+												<td class="offers-list__price">
+													8 500 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 3км. квартиру
+												</td>
+												<td class="offers-list__status">
+													<i class="icon icon-crown-red"></i>
+													VIP
+												</td>
+												<td class="offers-list__price">
+													9 700 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 2км. квартиру
+												</td>
+												<td class="offers-list__status">
+													<i class="icon icon-crown-red"></i>
+													VIP
+												</td>
+												<td class="offers-list__price">
+													11 200 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+											<tr>
+												<td class="offers-list__text">
+													Куплю 1км. квартиру
+												</td>
+												<td class="offers-list__status">
+								
+												</td>
+												<td class="offers-list__price">
+													2 000 000 руб.
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="building__more">
+									<a href="vasa_11novostroiki_list_of_proposals.html" class="building__link">
+										Смотреть все предложения
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+			<div class="overlay overlay_absolute"></div>
+		</main>
+	</div>
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer__container">
+				<!-- Horizontal-menu -->
+				<nav class="horizontal-menu">
+					<ul class="horizontal-menu__list">
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								О сайте
+							</a>
+						</li>
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								Размещение рекламы
+							</a>
+						</li>
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								Правила пользования
+							</a>
+						</li>
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								Контактная информация
+							</a>
+						</li>
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								Помощь
+							</a>
+						</li>
+						<li class="horizontal-menu__item">
+							<a href="#" class="horizontal-menu__link">
+								Обратная связь
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- Social -->
+				<div class="social">
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<i class="icon icon-vk"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<i class="icon icon-fb"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<i class="icon icon-ok"></i>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link">
+								<i class="icon icon-tw"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="copyright__list">
+					<li class="copyright__item">
+						<div class="copyright__text">
+							&copy;&nbsp;2015&nbsp;vas-A
+						</div>
+					</li>
+					<li class="copyright__item">
+						<div class="copyright__text">
+							Разработано в <a href="#" class="copyright__link">Softline</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

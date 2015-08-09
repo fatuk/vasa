@@ -1079,6 +1079,15 @@ body > footer {
 }
 .modal__container {
   border-radius: 3px;
+  zoom: 1;
+}
+.modal__container:before,
+.modal__container:after {
+  content: "";
+  display: table;
+}
+.modal__container:after {
+  clear: both;
 }
 .modal__container_white {
   background: #fff;
@@ -1110,6 +1119,10 @@ body > footer {
 .modal__container_registration .btn {
   font-size: 20px;
   letter-spacing: .8px;
+}
+.modal__column {
+  width: 50%;
+  float: left;
 }
 .modal__title {
   margin: 0;
@@ -2233,6 +2246,14 @@ input[type="password"] {
   color: #fff;
   border-radius: 3px 3px 0 0;
 }
+.building__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 10px;
+  background: rgba(197, 201, 234, 0.6);
+  padding: 12px 20px;
+}
 .building__container {
   padding: 26px 20px;
   padding-bottom: 0;
@@ -2246,6 +2267,9 @@ input[type="password"] {
 .building__container:after {
   clear: both;
 }
+.building__container_small-padding {
+  padding: 10px;
+}
 .building__column:first-of-type {
   float: left;
   width: 60%;
@@ -2254,6 +2278,31 @@ input[type="password"] {
   float: right;
   width: 40%;
   padding-left: 20px;
+}
+.building__column_50:first-of-type {
+  float: left;
+  width: 50%;
+}
+.building__column_50:last-of-type {
+  float: right;
+  width: 50%;
+  padding-left: 10px;
+}
+.building__address {
+  font-size: 20px;
+  line-height: 18px;
+}
+.building__company .building__link {
+  font-size: 15px;
+}
+.building__company-text {
+  font-size: 15px;
+  line-height: 18px;
+  opacity: .6;
+}
+.building__info-text {
+  font-size: 13px;
+  line-height: 18px;
 }
 .building__info-key {
   font-size: 15px;
@@ -2282,11 +2331,23 @@ input[type="password"] {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.building__more {
+  width: 100%;
+  text-align: center;
+}
 .building .map {
   width: 100%;
   height: 230px;
   margin-top: 20px;
   margin-bottom: 26px;
+}
+.building .btn {
+  font-size: 20px;
+  padding-left: 56px;
+  padding-right: 56px;
+  text-align: center;
+  letter-spacing: 0.65px;
+  width: 100%;
 }
 .offers__header {
   padding: 20px;
@@ -2442,6 +2503,16 @@ input[type="password"] {
   border-bottom: solid 1px #ccc;
   text-align: right;
   color: #f7412d;
+}
+.offers-list_narrow {
+  border: none;
+  padding: 0;
+}
+.offers-list_narrow .offers-list__status {
+  width: 100px;
+}
+.offers-list_narrow .offers-list__price {
+  text-align: right;
 }
 .upload-image {
   background: #eaeef9;
