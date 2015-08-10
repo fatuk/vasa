@@ -115,4 +115,26 @@ $(function () {
 		width: 'width'
 	});
 
+	// Tabs
+	var Tabs = function (selector) {
+		var $tabs = $(selector),
+			self = this;
+
+		self.init = function () {
+			$tabs.find('.js-tab').on('click', function () {
+				self.reset();
+				$(this).addClass('active');
+			});
+		};
+
+		self.reset = function () {
+			$tabs.find('.js-tab').removeClass('active');
+		};
+
+		self.init();
+	};
+
+	// Tabs init
+	var tabs = new Tabs('.js-tabs');
+
 });

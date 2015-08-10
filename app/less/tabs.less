@@ -1,0 +1,42 @@
+.tabs {
+	margin-top: 40px;
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		.clearfix();
+	}
+	&__item {
+		float: left;
+		&.active {
+			.tabs__title {
+				font-weight: @bold;
+				border: solid 1px #ccc;
+				border-bottom: solid 1px #fff;
+			}
+			.tabs__content {
+				display: block;
+			}
+		}
+	}
+	&__title {
+		font-size: 20px;
+		font-weight: @light;
+		cursor: pointer;
+		padding: 20px;
+		background: #fff;
+		position: relative;
+		z-index: 2;
+	}
+	&__content {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 64px;
+		border: solid 1px #ccc;
+		padding: 20px;
+		width: 100%;
+		z-index: 1;
+	}
+}

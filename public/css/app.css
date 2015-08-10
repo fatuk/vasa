@@ -3609,10 +3609,14 @@ input[type="password"] {
   float: right;
   width: 240px;
 }
+.tabs {
+  margin-top: 40px;
+}
 .tabs__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  position: relative;
   zoom: 1;
 }
 .tabs__list:before,
@@ -3625,10 +3629,11 @@ input[type="password"] {
 }
 .tabs__item {
   float: left;
-  padding: 20px;
 }
 .tabs__item.active .tabs__title {
   font-weight: 700;
+  border: solid 1px #ccc;
+  border-bottom: solid 1px #fff;
 }
 .tabs__item.active .tabs__content {
   display: block;
@@ -3636,9 +3641,21 @@ input[type="password"] {
 .tabs__title {
   font-size: 20px;
   font-weight: 300;
+  cursor: pointer;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
 }
 .tabs__content {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  border: solid 1px #ccc;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
