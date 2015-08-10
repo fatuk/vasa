@@ -1218,6 +1218,9 @@ body > footer {
 .modal_cluster-info .cluster-info__container:last-child {
   margin-bottom: 17px;
 }
+.modal_user-reply {
+  width: 720px;
+}
 .btn {
   display: inline-block;
   font-size: 22px;
@@ -1485,6 +1488,20 @@ input[type="password"] {
   letter-spacing: 0.6px;
   font-weight: 700;
   margin-top: 13px;
+}
+.form_offer-reply {
+  margin-top: 40px;
+  margin-bottom: 53px;
+}
+.form_offer-reply .field {
+  width: 360px;
+  margin-bottom: 5px;
+}
+.form_offer-reply .btn {
+  width: 360px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
 }
 .radio {
   zoom: 1;

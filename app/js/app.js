@@ -121,7 +121,7 @@ $(function () {
 			self = this;
 
 		self.init = function () {
-			$tabs.find('.js-tab').on('click', function () {
+			$tabs.find('.js-tab').on('click', function (e) {
 				var currentTabId = $(this).find('a').attr('href');
 				self.reset();
 				$(this).addClass('active');
