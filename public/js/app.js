@@ -115,6 +115,10 @@ $(function () {
 		width: 'width'
 	});
 
+	// Tabs init
+	$('.js-tabs').find('.js-tab').on('click', function () {
+		$(this).addClass('active');
+	});
 });
 
 //# sourceMappingURL=../js/app.js.map

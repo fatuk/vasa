@@ -1370,6 +1370,9 @@ input[type="password"] {
 .field.error .input {
   border: solid 3px #ef443b;
 }
+.field.error .textarea {
+  border: solid 3px #ef443b;
+}
 .field.error .checkbox__check {
   border: solid 3px #ef443b;
 }
@@ -3605,6 +3608,37 @@ input[type="password"] {
 .answers__item-controls {
   float: right;
   width: 240px;
+}
+.tabs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  zoom: 1;
+}
+.tabs__list:before,
+.tabs__list:after {
+  content: "";
+  display: table;
+}
+.tabs__list:after {
+  clear: both;
+}
+.tabs__item {
+  float: left;
+  padding: 20px;
+}
+.tabs__item.active .tabs__title {
+  font-weight: 700;
+}
+.tabs__item.active .tabs__content {
+  display: block;
+}
+.tabs__title {
+  font-size: 20px;
+  font-weight: 300;
+}
+.tabs__content {
+  display: none;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
