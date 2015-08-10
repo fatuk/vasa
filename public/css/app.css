@@ -716,6 +716,11 @@ body > footer {
   display: inline-block;
   vertical-align: middle;
 }
+.icon-arrow-left {
+  background-position: -692px -48px;
+  width: 19px;
+  height: 19px;
+}
 .icon-close-blue,
 .modal__close_blue .icon {
   background-position: -650px -507px;
@@ -739,13 +744,13 @@ body > footer {
   height: 23px;
 }
 .icon-close_active {
-  background-position: -23px -650px;
+  background-position: 0px -650px;
   width: 23px;
   height: 23px;
 }
 .icon-close_hover,
 .modal__close:hover .icon-close {
-  background-position: 0px -650px;
+  background-position: -23px -650px;
   width: 23px;
   height: 23px;
 }
@@ -782,13 +787,13 @@ body > footer {
   height: 24px;
 }
 .icon-enter {
-  background-position: -650px -558px;
+  background-position: -650px -533px;
   width: 25px;
   height: 25px;
 }
 .icon-enter_hover,
 .login__link:hover .icon-enter {
-  background-position: -650px -533px;
+  background-position: -650px -558px;
   width: 25px;
   height: 25px;
 }
@@ -804,77 +809,77 @@ body > footer {
   height: 21px;
 }
 .icon-fb {
-  background-position: -650px -84px;
+  background-position: -520px -567px;
   width: 42px;
   height: 42px;
 }
 .icon-fb_hover,
 .social__link:hover .icon-fb {
-  background-position: -520px -567px;
+  background-position: -562px -567px;
   width: 42px;
   height: 42px;
 }
 .icon-hammer-circle-bg {
-  background-position: 0px 0px;
+  background-position: -260px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle {
-  background-position: -260px -390px;
+  background-position: -390px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle_hover,
 .features__link:hover .icon-hammer-circle {
-  background-position: -390px -390px;
-  width: 130px;
-  height: 130px;
-}
-.icon-hands-circle-bg {
   background-position: -520px 0px;
   width: 130px;
   height: 130px;
 }
-.icon-hands-circle {
+.icon-hands-circle-bg {
   background-position: -520px -130px;
+  width: 130px;
+  height: 130px;
+}
+.icon-hands-circle {
+  background-position: -520px -260px;
   width: 130px;
   height: 130px;
 }
 .icon-hands-circle_hover,
 .features__link:hover .icon-hands-circle {
-  background-position: -520px -260px;
-  width: 130px;
-  height: 130px;
-}
-.icon-house-circle-bg {
   background-position: -520px -390px;
   width: 130px;
   height: 130px;
 }
-.icon-house-circle {
+.icon-house-circle-bg {
   background-position: 0px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-house-circle {
+  background-position: -130px -520px;
   width: 130px;
   height: 130px;
 }
 .icon-house-circle_hover,
 .features__link:hover .icon-house-circle {
-  background-position: -130px -520px;
-  width: 130px;
-  height: 130px;
-}
-.icon-offer-circle-bg {
   background-position: -260px -520px;
   width: 130px;
   height: 130px;
 }
-.icon-offer-circle {
+.icon-offer-circle-bg {
   background-position: -390px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-offer-circle {
+  background-position: -130px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-offer-circle_hover,
 .features__link:hover .icon-offer-circle {
-  background-position: -130px -390px;
+  background-position: -260px -260px;
   width: 130px;
   height: 130px;
 }
@@ -885,7 +890,7 @@ body > footer {
 }
 .icon-ok_hover,
 .social__link:hover .icon-ok {
-  background-position: -604px -567px;
+  background-position: -650px -84px;
   width: 42px;
   height: 42px;
 }
@@ -895,7 +900,7 @@ body > footer {
   height: 130px;
 }
 .icon-pig-circle {
-  background-position: -260px -260px;
+  background-position: 0px 0px;
   width: 130px;
   height: 130px;
 }
@@ -923,13 +928,13 @@ body > footer {
 }
 .icon-shevron-left-small-black,
 .pagination__item.disabled:first-child:hover .icon {
-  background-position: -692px -48px;
+  background-position: -692px -111px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-left-small-white,
 .pagination__item:first-child:hover .icon {
-  background-position: -692px -92px;
+  background-position: -692px -89px;
   width: 16px;
   height: 22px;
 }
@@ -946,30 +951,30 @@ body > footer {
 }
 .icon-shevron-right-small-black,
 .pagination__item.disabled:last-child:hover .icon {
-  background-position: -692px -70px;
+  background-position: -692px -133px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-right-small-white,
 .pagination__item:last-child:hover .icon {
-  background-position: -692px -114px;
+  background-position: -692px -67px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-right-small,
 .breadcrumbs__item:before {
-  background-position: -692px -136px;
+  background-position: -692px -155px;
   width: 16px;
   height: 21px;
 }
 .icon-shevron-right {
-  background-position: -650px -174px;
+  background-position: -650px -222px;
   width: 31px;
   height: 48px;
 }
 .icon-shevron-right_hover,
 .slider__btn_next:hover .icon {
-  background-position: -650px -222px;
+  background-position: -650px -174px;
   width: 31px;
   height: 48px;
 }
@@ -997,23 +1002,23 @@ body > footer {
 }
 .icon-triangle-small-down,
 .answers__collapse.expanded .icon {
-  background-position: -692px -170px;
+  background-position: -692px -189px;
   width: 14px;
   height: 13px;
 }
 .icon-triangle-small-up {
-  background-position: -692px -157px;
+  background-position: -692px -176px;
   width: 14px;
   height: 13px;
 }
 .icon-tw {
-  background-position: -562px -567px;
+  background-position: -650px -42px;
   width: 42px;
   height: 42px;
 }
 .icon-tw_hover,
 .social__link:hover .icon-tw {
-  background-position: -650px -42px;
+  background-position: -604px -567px;
   width: 42px;
   height: 42px;
 }
@@ -2456,6 +2461,12 @@ input[type="password"] {
 .building_offer {
   margin-bottom: 20px;
 }
+.building_user-kabinet {
+  border: none;
+}
+.building_user-kabinet .building__container {
+  padding: 0;
+}
 .offers__header {
   padding: 20px;
   zoom: 1;
@@ -3611,6 +3622,7 @@ input[type="password"] {
 }
 .tabs {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 .tabs__list {
   list-style: none;
@@ -3641,21 +3653,25 @@ input[type="password"] {
 .tabs__title {
   font-size: 20px;
   font-weight: 300;
-  cursor: pointer;
+  color: #000;
   padding: 20px;
   background: #fff;
   position: relative;
+  display: inline-block;
   z-index: 2;
 }
 .tabs__content {
   display: none;
-  position: absolute;
-  left: 0;
-  top: 64px;
+  margin-top: -1px;
+  float: left;
   border: solid 1px #ccc;
   padding: 20px;
+  padding-bottom: 0;
   width: 100%;
   z-index: 1;
+}
+.tabs__content.active {
+  display: block;
 }
 
 /*# sourceMappingURL=../css/app.css.map */

@@ -122,13 +122,16 @@ $(function () {
 
 		self.init = function () {
 			$tabs.find('.js-tab').on('click', function () {
+				var currentTabId = $(this).find('a').attr('href');
 				self.reset();
 				$(this).addClass('active');
+				$tabs.find('[data-tab="' + currentTabId.substr(1) + '"]').addClass('active');
 			});
 		};
 
 		self.reset = function () {
 			$tabs.find('.js-tab').removeClass('active');
+			$tabs.find('[data-tab]').removeClass('active');
 		};
 
 		self.init();

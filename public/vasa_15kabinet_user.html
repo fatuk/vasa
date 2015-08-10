@@ -123,29 +123,116 @@
 				<div class="tabs js-tabs">
 					<ul class="tabs__list">
 						<li class="tabs__item js-tab active">
-							<div class="tabs__title">
+							<a href="#tab1" class="tabs__title">
 								Покупка/аренда
-							</div>
-							<div class="tabs__content">
-								trololo 1
-							</div>
+							</a>
 						</li>
 						<li class="tabs__item js-tab">
-							<div class="tabs__title">
+							<a href="#tab2" class="tabs__title">
 								Настройки
-							</div>
-							<div class="tabs__content">
-								trololo 2
-							</div>
+							</a>
 						</li>
 						<li class="tabs__item js-tab">
-							<div class="tabs__title">
+							<a href="#tab3" class="tabs__title">
 								Подписки
-							</div>
-							<div class="tabs__content">
-								trololo 3
-							</div>
+							</a>
 						</li>
+						<!-- Content -->
+						<div class="tabs__content active" data-tab="tab1">
+							<!-- Building info user kabinet -->
+							<div class="building building_user-kabinet">
+								<div class="building__container">
+									<table class="building__info building__info_offer">
+										<tbody>
+											<tr>
+												<td class="building__info-key">
+													Цена предложения:
+												</td>
+												<td class="building__info-value">
+													<strong>
+														2 300 000 руб.
+													</strong>
+												</td>
+											</tr>
+											<tr>
+												<td class="building__info-key">
+													Объект недвижемости:
+												</td>
+												<td class="building__info-value">
+													ЖК «Элит»
+												</td>
+											</tr>
+											<tr>
+												<td class="building__info-key">
+													Недвижимость:
+												</td>
+												<td class="building__info-value">
+													2км. квартира
+												</td>
+											</tr>
+											<tr>
+												<td class="building__info-key">
+													Адрес:
+												</td>
+												<td class="building__info-value">
+													Некрасовский переулок, 7
+												</td>
+											</tr>
+											<tr>
+												<td class="building__info-key">
+													Описание:
+												</td>
+												<td class="building__info-value">
+													Куплю двухкомнатную квартиру в этом доме. Предпочтительно не первый и не последний этаж. Ремонт в стиле девяностых не предлагать.
+													<div class="map" id="buildingMap1"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- Footer -->
+								<footer class="building__footer">
+									<div class="building__footer-inner">
+										<div class="building__footer-column">
+											<div class="building__footer-row">
+												<div class="building__footer-key">
+													Дата создания:
+												</div>
+												<div class="building__footer-value">
+													30.06.2015, 12:17
+												</div>
+											</div>
+											<div class="building__footer-row">
+												<div class="building__footer-key">
+													Дата редактирования:
+												</div>
+												<div class="building__footer-value">
+													30.06.2015, 16:43
+												</div>
+											</div>
+										</div>
+										<div class="building__footer-column">
+											<a href="#" class="transparent-btn">
+												<span class="transparent-btn__text">
+													Ответить на предложение
+												</span>
+											</a>
+											<a href="#" class="transparent-btn">
+												<span class="transparent-btn__text">
+													Платежеспособность клиента
+												</span>
+											</a>
+										</div>
+									</div>
+								</footer>
+							</div>
+						</div>
+						<div class="tabs__content" data-tab="tab2">
+							trololo 2
+						</div>
+						<div class="tabs__content" data-tab="tab3">
+							trololo 3
+						</div>
 					</ul>
 				</div>
 			</div>
