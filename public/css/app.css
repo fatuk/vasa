@@ -2472,7 +2472,7 @@ input[type="password"] {
   clear: both;
 }
 .building__footer-column .transparent-btn {
-  margin-top: 3px;
+  margin-top: 9px;
   margin-bottom: 0;
   margin-right: 10px;
   float: right;
@@ -2484,12 +2484,12 @@ input[type="password"] {
   font-size: 15px;
   opacity: .6;
   float: left;
-  width: 50%;
+  width: 57%;
 }
 .building__footer-value {
   font-size: 15px;
   float: left;
-  width: 50%;
+  width: 43%;
 }
 .building .map {
   width: 100%;
@@ -2508,6 +2508,12 @@ input[type="password"] {
 .building_offer {
   margin-bottom: 20px;
 }
+.building_offer tr:last-child .building__info-value {
+  padding-bottom: 0;
+}
+.building_offer .building__footer-inner {
+  padding-bottom: 33px;
+}
 .building_user-kabinet {
   border: none;
 }
@@ -2522,12 +2528,6 @@ input[type="password"] {
 }
 .building_user-kabinet .building__footer-inner {
   padding: 26px 0;
-}
-.building_user-kabinet .building__footer-key {
-  width: 57%;
-}
-.building_user-kabinet .building__footer-value {
-  width: 43%;
 }
 .building_user-kabinet .building__footer-column .transparent-btn {
   margin-top: 9px;
