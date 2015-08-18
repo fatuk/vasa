@@ -2505,9 +2505,6 @@ input[type="password"] {
   letter-spacing: 0.65px;
   width: 100%;
 }
-.building_offer {
-  margin-bottom: 20px;
-}
 .building_offer tr:last-child .building__info-value {
   padding-bottom: 0;
 }
@@ -3595,10 +3592,14 @@ input[type="password"] {
 .price .input {
   padding-right: 100px;
 }
+.answers {
+  padding-bottom: 70px;
+}
 .answers__title {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
+  padding: 23px 20px;
 }
 .answers__link {
   border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
@@ -3615,6 +3616,10 @@ input[type="password"] {
 }
 .answers__list .answers__list {
   margin-left: 20px;
+  margin-top: 6px;
+}
+.answers__list .answers__list .answers__item {
+  margin-bottom: 10px;
 }
 .answers__collapse {
   border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
@@ -3623,7 +3628,6 @@ input[type="password"] {
   transition: color 0.1s;
   font-size: 15px;
   display: inline-block;
-  margin: 10px 0;
   cursor: pointer;
   position: relative;
 }
@@ -3639,8 +3643,10 @@ input[type="password"] {
   zoom: 1;
   border: solid 1px #cccccc;
   border-radius: 3px;
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 15px 20px;
+  padding-bottom: 17px;
+  margin-top: 6px;
+  position: relative;
 }
 .answers__item:before,
 .answers__item:after {
@@ -3650,12 +3656,21 @@ input[type="password"] {
 .answers__item:after {
   clear: both;
 }
+.answers__item:first-child {
+  margin-top: 0;
+}
 .answers__item .btn {
   font-size: 20px;
   text-transform: none;
   line-height: 40px;
   height: 40px;
-  padding: 0 20px;
+  padding: 0 16px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .answers__item .btn:active {
   padding-top: 2px;
@@ -3663,7 +3678,8 @@ input[type="password"] {
 .answers__item-name {
   width: 23%;
   float: left;
-  padding-right: 10px;
+  padding: 4px 0;
+  padding-right: 20px;
 }
 .answers__item-info {
   float: left;
@@ -3676,14 +3692,11 @@ input[type="password"] {
 .answers__item-text {
   font-size: 15px;
   margin: 0;
+  margin: 10px 0;
 }
 .answers__item-date {
   font-size: 13px;
   opacity: .6;
-}
-.answers__item-controls {
-  float: right;
-  width: 240px;
 }
 .tabs {
   margin-top: 37px;
