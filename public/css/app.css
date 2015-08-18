@@ -1275,8 +1275,9 @@ body > footer {
   background: none;
   border: solid 1px #c7c7c7;
   border-radius: 3px;
-  padding: 10px 12px;
+  padding: 10px 15px;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 .transparent-btn:last-child {
   margin-bottom: 0;
@@ -2290,6 +2291,26 @@ input[type="password"] {
   border: solid 1px #ccc;
   border-radius: 3px;
 }
+.building__back {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  display: inline-block;
+  border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
+  color: #006ca8;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.building__back .icon {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: -4px;
+}
 .building__title {
   font-size: 20px;
   font-weight: 700;
@@ -2357,7 +2378,7 @@ input[type="password"] {
   width: 740px;
 }
 .building__info_offer .building__info-key {
-  width: 200px;
+  width: 225px;
 }
 .building__info_offer .building__info-value {
   width: 540px;
@@ -2440,14 +2461,23 @@ input[type="password"] {
 }
 .building__footer-column:last-child {
   width: 60%;
-  text-align: right;
+  zoom: 1;
+}
+.building__footer-column:last-child:before,
+.building__footer-column:last-child:after {
+  content: "";
+  display: table;
+}
+.building__footer-column:last-child:after {
+  clear: both;
 }
 .building__footer-column .transparent-btn {
   margin-top: 3px;
   margin-bottom: 0;
   margin-right: 10px;
+  float: right;
 }
-.building__footer-column .transparent-btn:last-child {
+.building__footer-column .transparent-btn:first-child {
   margin-right: 0;
 }
 .building__footer-key {
@@ -2483,6 +2513,24 @@ input[type="password"] {
 }
 .building_user-kabinet .building__container {
   padding: 0;
+}
+.building_user-kabinet tr:last-child .building__info-value {
+  padding-bottom: 0;
+}
+.building_user-kabinet .building__footer {
+  padding: 0;
+}
+.building_user-kabinet .building__footer-inner {
+  padding: 26px 0;
+}
+.building_user-kabinet .building__footer-key {
+  width: 57%;
+}
+.building_user-kabinet .building__footer-value {
+  width: 43%;
+}
+.building_user-kabinet .building__footer-column .transparent-btn {
+  margin-top: 9px;
 }
 .offers__header {
   padding: 20px;
@@ -3638,7 +3686,7 @@ input[type="password"] {
   width: 240px;
 }
 .tabs {
-  margin-top: 40px;
+  margin-top: 37px;
   margin-bottom: 30px;
 }
 .tabs__list {
@@ -3671,7 +3719,7 @@ input[type="password"] {
   font-size: 20px;
   font-weight: 300;
   color: #000;
-  padding: 20px;
+  padding: 16px 18px;
   background: #fff;
   position: relative;
   display: inline-block;
@@ -3682,7 +3730,7 @@ input[type="password"] {
   margin-top: -1px;
   float: left;
   border: solid 1px #ccc;
-  padding: 20px;
+  padding: 17px 17px;
   padding-bottom: 0;
   width: 100%;
   z-index: 1;
