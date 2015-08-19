@@ -3786,16 +3786,18 @@ input[type="password"] {
 }
 .tabs__content {
   display: none;
-  margin-top: -1px;
   float: left;
-  border: solid 1px #ccc;
-  padding: 17px 17px;
-  padding-bottom: 0;
   width: 100%;
   z-index: 1;
 }
 .tabs__content.active {
   display: block;
+}
+.tabs__frame {
+  border: solid 1px #ccc;
+  padding: 17px 17px;
+  padding-bottom: 0;
+  margin-top: -1px;
 }
 
 /*# sourceMappingURL=../css/app.css.map */
