@@ -6,9 +6,9 @@
 		Ответы на предложение
 	</h2>
 	<ul class="answers__list">
-		<li class="answers__item">
+		<li class="answers__item answers__item_no-margin">
 			<div class="answers__item-name">
-				<a href="#" class="answers__link">
+				<a href="#" class="answers__item-link">
 					2-ой Петровско-Разумовский проезд, 100
 				</a>
 			</div>
@@ -29,9 +29,9 @@
 		</li>
 		<!-- Sub answers -->
 		<ul class="answers__list">
-			<li class="answers__collapse expanded">
+			<a href="#" class="answers__link expanded">
 				Свернуть переписку <i class="icon icon-triangle-small-up"></i>
-			</li>
+			</a>
 			<li class="answers__item">
 				<div class="answers__item-name">
 					<a href="#" class="answers__link">
@@ -51,7 +51,7 @@
 				</div>
 			</li>
 			<ul class="answers__list">
-				<li class="answers__item">
+				<li class="answers__item answers__item_no-margin">
 					<div class="answers__item-name">
 						<a href="#" class="answers__link">
 							2-ой Петровско-Разумовский проезд, 100
@@ -72,9 +72,18 @@
 						ТОРГ: 2 560 000 руб.
 					</a>
 				</li>
+				<a href="#" class="answers__link answers__link_right">
+					Ответить
+				</a>
+				<a href="#" class="answers__link answers__link_right">
+					Отписаться
+				</a>
+				<a href="#" class="answers__link answers__link_right">
+					Согласиться с предложением
+				</a>
 			</ul>
 		</ul>
-		<li class="answers__item">
+		<li class="answers__item new">
 			<div class="answers__item-name">
 				<a href="#" class="answers__link">
 					2-ой Петровско-Разумовский проезд, 100
@@ -96,4 +105,6 @@
 			</a>
 		</li>
 	</ul>
+	<!-- Pagination -->
+	{{>pagination}}
 </div>

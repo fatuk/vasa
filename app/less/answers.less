@@ -1,7 +1,7 @@
 @answers-link: #006CA8;
 @answers-border: #CCCCCC;
 .answers {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	&__title {
 		margin: 0;
 		font-size: 20px;
@@ -11,28 +11,11 @@
 	&__link {
 		.symlink(@answers-link);
 		font-size: 15px;
-		font-weight: @bold;
-	}
-	&__list {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		.answers__list {
-			margin-left: 20px;
-			margin-top: 6px;
-			.answers__item {
-				// background: red;
-				margin-bottom: 10px;
-			}
-		}
-	}
-	&__collapse {
-		.symlink(@answers-link);
-		font-size: 15px;
 		display: inline-block;
-		// margin-top: 5px;
+		margin: 8px 0;
 		cursor: pointer;
 		position: relative;
+		margin-right: 20px;
 		.icon {
 			position: absolute;
 			top: 50%;
@@ -44,6 +27,21 @@
 				&:extend(.icon-triangle-small-down);
 			}
 		}
+		&:first-of-type {
+			margin-right: 0;
+		}
+		&_right {
+			float: right;
+		}
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		.clearfix();
+		.answers__list {
+			margin-left: 20px;
+		}
 	}
 	&__item {
 		.clearfix();
@@ -51,11 +49,13 @@
 		border-radius: 3px;
 		padding: 15px 20px;
 		padding-bottom: 17px;
-		// margin-bottom: 10px;
-		margin-top: 6px;
+		margin-bottom: 10px;
 		position: relative;
 		&:first-child {
 			margin-top: 0;
+		}
+		&:last-child {
+			// margin-bottom: 0;
 		}
 		.btn {
 			font-size: 20px;
@@ -71,6 +71,14 @@
 				padding-top: 2px;
 			}
 		}
+		&_no-margin {
+			margin: 0;
+		}
+	}
+	&__item-link {
+		.symlink(@answers-link);
+		font-size: 15px;
+		font-weight: @bold;
 	}
 	&__item-name {
 		width: 23%;
