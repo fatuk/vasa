@@ -1504,6 +1504,19 @@ input[type="password"] {
   letter-spacing: 0.6px;
   font-weight: 700;
 }
+.form_offer-reply .form__cell_left {
+  width: 29%;
+}
+.form_offer-reply .form__cell_right {
+  width: 71%;
+}
+.form_offer-reply .field {
+  margin-bottom: 0;
+}
+.form_offer-reply .checkbox {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
 .radio {
   zoom: 1;
   float: left;
