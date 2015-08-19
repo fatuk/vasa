@@ -2366,6 +2366,9 @@ input[type="password"] {
   width: 40%;
   padding-left: 20px;
 }
+.building__column_50 {
+  position: relative;
+}
 .building__column_50:first-of-type {
   float: left;
   width: 50%;
@@ -2378,6 +2381,14 @@ input[type="password"] {
 .building__address {
   font-size: 20px;
   line-height: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.building__company {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .building__company .building__link {
   font-size: 15px;
@@ -2403,6 +2414,11 @@ input[type="password"] {
 .building__info-text {
   font-size: 13px;
   line-height: 18px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .building__info-key {
   font-size: 15px;
@@ -2434,6 +2450,9 @@ input[type="password"] {
 .building__more {
   width: 100%;
   text-align: center;
+  position: absolute;
+  bottom: -33px;
+  left: 0;
 }
 .building__footer {
   padding: 0 20px;
@@ -2541,6 +2560,16 @@ input[type="password"] {
 }
 .building_user-kabinet .building__footer-column .transparent-btn {
   margin-top: 9px;
+}
+.building_new-buildings-modal .btn {
+  font-size: 18px;
+}
+.building_new-buildings-modal .offers-list__inner tr:last-child td {
+  border-bottom: solid 1px #CCC;
+}
+.building_new-buildings-modal .map {
+  height: 190px;
+  margin-bottom: 0;
 }
 .offers__header {
   padding: 20px;
@@ -2700,6 +2729,10 @@ input[type="password"] {
 .offers-list_narrow {
   border: none;
   padding: 0;
+  margin-top: 12px;
+}
+.offers-list_narrow .offers-list__text {
+  width: 225px;
 }
 .offers-list_narrow .offers-list__status {
   width: 100px;

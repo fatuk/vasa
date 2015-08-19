@@ -54,6 +54,7 @@
 			padding-left: @base*2;
 		}
 		&_50 {
+			position: relative;
 			&:first-of-type {
 				float: left;
 				width: 50%;
@@ -68,8 +69,15 @@
 	&__address {
 		font-size: 20px;
 		line-height: 18px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+
 	}
 	&__company {
+		padding-left: 10px;
+		padding-right: 10px;
 		.building__link {
 			font-size: 15px;
 		}
@@ -98,6 +106,11 @@
 	&__info-text {
 		font-size: 13px;
 		line-height: 18px;
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 20px;
+		padding-bottom: 40px;
 	}
 	&__info-key {
 		font-size: 15px;
@@ -126,6 +139,9 @@
 	&__more {
 		width: 100%;
 		text-align: center;
+		position: absolute;
+		bottom: -33px;
+		left: 0;
 	}
 	// Footer
 	&__footer {
@@ -223,6 +239,18 @@
 			.transparent-btn {
 				margin-top: 9px;
 			}
+		}
+	}
+	&_new-buildings-modal {
+		.btn {
+			font-size: 18px;
+		}
+		.offers-list__inner tr:last-child td {
+			  border-bottom: solid 1px #CCC;
+		}
+		.map {
+			height: 190px;
+			margin-bottom: 0;
 		}
 	}
 }
