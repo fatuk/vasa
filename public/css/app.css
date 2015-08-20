@@ -3726,6 +3726,9 @@ input[type="password"] {
 .answers__item .btn:active {
   padding-top: 2px;
 }
+.answers__item.new {
+  background: #eff2fc;
+}
 .answers__item_no-margin {
   margin: 0;
 }
