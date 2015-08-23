@@ -2753,8 +2753,23 @@ input[type="password"] {
 .offers-list__controls .offers-list__link {
   float: right;
 }
+.offers-list__row-controls {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.offers-list__control {
+  vertical-align: middle;
+}
 .offers-list__inner {
   width: 100%;
+}
+.offers-list__inner tr:hover .offers-list__row-controls {
+  display: inline-block;
 }
 .offers-list__inner tr:last-child td {
   border-bottom: none;
@@ -2819,10 +2834,15 @@ input[type="password"] {
   vertical-align: middle;
   width: 230px;
 }
-.offers-list__text {
+.offers-list__name {
   font-size: 15px;
   border-bottom: solid 1px #ccc;
   width: 250px;
+}
+.offers-list__text {
+  display: inline-block;
+  position: relative;
+  padding-right: 72px;
 }
 .offers-list__price {
   font-size: 15px;
@@ -2862,7 +2882,7 @@ input[type="password"] {
   border: none;
   padding: 0;
 }
-.offers-list_kabinet .offers-list__text {
+.offers-list_kabinet .offers-list__name {
   width: 380px;
 }
 .offers-list_kabinet tr {

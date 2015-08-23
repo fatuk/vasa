@@ -26,9 +26,24 @@
 			float: right;
 		}
 	}
+	&__row-controls {
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	&__control {
+		vertical-align: middle;
+	}
 	&__inner {
 		width: 100%;
 		tr {
+			&:hover {
+				.offers-list__row-controls {
+					display: inline-block;
+				}
+			}
 			&:last-child {
 				td {
 					border-bottom: none;
@@ -88,10 +103,15 @@
 		vertical-align: middle;
 		width: 230px;
 	}
-	&__text {
+	&__name {
 		font-size: 15px;
 		border-bottom: solid 1px #ccc;
 		width: @base*25;
+	}
+	&__text {
+		display: inline-block;
+		position: relative;
+		padding-right: 72px;
 	}
 	&__price {
 		font-size: 15px;
@@ -130,7 +150,7 @@
 	&_kabinet {
 		border: none;
 		padding: 0;
-		.offers-list__text {
+		.offers-list__name {
 			width: 380px;
 		}
 		tr {
