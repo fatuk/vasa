@@ -1,8 +1,31 @@
 @offers-list-vip: #F7412D;
+@offers-list-link: #226AA3;
+@offers-list-header: #DBDDF2;
+@offers-list-counter: #3D68F1;
 .offers-list {
 	border: solid 1px #ccc;
 	border-radius: 3px;
 	padding: 0 10px;
+	&__container {
+		margin-bottom: 26px;
+	}
+	&__header {
+		background: @offers-list-header;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 3px 3px 0 0;
+		font-size: 18px;
+	}
+	&__controls {
+		padding-top: 5px;
+		padding-bottom: 22px;
+		.clearfix();
+		.offers-list__link {
+			float: right;
+		}
+	}
 	&__inner {
 		width: 100%;
 		tr {
@@ -16,6 +39,54 @@
 			padding: 12px 10px;
 			height: 49px;
 		}
+	}
+	&__link {
+		.link(@offers-list-link);
+		font-size: 15px;
+		position: relative;
+		margin-left: 32px;
+		.icon {
+			position: absolute;
+			left: -32px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&__symlink {
+		.symlink(@offers-list-link);
+		font-size: 15px;
+		position: relative;
+	}
+	&__messages {
+		border-radius: 4px;
+		border: solid 1px #CCCCCC;
+		display: inline-block;
+		padding: 3px 5px;
+		margin-right: 20px;
+	}
+	&__messages-counter {
+		font-size: 15px;
+		color: @offers-list-link;
+		font-weight: @bold;
+		line-height: 20px;
+		vertical-align: middle;
+	}
+	&__counter {
+		background: @offers-list-counter;
+		display: inline-block;
+		width: 29px;
+		height: 29px;
+		line-height: 29px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 14px;
+		font-weight: @bold;
+		color: #fff;
+	}
+	&__info {
+		border-bottom: solid 1px #ccc;
+		vertical-align: middle;
+		width: 230px;
 	}
 	&__text {
 		font-size: 15px;
@@ -32,6 +103,10 @@
 		font-size: 15px;
 		border-bottom: solid 1px #ccc;
 	}
+	&__footer {
+		text-align: center;
+		padding: 10px;
+	}
 	&__status {
 		font-size: 16px;
 		border-bottom: solid 1px #ccc;
@@ -47,6 +122,30 @@
 		}
 		.offers-list__status {
 			width: 100px;
+		}
+		.offers-list__price {
+			text-align: right;
+		}
+	}
+	&_kabinet {
+		border: none;
+		padding: 0;
+		.offers-list__text {
+			width: 380px;
+		}
+		tr {
+			cursor: pointer;
+			&:last-child {
+				td {
+					border-bottom: solid 1px #ccc;
+				}
+			}
+		}
+		.offers-list__inner td {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 		.offers-list__price {
 			text-align: right;

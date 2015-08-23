@@ -1,4 +1,9 @@
 $(function () {
+	// Clickable rows
+	$('.js-clickable').click(function () {
+		window.document.location = $(this).data('url');
+	});
+
 	// Slider
 	var slider = $('.js-slider').owlCarousel({
 		navigation: false, // Show next and prev buttons
@@ -32,8 +37,7 @@ $(function () {
 			this.map = new ymaps.Map(id, {
 				center: location,
 				zoom: zoom,
-				controls: [],
-				center: center
+				controls: []
 			});
 
 			this.map.behaviors.disable(['scrollZoom', 'dblClickZoom']);
