@@ -1003,7 +1003,7 @@ body > footer {
   width: 31px;
   height: 48px;
 }
-.icon-shevron-upt-small-blue {
+.icon-shevron-up-small-blue {
   background-position: -650px -631px;
   width: 25px;
   height: 19px;
@@ -2737,6 +2737,47 @@ input[type="password"] {
   border-radius: 3px 3px 0 0;
   font-size: 18px;
 }
+.offers-list__header-text {
+  display: inline-block;
+  margin-right: 16px;
+}
+.offers-list__sub-header {
+  zoom: 1;
+  padding: 29px 0;
+  padding-bottom: 7px;
+}
+.offers-list__sub-header:before,
+.offers-list__sub-header:after {
+  content: "";
+  display: table;
+}
+.offers-list__sub-header:after {
+  clear: both;
+}
+.offers-list__sub-header .offers-list__symlink {
+  margin-right: 27px;
+}
+.offers-list__sub-header-title {
+  float: left;
+  margin: 0;
+  font-size: 20px;
+}
+.offers-list__sub-header-controls {
+  float: right;
+}
+.offers-list__bargain {
+  text-align: right;
+  border-bottom: solid 1px #ccc;
+}
+.offers-list__bargain-btn {
+  color: #fff;
+  background: #3d68f1;
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 3px;
+  display: inline-block;
+}
 .offers-list__controls {
   padding-top: 5px;
   padding-bottom: 22px;
@@ -2810,6 +2851,9 @@ input[type="password"] {
   padding: 3px 5px;
   margin-right: 20px;
 }
+.offers-list__messages_no-border {
+  border: none;
+}
 .offers-list__messages-counter {
   font-size: 15px;
   color: #226aa3;
@@ -2844,6 +2888,16 @@ input[type="password"] {
   position: relative;
   padding-right: 72px;
 }
+.offers-list__map {
+  font-size: 15px;
+  border-bottom: solid 1px #ccc;
+}
+.offers-list__map .icon {
+  left: -22px;
+}
+.offers-list__map .offers-list__link {
+  margin-left: 22px;
+}
 .offers-list__price {
   font-size: 15px;
   font-weight: 700;
@@ -2864,6 +2918,10 @@ input[type="password"] {
   text-align: right;
   color: #f7412d;
 }
+.offers-list__status-text {
+  vertical-align: middle;
+  line-height: 24px;
+}
 .offers-list_narrow {
   border: none;
   padding: 0;
@@ -2878,27 +2936,74 @@ input[type="password"] {
 .offers-list_narrow .offers-list__price {
   text-align: right;
 }
-.offers-list_kabinet {
+.offers-list_user-kabinet {
   border: none;
   padding: 0;
 }
-.offers-list_kabinet .offers-list__name {
+.offers-list_user-kabinet .offers-list__name {
   width: 380px;
 }
-.offers-list_kabinet tr {
+.offers-list_user-kabinet tr {
   cursor: pointer;
 }
-.offers-list_kabinet tr:last-child td {
+.offers-list_user-kabinet tr:last-child td {
   border-bottom: solid 1px #ccc;
 }
-.offers-list_kabinet .offers-list__inner td {
+.offers-list_user-kabinet .offers-list__inner td {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.offers-list_kabinet .offers-list__price {
+.offers-list_user-kabinet .offers-list__price {
   text-align: right;
+}
+.offers-list_company-kabinet {
+  border: none;
+  padding: 0;
+}
+.offers-list_company-kabinet .offers-list__controls .btn {
+  padding-left: 77px;
+  padding-right: 77px;
+  font-size: 19px;
+}
+.offers-list_company-kabinet .offers-list__controls .offers-list__link {
+  margin-top: 20px;
+}
+.offers-list_company-kabinet .offers-list__header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.offers-list_company-kabinet .offers-list__counter {
+  margin-right: 5px;
+}
+.offers-list_company-kabinet .offers-list__messages {
+  margin-right: 0;
+}
+.offers-list_company-kabinet .offers-list__text {
+  padding-right: 0;
+}
+.offers-list_company-kabinet .offers-list__name {
+  width: 191px;
+  padding: 12px 18px;
+}
+.offers-list_company-kabinet .offers-list__info {
+  width: 102px;
+}
+.offers-list_company-kabinet .offers-list__status {
+  text-align: left;
+}
+.offers-list_company-kabinet .offers-list__price {
+  width: inherit;
+}
+.offers-list_company-kabinet tr:nth-child(odd) {
+  background: #f4f4fa;
+}
+.offers-list_company-kabinet tr:last-child td {
+  border-bottom: solid 1px #ccc;
+}
+.offers-list_company-kabinet tr .offers-list__bargain {
+  padding-right: 6px;
 }
 .upload-image {
   background: #eaeef9;

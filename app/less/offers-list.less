@@ -2,6 +2,7 @@
 @offers-list-link: #226AA3;
 @offers-list-header: #DBDDF2;
 @offers-list-counter: #3D68F1;
+@offers-list-odd: #F4F4FA;
 .offers-list {
 	border: solid 1px #ccc;
 	border-radius: 3px;
@@ -17,6 +18,45 @@
 		padding-right: 20px;
 		border-radius: 3px 3px 0 0;
 		font-size: 18px;
+	}
+	&__header-text {
+		display: inline-block;
+		margin-right: 16px;
+	}
+	&__sub-header {
+		.clearfix();
+		padding: 29px 0;
+		padding-bottom: 7px;
+		.offers-list__symlink {
+			margin-right: 27px;
+		}
+		.offers-list__shevron {
+
+		}
+	}
+	&__sub-header-title {
+		float: left;
+		margin: 0;
+		font-size: 20px;
+	}
+	&__sub-header-controls {
+		float: right;
+	}
+	&__shevron {
+
+	}
+	&__bargain {
+		text-align: right;
+		border-bottom: solid 1px #ccc;
+	}
+	&__bargain-btn {
+		color: #fff;
+		background: @offers-list-counter;
+		padding: 4px 8px;
+		font-size: 15px;
+		font-weight: @bold;
+		border-radius: 3px;
+		display: inline-block;
 	}
 	&__controls {
 		padding-top: 5px;
@@ -78,6 +118,9 @@
 		display: inline-block;
 		padding: 3px 5px;
 		margin-right: 20px;
+		&_no-border {
+			border: none;
+		}
 	}
 	&__messages-counter {
 		font-size: 15px;
@@ -113,6 +156,16 @@
 		position: relative;
 		padding-right: 72px;
 	}
+	&__map {
+		font-size: 15px;
+		border-bottom: solid 1px #ccc;
+		.icon {
+			left: -22px;
+		}
+		.offers-list__link {
+			margin-left: 22px;
+		}
+	}
 	&__price {
 		font-size: 15px;
 		font-weight: @bold;
@@ -133,6 +186,10 @@
 		text-align: right;
 		color: @offers-list-vip;
 	}
+	&__status-text {
+		vertical-align: middle;
+		line-height: 24px;
+	}
 	&_narrow {
 		border: none;
 		padding: 0;
@@ -147,7 +204,7 @@
 			text-align: right;
 		}
 	}
-	&_kabinet {
+	&_user-kabinet {
 		border: none;
 		padding: 0;
 		.offers-list__name {
@@ -169,6 +226,59 @@
 		}
 		.offers-list__price {
 			text-align: right;
+		}
+	}
+	&_company-kabinet {
+		border: none;
+		padding: 0;
+		.offers-list__controls {
+			.btn {
+				padding-left: 77px;
+				padding-right: 77px;
+				font-size: 19px;
+			}
+			.offers-list__link {
+				margin-top: 20px;
+			}
+		}
+		.offers-list__header {
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+		.offers-list__counter {
+			margin-right: 5px;
+		}
+		.offers-list__messages {
+			margin-right: 0;
+		}
+		.offers-list__text {
+			padding-right: 0;
+		}
+		.offers-list__name {
+			width: 191px;
+			padding: 12px 18px;
+		}
+		.offers-list__info {
+			width: 102px;
+		}
+		.offers-list__status {
+			text-align: left;
+		}
+		.offers-list__price {
+			width: inherit;
+		}
+		tr {
+			&:nth-child(odd) {
+				background: @offers-list-odd;
+			}
+			&:last-child {
+				td {
+					border-bottom: solid 1px #ccc;
+				}
+			}
+			.offers-list__bargain {
+				padding-right: 6px;
+			}
 		}
 	}
 }
