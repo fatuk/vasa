@@ -2793,6 +2793,10 @@ input[type="password"] {
   border-radius: 3px;
   padding: 0 10px;
 }
+.offers-list__empty {
+  padding: 100px;
+  text-align: center;
+}
 .offers-list__container {
   margin-bottom: 26px;
 }
