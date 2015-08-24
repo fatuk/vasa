@@ -1488,6 +1488,21 @@ input[type="password"] {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.form__symlink {
+  border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
+  color: #006ca8;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.form__symlink:hover {
+  border-bottom: dashed 1px rgba(9, 165, 252, 0.4);
+  color: #09a5fc;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.form__symlink_field {
+  line-height: 50px;
+}
 .form_registration {
   padding-bottom: 75px;
 }
