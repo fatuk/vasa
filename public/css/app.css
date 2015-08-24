@@ -2402,6 +2402,16 @@ input[type="password"] {
   transform: translateY(-50%);
   margin-left: -4px;
 }
+.building__status {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+.building__status-text {
+  line-height: 24px;
+  vertical-align: middle;
+  color: #f7412d;
+}
 .building__title {
   font-size: 20px;
   font-weight: 700;
@@ -2422,6 +2432,7 @@ input[type="password"] {
 .building__container {
   padding: 26px 20px;
   padding-bottom: 0;
+  position: relative;
   zoom: 1;
 }
 .building__container:before,
@@ -3985,6 +3996,17 @@ input[type="password"] {
 }
 .answers__link_right {
   float: right;
+}
+.answers__controls {
+  zoom: 1;
+}
+.answers__controls:before,
+.answers__controls:after {
+  content: "";
+  display: table;
+}
+.answers__controls:after {
+  clear: both;
 }
 .answers__list {
   list-style: none;

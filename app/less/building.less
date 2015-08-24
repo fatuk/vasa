@@ -1,5 +1,6 @@
 @building-title-bg: #3E4EB8;
 @building-link: #006CA8;
+@building-vip: #F7412D;
 .building {
 	border: solid 1px #ccc;
 	border-radius: 3px;
@@ -17,6 +18,16 @@
 			transform: translateY(-50%);
 			margin-left: -4px;
 		}
+	}
+	&__status {
+		position: absolute;
+		top: 23px;
+		right: 23px;
+	}
+	&__status-text {
+		line-height: 24px;
+		vertical-align: middle;
+		color: @building-vip;
 	}
 	&__title {
 		font-size: 20px;
@@ -38,6 +49,7 @@
 	&__container {
 		padding: 26px 20px;
 		padding-bottom: 0;
+		position: relative;
 		.clearfix();
 		&_small-padding {
 			padding: 10px;
