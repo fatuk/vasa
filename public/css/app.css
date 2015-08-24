@@ -1251,6 +1251,12 @@ body > footer {
 .modal_user-reply {
   width: 720px;
 }
+.modal_success {
+  width: 720px;
+}
+.modal_success .modal__title {
+  font-size: 23px;
+}
 .btn {
   display: inline-block;
   font-size: 22px;
@@ -1798,6 +1804,27 @@ input[type="password"] {
   padding-right: 38px;
   margin-top: 33px;
   letter-spacing: 1.1px;
+}
+.success-modal {
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 30px;
+}
+.success-modal__img {
+  width: 100px;
+  height: 100px;
+}
+.success-modal__text {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 0 150px;
+  font-size: 17px;
+}
+.success-modal .btn {
+  font-size: 18px;
+  width: 360px;
+  margin-bottom: 35px;
 }
 .password {
   position: relative;
