@@ -1,0 +1,24 @@
+@transparent-btn-text: #006CA8;
+@transparent-btn-border: #c7c7c7;
+@transparent-btn-active: #7E8386;
+.transparent-btn {
+	display: inline-block;
+	background: none;
+	border: solid 1px @transparent-btn-border;
+	border-radius: 3px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__text {
+		.link(@transparent-btn-text);
+	}
+	&.active {
+		.transparent-btn__text {
+			color: @transparent-btn-active;
+			border: none;
+		}
+	}
+}

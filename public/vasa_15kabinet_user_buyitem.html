@@ -240,10 +240,25 @@
 							<!-- Answers -->
 							<!-- Partial: answers-buy-item -->
 							<div class="answers">
-								<!-- Title -->
-								<h2 class="answers__title">
-									Ответы на предложение
-								</h2>
+								<!-- Header -->
+								<header class="answers__header">
+									<!-- Title -->
+									<h2 class="answers__title">
+										Ответы на предложение
+									</h2>
+									<div class="answers__controls answers__controls_right answers__controls_padding">
+										<a href="#" class="transparent-btn active">
+											<span class="transparent-btn__text">
+												Предложение в интересующем объекте
+											</span>
+										</a>
+										<a href="#" class="transparent-btn">
+											<span class="transparent-btn__text">
+												Другие предложения
+											</span>
+										</a>
+									</div>
+								</header>
 								<ul class="answers__list">
 									<li class="answers__item answers__item_no-margin">
 										<div class="answers__item-name">
@@ -311,17 +326,28 @@
 													ТОРГ: 2 560 000 руб.
 												</a>
 											</li>
-											<a href="#" class="answers__link answers__link_right">
-												Ответить
-											</a>
-											<a href="#" class="answers__link answers__link_right">
-												Отписаться
-											</a>
-											<a href="#" class="answers__link answers__link_right">
-												Согласиться с предложением
-											</a>
+											<li class="answers__controls">
+												<a href="#" class="answers__link answers__link_right">
+													Ответить
+												</a>
+												<a href="#" class="answers__link answers__link_right">
+													Отписаться
+												</a>
+												<a href="#" class="answers__link answers__link_right">
+													Согласиться с предложением
+												</a>
+											</li>
 										</ul>
 									</ul>
+									<!-- Hidden -->
+									<li class="answers__hidden">
+										<div class="answers__hidden-container">
+											<i class="icon icon-eye_shut_black"></i>
+											<div class="answers__hidden-text">
+												Переписка скрыта
+											</div>
+										</div>
+									</li>
 									<li class="answers__item new">
 										<div class="answers__item-name">
 											<a href="#" class="answers__link">

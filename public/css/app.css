@@ -717,7 +717,7 @@ body > footer {
   vertical-align: middle;
 }
 .icon-arrow-left {
-  background-position: -692px -72px;
+  background-position: -692px -186px;
   width: 19px;
   height: 19px;
 }
@@ -739,18 +739,18 @@ body > footer {
   height: 31px;
 }
 .icon-close {
-  background-position: -23px -650px;
+  background-position: -692px -23px;
   width: 23px;
   height: 23px;
 }
 .icon-close_active {
-  background-position: 0px -650px;
+  background-position: -692px 0px;
   width: 23px;
   height: 23px;
 }
 .icon-close_hover,
 .modal__close:hover .icon-close {
-  background-position: -46px -650px;
+  background-position: -692px -46px;
   width: 23px;
   height: 23px;
 }
@@ -771,28 +771,28 @@ body > footer {
   height: 130px;
 }
 .icon-crown-red {
-  background-position: -650px -433px;
+  background-position: -650px -409px;
   width: 31px;
   height: 24px;
 }
 .icon-crown {
-  background-position: -650px -457px;
+  background-position: -650px -433px;
   width: 31px;
   height: 24px;
 }
 .icon-crown_hover,
 .vip:hover .icon {
-  background-position: -650px -409px;
+  background-position: -650px -457px;
   width: 31px;
   height: 24px;
 }
 .icon-delete {
-  background-position: -91px -650px;
+  background-position: -692px -92px;
   width: 22px;
   height: 22px;
 }
 .icon-edit {
-  background-position: -69px -650px;
+  background-position: -692px -69px;
   width: 22px;
   height: 23px;
 }
@@ -819,76 +819,81 @@ body > footer {
   height: 28px;
 }
 .icon-eye_shut {
+  background-position: 0px -650px;
+  width: 44px;
+  height: 21px;
+}
+.icon-eye_shut_black {
   background-position: -564px -609px;
   width: 44px;
   height: 21px;
 }
 .icon-fb {
-  background-position: -650px -84px;
+  background-position: -520px -567px;
   width: 42px;
   height: 42px;
 }
 .icon-fb_hover,
 .social__link:hover .icon-fb {
-  background-position: -520px -567px;
+  background-position: -562px -567px;
   width: 42px;
   height: 42px;
 }
 .icon-hammer-circle-bg {
-  background-position: -520px 0px;
+  background-position: -520px -130px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle {
-  background-position: -520px -130px;
+  background-position: -520px -260px;
   width: 130px;
   height: 130px;
 }
 .icon-hammer-circle_hover,
 .features__link:hover .icon-hammer-circle {
-  background-position: -520px -260px;
-  width: 130px;
-  height: 130px;
-}
-.icon-hands-circle-bg {
   background-position: -520px -390px;
   width: 130px;
   height: 130px;
 }
-.icon-hands-circle {
+.icon-hands-circle-bg {
   background-position: 0px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-hands-circle {
+  background-position: -130px -520px;
   width: 130px;
   height: 130px;
 }
 .icon-hands-circle_hover,
 .features__link:hover .icon-hands-circle {
-  background-position: -130px -520px;
-  width: 130px;
-  height: 130px;
-}
-.icon-house-circle-bg {
   background-position: -260px -520px;
   width: 130px;
   height: 130px;
 }
-.icon-house-circle {
+.icon-house-circle-bg {
   background-position: -390px -520px;
+  width: 130px;
+  height: 130px;
+}
+.icon-house-circle {
+  background-position: -130px -390px;
   width: 130px;
   height: 130px;
 }
 .icon-house-circle_hover,
 .features__link:hover .icon-house-circle {
-  background-position: -130px -390px;
-  width: 130px;
-  height: 130px;
-}
-.icon-offer-circle-bg {
   background-position: -260px -260px;
   width: 130px;
   height: 130px;
 }
-.icon-offer-circle {
+.icon-offer-circle-bg {
   background-position: -130px 0px;
+  width: 130px;
+  height: 130px;
+}
+.icon-offer-circle {
+  background-position: -520px 0px;
   width: 130px;
   height: 130px;
 }
@@ -926,17 +931,17 @@ body > footer {
   height: 130px;
 }
 .icon-pin {
-  background-position: -692px -24px;
+  background-position: -692px -162px;
   width: 20px;
   height: 24px;
 }
 .icon-plus {
-  background-position: -650px -583px;
+  background-position: -650px -607px;
   width: 24px;
   height: 24px;
 }
 .icon-question-circle-fill {
-  background-position: -650px -607px;
+  background-position: -650px -583px;
   width: 24px;
   height: 24px;
 }
@@ -953,13 +958,13 @@ body > footer {
 }
 .icon-shevron-left-small-black,
 .pagination__item.disabled:first-child:hover .icon {
-  background-position: -692px -157px;
+  background-position: -692px -271px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-left-small-white,
 .pagination__item:first-child:hover .icon {
-  background-position: -692px -135px;
+  background-position: -692px -249px;
   width: 16px;
   height: 22px;
 }
@@ -970,30 +975,30 @@ body > footer {
 }
 .icon-shevron-left_hover,
 .slider__btn_prev:hover .icon {
-  background-position: -650px -222px;
+  background-position: -650px -126px;
   width: 31px;
   height: 48px;
 }
 .icon-shevron-right-small-black,
 .pagination__item.disabled:last-child:hover .icon {
-  background-position: -692px -113px;
+  background-position: -692px -227px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-right-small-white,
 .pagination__item:last-child:hover .icon {
-  background-position: -692px -91px;
+  background-position: -692px -205px;
   width: 16px;
   height: 22px;
 }
 .icon-shevron-right-small,
 .breadcrumbs__item:before {
-  background-position: -692px -179px;
+  background-position: -692px -293px;
   width: 16px;
   height: 21px;
 }
 .icon-shevron-right {
-  background-position: -650px -126px;
+  background-position: -650px -222px;
   width: 31px;
   height: 48px;
 }
@@ -1032,17 +1037,17 @@ body > footer {
 }
 .icon-triangle-small-down,
 .answers__link.expanded .icon {
-  background-position: -692px -213px;
+  background-position: -692px -327px;
   width: 14px;
   height: 13px;
 }
 .icon-triangle-small-up {
-  background-position: -692px -200px;
+  background-position: -692px -314px;
   width: 14px;
   height: 13px;
 }
 .icon-tw {
-  background-position: -562px -567px;
+  background-position: -650px -84px;
   width: 42px;
   height: 42px;
 }
@@ -1053,13 +1058,13 @@ body > footer {
   height: 42px;
 }
 .icon-user {
-  background-position: -692px 0px;
+  background-position: -692px -138px;
   width: 20px;
   height: 24px;
 }
 .icon-user_hover,
 .login__link:hover .icon-user {
-  background-position: -692px -48px;
+  background-position: -692px -114px;
   width: 20px;
   height: 24px;
 }
@@ -1326,6 +1331,10 @@ body > footer {
   color: #006ca8;
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
+}
+.transparent-btn.active .transparent-btn__text {
+  color: #7e8386;
+  border: none;
 }
 .overlay {
   position: fixed;
@@ -3965,11 +3974,24 @@ input[type="password"] {
 .answers {
   padding-bottom: 30px;
 }
+.answers__header {
+  zoom: 1;
+}
+.answers__header:before,
+.answers__header:after {
+  content: "";
+  display: table;
+}
+.answers__header:after {
+  clear: both;
+}
 .answers__title {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
   padding: 23px 20px;
+  float: left;
+  line-height: 39px;
 }
 .answers__link {
   border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
@@ -3997,6 +4019,22 @@ input[type="password"] {
 .answers__link_right {
   float: right;
 }
+.answers__hidden {
+  background: url('../img/dash.png') repeat-x center;
+  height: 89px;
+  position: relative;
+}
+.answers__hidden-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
 .answers__controls {
   zoom: 1;
 }
@@ -4007,6 +4045,17 @@ input[type="password"] {
 }
 .answers__controls:after {
   clear: both;
+}
+.answers__controls .transparent-btn {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.answers__controls_right {
+  float: right;
+}
+.answers__controls_padding {
+  padding: 23px 0;
 }
 .answers__list {
   list-style: none;

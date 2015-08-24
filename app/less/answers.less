@@ -3,11 +3,16 @@
 @answers-new: #EFF2FC;
 .answers {
 	padding-bottom: 30px;
+	&__header {
+		.clearfix();
+	}
 	&__title {
 		margin: 0;
 		font-size: 20px;
 		font-weight: @bold;
 		padding: 23px 20px;
+		float: left;
+		line-height: 39px;
 	}
 	&__link {
 		.symlink(@answers-link);
@@ -35,8 +40,36 @@
 			float: right;
 		}
 	}
+	&__hidden {
+		background: url('../img/dash.png') repeat-x center;
+		height: 89px;
+		position: relative;
+	}
+	&__hidden-container {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		text-align: center;
+		padding: 0 20px;
+	}
+	&__hidden-text {
+
+	}
 	&__controls {
 		.clearfix();
+		.transparent-btn {
+			float: left;
+			margin-left: 10px;
+			margin-bottom: 0;
+		}
+		&_right {
+			float: right;
+		}
+		&_padding {
+			padding: 23px 0;
+		}
 	}
 	&__list {
 		list-style: none;
