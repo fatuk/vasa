@@ -1251,6 +1251,9 @@ body > footer {
 .modal_user-reply {
   width: 720px;
 }
+.modal_new-offer {
+  width: 720px;
+}
 .modal_success {
   width: 720px;
 }
@@ -1462,6 +1465,9 @@ input[type="password"] {
 }
 .form__label_v-center {
   line-height: 50px;
+}
+.form__value {
+  margin-bottom: 14px;
 }
 .form__description {
   font-size: 13px;

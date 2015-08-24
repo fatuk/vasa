@@ -76,7 +76,7 @@ $(function () {
 		});
 	};
 
-	// New building map init
+	/*// New building map init
 	if ($('#newBuildingsMap').length > 0) {
 		var newBuildingsMap = new map({
 			id: 'newBuildingsMap',
@@ -110,11 +110,15 @@ $(function () {
 				content: 'Test pin'
 			}]
 		});
-	}
+	}*/
 
 	// Select2
 	$.fn.select2.defaults.set('theme', 'classic');
 	$('.js-selectPriceType').select2({
+		minimumResultsForSearch: Infinity,
+		width: 'width'
+	});
+	$('.js-select').select2({
 		minimumResultsForSearch: Infinity,
 		width: 'width'
 	});
