@@ -64,10 +64,18 @@
 .select2-results__options {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  &--nested {
+    // padding: 10px 20px;
+  }
+}
+.select2-results__group {
+  padding: 10px 20px;
+}
 
 .select2-results__option {
-  padding: @select2-option-padding;
+  // padding: @select2-option-padding;
+  padding: 10px 20px;
   user-select: none;
   -webkit-user-select: none; }
   .select2-results__option[aria-selected] {

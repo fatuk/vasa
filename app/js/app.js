@@ -1,4 +1,23 @@
 $(function () {
+	// Collapse
+	if ($('.js-collapseBtn').length > 0) {
+		var $btn = $('.js-collapseBtn'),
+			$container = $('#' + $btn.attr('href').substr(1));
+
+		$btn.on('click', function (e) {
+			e.preventDefault();
+
+			if (!$container.hasClass('collapsed')) {
+				$container.addClass('collapsed');
+				$container.slideUp('fast');
+				$btn.addClass('collapsed');
+			} else {
+				$container.removeClass('collapsed');
+				$container.slideDown('fast');
+				$btn.removeClass('collapsed');
+			}
+		});
+	}
 	// Clickable rows
 	$('.js-clickable').click(function () {
 		window.document.location = $(this).data('url');
@@ -76,7 +95,7 @@ $(function () {
 		});
 	};
 
-	/*// New building map init
+	// New building map init
 	if ($('#newBuildingsMap').length > 0) {
 		var newBuildingsMap = new map({
 			id: 'newBuildingsMap',
@@ -110,15 +129,43 @@ $(function () {
 				content: 'Test pin'
 			}]
 		});
-	}*/
+	}
 
-	// Select2
+	// Select2 Prce
 	$.fn.select2.defaults.set('theme', 'classic');
 	$('.js-selectPriceType').select2({
 		minimumResultsForSearch: Infinity,
 		width: 'width'
 	});
-	$('.js-select').select2({
+
+	// Select2 estates
+	var estateData = [{
+		value: '1',
+		name: 'Квартиры',
+		children: [{
+			value: '1.1',
+			name: 'Комната'
+		}, {
+			value: '1.2',
+			name: 'Студия'
+		}, {
+			value: '1.3',
+			name: 'Комната'
+		}, {
+			value: '1.4',
+			name: '1км. квартира'
+		}, {
+			value: '1.5',
+			name: '2км. квартира'
+		}, {
+			value: '1.6',
+			name: '3км. квартира'
+		}, , {
+			value: '1.7',
+			name: '4км. квартира'
+		}]
+	}];
+	$('.js-selectEstate').select2({
 		minimumResultsForSearch: Infinity,
 		width: 'width'
 	});

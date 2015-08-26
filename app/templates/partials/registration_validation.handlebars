@@ -9,6 +9,21 @@
 						<h2 class="form__title">
 							Регистрация
 						</h2>
+						<!-- Errors -->
+						<ul class="form__errors-list">
+							<li class="form__errors-item">
+								Адрес электронной почты указан неверно
+							</li>
+							<li class="form__errors-item">
+								Номер телефона указан неверно
+							</li>
+							<li class="form__errors-item">
+								Пароли не совпадают
+							</li>
+							<li class="form__errors-item">
+								Неверный крд
+							</li>
+						</ul>
 					</div>
 				</div>
 				<!-- Type row -->
@@ -71,7 +86,6 @@
 					<div class="form__cell form__cell_right">
 						<div class="field error">
 							<input type="email" id="email" class="input input_border input_wide" placeholder="name@email.com">
-							{{>tooltip text="Адрес электронной почты указан неверно"}}
 						</div>
 					</div>
 				</div>
@@ -85,7 +99,6 @@
 					<div class="form__cell form__cell_right">
 						<div class="field error">
 							<input type="phone" id="phone" class="input input_border input_wide" placeholder="+7 (___) ___-__-__">
-							{{>tooltip text="Номер телефона указан неверно"}}
 						</div>
 					</div>
 				</div>
@@ -112,7 +125,6 @@
 					<div class="form__cell form__cell_right">
 						<div class="field error">
 							<input type="password" id="pass2" class="input input_border input_wide">
-							{{>tooltip text="Пароли не совпадают"}}
 						</div>
 					</div>
 				</div>
@@ -130,7 +142,6 @@
 								<img src="img/captcha.jpg" alt="" class="captcha__img">
 								<input type="text" id="captcha" class="input input_border">
 							</div>
-							{{>tooltip text="Неверный код"}}
 						</div>
 					</div>
 				</div>
@@ -147,7 +158,6 @@
 									Я соглашаюсь с <a href="#" class="form__link">правилами пользования</a> сайтом
 								</span>
 							</label>
-							{{>tooltip text="Необходимо изучить правила пользования"}}
 						</div>
 					</div>
 				</div>

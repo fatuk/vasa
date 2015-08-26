@@ -19,9 +19,19 @@
 		padding-top: 12px;
 		padding-bottom: 12px;
 		padding-left: 20px;
-		padding-right: 20px;
+		padding-right: 10px;
 		border-radius: 3px 3px 0 0;
 		font-size: 18px;
+		.offers-list__shevron {
+			.icon {
+				transition: transform @animation-time;
+			}
+			&.collapsed {
+				.icon {
+					transform: rotate(-180deg);
+				}
+			}
+		}
 	}
 	&__header-text {
 		display: inline-block;
@@ -33,6 +43,9 @@
 		padding-bottom: 7px;
 		.offers-list__symlink {
 			margin-right: 27px;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		.offers-list__shevron {
 
@@ -47,7 +60,9 @@
 		float: right;
 	}
 	&__shevron {
-
+		&_right {
+			float: right;
+		}
 	}
 	&__bargain {
 		text-align: right;

@@ -1438,7 +1438,24 @@ input[type="password"] {
   font-weight: 500;
   margin: 0;
   margin-top: 47px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
+}
+.form__errors-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.form__errors-list_lighter .form__errors-item {
+  color: #f58782;
+}
+.form__errors-item {
+  color: #ef443b;
+  font-size: 16px;
+  margin-bottom: 9px;
+}
+.form__errors-item:last-child {
+  margin-bottom: 0;
 }
 .form__row {
   zoom: 1;
@@ -1555,6 +1572,17 @@ input[type="password"] {
   letter-spacing: 0.6px;
   font-weight: 700;
   margin-top: 13px;
+}
+.form_change-pass .field {
+  width: 360px;
+  margin-bottom: 0;
+}
+.form_change-pass .btn {
+  width: 360px;
+  font-size: 21px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  margin-top: 25px;
 }
 .form_offer-reply {
   margin-top: 40px;
@@ -2805,9 +2833,18 @@ input[type="password"] {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
   border-radius: 3px 3px 0 0;
   font-size: 18px;
+}
+.offers-list__header .offers-list__shevron .icon {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+}
+.offers-list__header .offers-list__shevron.collapsed .icon {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 .offers-list__header-text {
   display: inline-block;
@@ -2829,12 +2866,18 @@ input[type="password"] {
 .offers-list__sub-header .offers-list__symlink {
   margin-right: 27px;
 }
+.offers-list__sub-header .offers-list__symlink:last-child {
+  margin-right: 0;
+}
 .offers-list__sub-header-title {
   float: left;
   margin: 0;
   font-size: 20px;
 }
 .offers-list__sub-header-controls {
+  float: right;
+}
+.offers-list__shevron_right {
   float: right;
 }
 .offers-list__bargain {
@@ -3321,8 +3364,11 @@ input[type="password"] {
   margin: 0;
   padding: 0;
 }
+.select2-results__group {
+  padding: 10px 20px;
+}
 .select2-results__option {
-  padding: 10px;
+  padding: 10px 20px;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -4147,8 +4193,21 @@ input[type="password"] {
   margin: 0;
   margin: 10px 0;
 }
-.answers__item-date {
+.answers__item-email {
+  float: left;
   font-size: 13px;
+  vertical-align: baseline;
+  margin-bottom: 10px;
+  border-bottom: solid 1px rgba(0, 108, 168, 0.4);
+  color: #006ca8;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.answers__item-date {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  vertical-align: baseline;
   opacity: .6;
 }
 .tabs {

@@ -6,7 +6,26 @@
 		font-weight: @medium;
 		margin: 0;
 		margin-top: 47px;
-		margin-bottom: @base*3.5;
+		margin-bottom: 28px;
+	}
+	&__errors-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 27px;
+		&_lighter {
+			.form__errors-item {
+				color: lighten(@error-color, 15%);
+			}
+		}
+	}
+	&__errors-item {
+		color: @error-color;
+		font-size: 16px;
+		margin-bottom: 9px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	&__row {
 		.clearfix();
@@ -118,14 +137,24 @@
 		}
 	}
 	&_change-pass {
-
+		.field {
+			width: 360px;
+			margin-bottom: 0;
+		}
+		.btn {
+			width: 360px;
+			font-size: 21px;
+			letter-spacing: 0.6px;
+			font-weight: 700;
+			margin-top: 25px;
+		}
 	}
 	&_offer-reply {
 		margin-top: 40px;
 		margin-bottom: 53px;
 		.field {
 			width: 360px;
-  			margin-bottom: 5px;
+			margin-bottom: 5px;
 		}
 		.btn {
 			width: 360px;
