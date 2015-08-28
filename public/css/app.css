@@ -1475,6 +1475,12 @@ input[type="password"] {
   padding-top: 12px;
   padding-bottom: 11px;
 }
+.form__row_margin-bottom {
+  margin-bottom: 50px;
+}
+.form__row_margin-top {
+  margin-top: 33px;
+}
 .form__cell_left {
   float: left;
   width: 33.33333333%;
@@ -1490,6 +1496,12 @@ input[type="password"] {
 }
 .form__label_v-center {
   line-height: 50px;
+}
+.form__label_small {
+  font-size: 13px;
+  opacity: .7;
+  padding-top: 12px;
+  display: inline-block;
 }
 .form__value {
   margin-bottom: 14px;
@@ -1527,6 +1539,14 @@ input[type="password"] {
 }
 .form__symlink_field {
   line-height: 50px;
+}
+.form__footer {
+  border-top: solid 1px #ccc;
+  padding: 30px 0;
+}
+.form__footer .btn {
+  font-size: 18px;
+  text-align: center;
 }
 .form_registration {
   padding-bottom: 75px;
@@ -1612,6 +1632,31 @@ input[type="password"] {
 .form_offer-reply .checkbox {
   margin-top: 5px;
   margin-bottom: 15px;
+}
+.form_user-options {
+  padding-bottom: 0;
+  margin-top: 29px;
+}
+.form_user-options .field {
+  width: 360px;
+  margin-bottom: 26px;
+}
+.form_user-options .field:last-of-type + .btn {
+  margin-top: 30px;
+}
+.form_user-options .btn {
+  width: 360px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.form_user-options .container {
+  padding-left: 35px;
+}
+.form_user-options .form__cell_right .field:last-of-type {
+  margin-bottom: 0;
+}
+.form_user-options .form__footer .btn {
+  font-size: 18px;
 }
 .radio {
   zoom: 1;
@@ -4288,6 +4333,15 @@ input[type="password"] {
 .tabs {
   margin-top: 37px;
   margin-bottom: 30px;
+  zoom: 1;
+}
+.tabs:before,
+.tabs:after {
+  content: "";
+  display: table;
+}
+.tabs:after {
+  clear: both;
 }
 .tabs__list {
   list-style: none;
@@ -4341,6 +4395,9 @@ input[type="password"] {
   padding: 17px 17px;
   padding-bottom: 0;
   margin-top: -1px;
+}
+.tabs_no-margin-top {
+  margin-top: 0;
 }
 .error-page {
   width: 550px;

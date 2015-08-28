@@ -1,7 +1,7 @@
 <!-- Partial: user-tabs -->
 <div class="container">
 	<!-- User tabs -->
-	<div class="tabs js-tabs">
+	<div class="tabs tabs_no-margin-top js-tabs">
 		<ul class="tabs__list">
 			<li class="tabs__item js-tab active">
 				<a href="#tab1" class="tabs__title">
@@ -18,22 +18,22 @@
 					Подписки
 				</a>
 			</li>
-			<!-- Content -->
-			<div class="tabs__content active" data-tab="tab1">
-				<div class="tabs__frame">
-					{{>user-offers-list}}
-				</div>
-			</div>
-			<div class="tabs__content" data-tab="tab2">
-				<div class="tabs__frame">
-					{{>user-options}}
-				</div>
-			</div>
-			<div class="tabs__content" data-tab="tab3">
-				<div class="tabs__frame">
-					trololo 3
-				</div>
-			</div>
 		</ul>
+		<!-- Content -->
+		<div class="tabs__content active" data-tab="tab1">
+			<div class="tabs__frame">
+				{{>user-offers-list}}
+			</div>
+		</div>
+		<div class="tabs__content" data-tab="tab2">
+			<div class="tabs__frame">
+				{{>user-options}}
+			</div>
+		</div>
+		<div class="tabs__content" data-tab="tab3">
+			<div class="tabs__frame">
+				Контент подписок
+			</div>
+		</div>
 	</div>
 </div>

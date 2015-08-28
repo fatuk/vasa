@@ -180,6 +180,7 @@ $(function () {
 				var currentTabId = $(this).find('a').attr('href');
 				self.reset();
 				$(this).addClass('active');
+				console.log($tabs.find('[data-tab="' + currentTabId.substr(1) + '"]'));
 				$tabs.find('[data-tab="' + currentTabId.substr(1) + '"]').addClass('active');
 			});
 		};
