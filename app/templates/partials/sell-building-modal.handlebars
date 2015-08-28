@@ -1,0 +1,77 @@
+<!-- Cluster map info -->
+<!-- Partial: sell-building-modal -->
+<div class="modal modal_wide modal_shadow">
+	<header class="modal__header">
+		<!-- Close btn -->
+		<a href="#" class="modal__close">
+			<i class="icon icon-close-white-big"></i>
+		</a>
+		<!-- Title -->
+		<h2 class="modal__title">
+			Район Промышленный: 2 комнатные
+		</h2>
+	</header>
+	<div class="modal__container modal__container_white">
+		<!-- Building info -->
+		<div class="building building_sell-building-modal">
+			<div class="building__container building__container_small-padding">
+				<div class="building__column building__column_50">
+					<!-- Subtitle -->
+					<h3 class="building__subtitle">
+						Информация о недвижимости
+					</h3>
+					<table class="building__info building__info_modal">
+						<tbody>
+							<tr>
+								<td class="building__info-key">
+									Цена предложения:
+								</td>
+								<td class="building__info-value">
+									<strong>
+										2 300 000 &ndash; 3 000 000 руб.
+									</strong>
+								</td>
+							</tr>
+							<tr>
+								<td class="building__info-key">
+									Недвижимость:
+								</td>
+								<td class="building__info-value">
+									2км. квартира
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="building__info-text">
+						Жилой комплекс «Элит» (застройщик «Тekta Group») находится в экологически чисто районе. Комплекс представляет собой трехсекционный монолитно-кирпичный жилой дом высотой девять этажей. Территория комплекса огорожена, во дворе расположены автостоянка и детская площадка.
+					</p>
+					<!-- Map -->
+					<div class="map" id="buildingMap1"></div>
+				</div>
+				<div class="building__column building__column_50">
+					<!-- Subtitle -->
+					<h3 class="building__subtitle">
+						Предложения (9)
+					</h3>
+					<!-- Offers -->
+					{{>offers-list-for-modal}}
+					<div class="building__more">
+						<a href="vasa_11novostroiki_list_of_proposals.html" class="building__link">
+							Смотреть все предложения
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Offers list -->
+		<div class="offers">
+			<header class="offers__header offers__header_no-padding-top">
+				<h2 class="offers__title">
+					Все VIP предложения по 2 км. квартирам в этом городе
+				</h2>
+			</header>
+			{{>sell-offers-list class="offers-list_equal offers-list_center offers-list_sell"}}
+		</div>
+	</div>
+</div>
+<div class="overlay overlay_absolute"></div>
