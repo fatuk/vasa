@@ -44,6 +44,15 @@
 .no-break() {
 	white-space: nowrap;
 }
-.no-select {
+.no-select() {
 	user-select: none;
+}
+.no-wrap() {
+	white-space: nowrap;
+}
+
+.dots() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	.no-wrap();
 }

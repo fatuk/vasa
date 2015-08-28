@@ -189,12 +189,6 @@ th {
 .clearfix:after {
   clear: both;
 }
-.no-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -1113,6 +1107,8 @@ body > footer {
   font-size: 24px;
   font-weight: 700;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 60px;
   line-height: 60px;
 }
 .modal__header .modal__close {
@@ -1181,6 +1177,9 @@ body > footer {
   font-weight: 500;
   padding-top: 25px;
   padding-bottom: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .modal__link {
   font-size: 15px;
@@ -2828,6 +2827,9 @@ input[type="password"] {
   -webkit-transition: color 0.1s, opacity 0.1s;
   transition: color 0.1s, opacity 0.1s;
 }
+.pagination_no-margin-bottom {
+  margin-bottom: 0;
+}
 .offers-list {
   border: solid 1px #ccc;
   border-radius: 3px;
@@ -3034,6 +3036,7 @@ input[type="password"] {
 .offers-list__date {
   font-size: 15px;
   border-bottom: solid 1px #ccc;
+  opacity: .5;
 }
 .offers-list__footer {
   text-align: center;
@@ -3132,6 +3135,19 @@ input[type="password"] {
 .offers-list_company-kabinet tr .offers-list__bargain {
   padding-right: 6px;
 }
+.offers-list_equal tr td {
+  width: auto;
+}
+.offers-list_center tr td {
+  text-align: center;
+}
+.offers-list_center tr td:first-child {
+  text-align: left;
+  width: 300px;
+}
+.offers-list_center tr td:last-child {
+  text-align: right;
+}
 .upload-image {
   background: #eaeef9;
   width: 175px;
@@ -3222,6 +3238,9 @@ input[type="password"] {
   margin-bottom: 27px;
   background: rgba(197, 201, 234, 0.6);
   padding: 12px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cluster-info__container {
   zoom: 1;

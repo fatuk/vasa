@@ -194,6 +194,7 @@
 	&__date {
 		font-size: 15px;
 		border-bottom: solid 1px #ccc;
+		opacity: .5;
 	}
 	&__footer {
 		text-align: center;
@@ -297,6 +298,27 @@
 			}
 			.offers-list__bargain {
 				padding-right: 6px;
+			}
+		}
+	}
+	&_equal {
+		tr {
+			td {
+				width: auto;
+			}
+		}
+	}
+	&_center {
+		tr {
+			td {
+				text-align: center;
+				&:first-child {
+					text-align: left;
+					width: 300px;
+				}
+				&:last-child {
+					text-align: right;
+				}
 			}
 		}
 	}
