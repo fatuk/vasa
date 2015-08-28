@@ -1,0 +1,30 @@
+@error-page-text-color: #3E4EB8;
+@error-page-link-color: #006CA8;
+.error-page {
+	width: 550px;
+	margin: 0 auto;
+	text-align: center;
+	&__code {
+		font-size: 170px;
+		opacity: .2;
+		font-weight: @thin;
+		color: @error-page-text-color;
+		padding-top: 14px;
+	}
+	&__title {
+		color: @error-page-text-color;
+		font-size: 38px;
+		font-weight: @normal;
+		margin: 0;
+	}
+	&__text {
+		font-size: 18px;
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		padding: 0 50px;
+	}
+	&__link {
+		.link(@error-page-link-color);
+	}
+}
