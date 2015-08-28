@@ -61,7 +61,7 @@ $(function () {
 
 			this.map.behaviors.disable(['scrollZoom', 'dblClickZoom']);
 
-			if (params.pins.length > 0) {
+			if (params.pins) {
 				this.addPins(params.pins);
 			}
 		};
