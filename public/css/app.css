@@ -1200,6 +1200,17 @@ body > footer {
   font-size: 20px;
   color: #000;
 }
+.modal__list {
+  padding-right: 20px;
+}
+.modal__item {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.modal__item:last-of-type {
+  margin-bottom: 0;
+}
 .modal_auth {
   top: 44%;
   width: 420px;
