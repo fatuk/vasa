@@ -131,6 +131,15 @@ $(function () {
 		});
 	}
 
+	// New answer map init
+	if ($('#setPointMap').length > 0) {
+		var buildingMap1 = new map({
+			id: 'setPointMap',
+			zoom: 17,
+			center: [55.76, 37.64]
+		});
+	}
+
 	// Select2 Prce
 	$.fn.select2.defaults.set('theme', 'classic');
 	$('.js-selectPriceType').select2({

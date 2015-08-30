@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VaSa - vasa_18answer-popup</title>
+	<title>VaSa - vasa_18answer-popup_map_modal</title>
 
 	<link rel="icon" type="image/png" href="img/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,400italic,100,300,700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -131,99 +131,11 @@
 					</a>
 					<!-- Title -->
 					<h2 class="modal__title">
-						Ответ на предложение
+						Укажите точку на карте
 					</h2>
 				</header>
 				<div class="modal__container modal__container_white">
-					<div class="form form_offer-reply">
-						<form action="#">
-							<!-- Price row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="price" class="form__label form__label_v-center">
-										Цена:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<!-- Measure input -->
-										<div class="measure-input">
-											<input value="2 000 000" type="text" id="square" class="input input_border input_wide">
-											<span class="measure-input__text">
-												руб
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Address row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="addess" class="form__label form__label_v-center">
-										Адрес:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<input type="text" class="input input_border input_wide" id="address">
-									</div>
-								</div>
-							</div>
-							<!-- Address row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="location" class="form__label form__label_v-center">
-										Местоположение:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<a href="vasa_18answer-popup_map_modal.html" class="form__symlink form__symlink_field">
-											Указать на карте
-										</a>
-									</div>
-								</div>
-							</div>
-							<!-- Description row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="description" class="form__label form__label_v-center">
-										Описание:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<textarea id="description" class="textarea"></textarea>
-									</div>
-								</div>
-							</div>
-							<!-- Hide messages -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-			
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<label class="checkbox">
-											<input type="checkbox">
-											<span class="checkbox__check">
-												<i class="icon icon-check"></i>
-											</span>
-											<span class="checkbox__label">
-												Скрыть переписку
-											</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<!-- Button row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_right">
-									<input type="submit" value="Отправить" class="btn btn_green">
-								</div>
-							</div>
-						</form>
-					</div>
+					<div class="map map_modal" id="setPointMap"></div>
 				</div>
 			</div>
 			<div class="overlay overlay_absolute"></div>
