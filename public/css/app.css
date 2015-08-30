@@ -4130,9 +4130,6 @@ input[type="password"] {
   max-height: 300px;
   overflow-y: auto;
 }
-.select2-container--classic .select2-results__option {
-  padding: 10px 40px;
-}
 .select2-container--classic .select2-results__option[role=group] {
   padding: 0;
 }
@@ -4148,6 +4145,9 @@ input[type="password"] {
 .select2-container--classic .select2-results__group {
   cursor: default;
   display: block;
+}
+.select2-container--classic .select2-results__options--nested .select2-results__option {
+  padding: 10px 40px;
 }
 .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: none;
