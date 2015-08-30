@@ -1101,6 +1101,7 @@ body > footer {
   background: #3e4eb8;
   text-align: center;
   position: relative;
+  border-radius: 3px 3px 0 0;
 }
 .modal__header .modal__title {
   color: #fff;
@@ -1264,6 +1265,26 @@ body > footer {
 .modal_success .modal__title {
   font-size: 23px;
 }
+.modal_notification {
+  width: 720px;
+  text-align: center;
+}
+.modal_notification .modal__container {
+  padding-top: 55px;
+  padding-bottom: 25px;
+}
+.modal_notification .modal__text {
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 100px;
+}
+.modal_notification .modal__text:last-of-type {
+  margin-bottom: 0;
+}
+.modal_notification .btn-set {
+  margin-top: 33px;
+}
 .btn {
   display: inline-block;
   font-size: 22px;
@@ -1287,6 +1308,10 @@ body > footer {
 .btn_yellow {
   background: #ffd200;
   color: #2f3ba2;
+}
+.btn_transparent {
+  background: none;
+  color: #8e8e8e;
 }
 .btn_wide {
   width: 100%;
@@ -1312,6 +1337,17 @@ body > footer {
 .btn:active.btn_yellow {
   background: #ffc100;
   color: #b38300;
+}
+.btn-set {
+  width: 360px;
+  display: inline-block;
+}
+.btn-set .btn {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  text-align: center;
 }
 .transparent-btn {
   display: inline-block;

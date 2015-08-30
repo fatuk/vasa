@@ -9,6 +9,7 @@
 @btn-yellow-hover: #FFED18;
 @btn-yellow-active: #FFC100;
 @btn-yellow-active-text: #B38300;
+@btn-transparent-text: #8E8E8E;
 .btn {
 	display: inline-block;
 	font-size: 22px;
@@ -30,6 +31,10 @@
 	&_yellow {
 		background: @btn-yellow;
 		color: @btn-yellow-text;
+	}
+	&_transparent {
+		background: none;
+		color: @btn-transparent-text;
 	}
 	&_wide {
 		width: 100%;
