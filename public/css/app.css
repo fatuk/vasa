@@ -1513,6 +1513,11 @@ input[type="password"] {
   padding: 16px 30px;
   margin: 0;
 }
+.form__description_no-padding {
+  padding-left: 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 .form__link {
   border-bottom: solid 1px rgba(0, 108, 168, 0.4);
   color: #006ca8;

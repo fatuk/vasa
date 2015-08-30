@@ -1,0 +1,103 @@
+<!-- New offer modal -->
+<!-- Partial: buy-new-offer-modal -->
+<div class="modal modal_wide modal_shadow modal_new-offer">
+	<header class="modal__header">
+		<!-- Close btn -->
+		<a href="#" class="modal__close">
+			<i class="icon icon-close-white-big"></i>
+		</a>
+		<!-- Title -->
+		<h2 class="modal__title">
+			Новое предложение
+		</h2>
+	</header>
+	<div class="modal__container modal__container_white">
+		<div class="form form_offer-reply">
+			<form action="#">
+					<!-- Region row -->
+					<div class="form__row">
+						<div class="form__cell form__cell_left">
+							<label for="object" class="form__label">
+								Район:
+							</label>
+						</div>
+						<div class="form__cell form__cell_right">
+							<div class="form__value">
+								Промышленный
+							</div>
+						</div>
+					</div>
+					<!-- Real estate row -->
+					<div class="form__row">
+						<div class="form__cell form__cell_left">
+							<label for="estate" class="form__label form__label_v-center">
+								Недвижимость:
+							</label>
+						</div>
+						<div class="form__cell form__cell_right">
+							<div class="field">
+								<select class="js-selectEstate" name="estate" id="estate">
+									<optgroup label="Квартиры">
+										<option value="1">Комната</option>
+										<option value="2">Студия</option>
+										<option value="3">1км. квартира</option>
+										<option value="4">2км. квартира</option>
+										<option value="5">3км. квартира</option>
+										<option value="6">4км. квартира</option>
+									</optgroup>
+									<optgroup label="Дома, коттеджи">
+										<option value="7">Участок</option>
+										<option value="8">Дом</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- Price row -->
+					<div class="form__row">
+						<div class="form__cell form__cell_left">
+							<label for="price" class="form__label form__label_v-center">
+								Цена:
+							</label>
+						</div>
+						<div class="form__cell form__cell_right">
+							<div class="field">
+								<!-- Measure input -->
+								<div class="measure-input">
+									<input value="2 000 000" type="text" id="square" class="input input_border input_wide">
+									<span class="measure-input__text">
+										руб
+									</span>
+								</div>
+							</div>
+							<!-- Description -->
+							<p class="form__description form__description_no-padding">
+								Диапазон цен: 2&nbsp;500&nbsp;000&nbsp;&ndash;&nbsp;3&nbsp;500&nbsp;000&nbsp;руб.
+							</p>
+						</div>
+					</div>
+					<!-- Description row -->
+					<div class="form__row">
+						<div class="form__cell form__cell_left">
+							<label for="description" class="form__label form__label_v-center">
+								Описание:
+							</label>
+						</div>
+						<div class="form__cell form__cell_right">
+							<div class="field">
+								<textarea id="description" class="textarea"></textarea>
+							</div>
+						</div>
+					</div>
+					<!-- Button row -->
+					<div class="form__row">
+						<div class="form__cell form__cell_right">
+							<input type="submit" value="Сделать предложение" class="btn btn_green">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+<div class="overlay overlay_absolute"></div>
+</div>
