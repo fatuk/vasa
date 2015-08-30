@@ -1779,6 +1779,12 @@ input[type="password"] {
   float: right;
   width: 50%;
 }
+.captcha_auth {
+  width: 100%;
+}
+.captcha_auth .captcha__img {
+  width: 47%;
+}
 .checkbox {
   float: left;
   margin: 0;

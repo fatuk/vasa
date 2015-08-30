@@ -1,0 +1,66 @@
+<!-- Auth modal -->
+<!-- Partial: auth-captcha-modal -->
+<div class="modal modal_auth">
+	<!-- Close btn -->
+	<a href="#" class="modal__close">
+		<i class="icon icon-close"></i>
+	</a>
+	<div class="modal__container modal__container_blue">
+		<!-- Title -->
+		<h2 class="modal__title">
+			Вход на сайт
+		</h2>
+		<!-- Errors -->
+		<div class="modal__errors-container">
+			<div class="form">
+				<ul class="form__errors-list form__errors-list_lighter">
+					<li class="form__errors-item">
+						Нет такого пользователя
+					</li>
+					<li class="form__errors-item">
+						Неверный пароль
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Form -->
+		<div class="form">
+			<form action="#">
+				<div class="field error field_wide">
+					<input type="email" class="input input_wide" placeholder="example@gmail.com">
+				</div>
+				<div class="field error field_wide">
+					<!-- Password -->
+					<div class="password">
+						<input type="password" class="input input_wide" placeholder="Password">
+						<a href="#" class="password__btn open">
+							<i class="icon icon-eye_shut"></i>
+						</a>
+					</div>
+				</div>
+				<div class="field error field_wide">
+					<!-- Captcha -->
+					<div class="captcha captcha_auth">
+						<img src="img/captcha.jpg" alt="" class="captcha__img">
+						<input type="text" id="captcha" class="input">
+					</div>
+				</div>
+				<button class="btn btn_green btn_wide">
+					Войти
+				</button>
+			</form>
+		</div>
+		<a href="vasa_03password_restore.html" class="modal__link">
+			Забыли пароль?
+		</a>
+	</div>
+	<div class="modal__container modal__container_registration">
+		<div class="modal__text">
+			Еще не с нами?
+		</div>
+		<a href="vasa_04registration.html" class="btn btn_blue btn_wide">
+			Зарегистрироваться
+		</a>
+	</div>
+</div>
+<div class="overlay"></div>
