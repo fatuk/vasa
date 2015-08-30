@@ -230,4 +230,30 @@
 			}
 		}
 	}
+	&_feedback {
+		padding-bottom: @base*7.5;
+		.field {
+			width: @base*36;
+			margin-bottom: 26px;
+			&:last-of-type {
+				& + .btn {
+					margin-top: @base*3;
+				}
+			}
+		}
+		.btn {
+			width: @base*36;
+			font-weight: @bold;
+		}
+		.container {
+			padding-left: 35px;
+		}
+		.form__cell_right {
+			.field {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }

@@ -1658,6 +1658,26 @@ input[type="password"] {
 .form_user-options .form__footer .btn {
   font-size: 18px;
 }
+.form_feedback {
+  padding-bottom: 75px;
+}
+.form_feedback .field {
+  width: 360px;
+  margin-bottom: 26px;
+}
+.form_feedback .field:last-of-type + .btn {
+  margin-top: 30px;
+}
+.form_feedback .btn {
+  width: 360px;
+  font-weight: 700;
+}
+.form_feedback .container {
+  padding-left: 35px;
+}
+.form_feedback .form__cell_right .field:last-of-type {
+  margin-bottom: 0;
+}
 .radio {
   zoom: 1;
   float: left;
