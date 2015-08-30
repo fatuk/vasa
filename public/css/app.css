@@ -1174,6 +1174,7 @@ body > footer {
 }
 .modal__title {
   margin: 0;
+  margin-left: 30px;
   font-size: 32px;
   font-weight: 500;
   padding-top: 25px;
@@ -1278,9 +1279,6 @@ body > footer {
   margin: 0;
   margin-bottom: 20px;
   padding: 0 100px;
-}
-.modal_notification .modal__text:last-of-type {
-  margin-bottom: 0;
 }
 .modal_notification .btn-set {
   margin-top: 33px;
