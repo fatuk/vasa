@@ -24,7 +24,54 @@
 		width: 560px;
 		margin: 0 auto;
 	}
+	&__info {
+		text-align: left;
+		padding: 0 10px;
+	}
+	&__info-title {
+		margin: 0;
+		margin-bottom: 11px;
+		font-size: 15px;
+		font-weight: @normal;
+	}
+	&__info-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__info-item {
+		font-size: 22px;
+		margin-bottom: 11px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:before {
+			content: '\2014';
+			color: #999999;
+		}
+	}
+	&__info-link {
+		.link(@article-header);
+	}
 	&_unregistered {
+		text-align: center;
+		margin-top: 48px;
+		margin-bottom: 92px;
+		.article__title {
+			font-size: 23px;
+			font-weight: @bold;
+			margin-top: 17px;
+			margin-bottom: 16px;
+		}
+		.article__text {
+			text-align: left;
+		}
+		.btn {
+			padding: 0 53px;
+			margin-top: 23px;
+		}
+	}
+	&_registered {
 		text-align: center;
 		margin-top: 48px;
 		margin-bottom: 92px;
