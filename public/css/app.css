@@ -4513,5 +4513,27 @@ input[type="password"] {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.article {
+  margin-bottom: 70px;
+}
+.article__title {
+  font-size: 40px;
+  font-weight: 300;
+  color: #3e4eb8;
+  margin: 0;
+  margin-top: 39px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.article__text {
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0 10px;
+}
+.article__text:last-child {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=../css/app.css.map */
