@@ -27,6 +27,14 @@
 		&:last-child {
 			margin-right: 0;
 		}
+		&:hover {
+			.how-to__item-title {
+				display: block;
+				bottom: inherit;
+				top: -20px;
+				transform: translate(-50%, -100%);
+			}
+		}
 		&.active {
 			margin: 0 30px;
 			.how-to__number {
@@ -36,6 +44,8 @@
 			}
 			.how-to__item-title {
 				display: block;
+				bottom: -@base*2;
+				transform: translate(-50%, 100%);
 			}
 		}
 	}
