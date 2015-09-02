@@ -4621,5 +4621,27 @@ input[type="password"] {
 .article__text:last-child {
   margin-bottom: 0;
 }
+.article__container {
+  width: 560px;
+  margin: 0 auto;
+}
+.article_unregistered {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 92px;
+}
+.article_unregistered .article__title {
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 17px;
+  margin-bottom: 16px;
+}
+.article_unregistered .article__text {
+  text-align: left;
+}
+.article_unregistered .btn {
+  padding: 0 53px;
+  margin-top: 23px;
+}
 
 /*# sourceMappingURL=../css/app.css.map */
