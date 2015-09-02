@@ -3305,6 +3305,56 @@ input[type="password"] {
 .offers-list_company-kabinet tr .offers-list__bargain {
   padding-right: 6px;
 }
+.offers-list_seller-kabinet {
+  border: none;
+  padding: 0;
+}
+.offers-list_seller-kabinet .offers-list__controls .btn {
+  padding-left: 77px;
+  padding-right: 77px;
+  font-size: 19px;
+}
+.offers-list_seller-kabinet .offers-list__controls .offers-list__link {
+  margin-top: 20px;
+}
+.offers-list_seller-kabinet .offers-list__header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.offers-list_seller-kabinet .offers-list__sub-header {
+  padding-top: 0;
+}
+.offers-list_seller-kabinet .offers-list__counter {
+  margin-right: 5px;
+}
+.offers-list_seller-kabinet .offers-list__messages {
+  margin-right: 0;
+}
+.offers-list_seller-kabinet .offers-list__text {
+  padding-right: 0;
+}
+.offers-list_seller-kabinet .offers-list__name {
+  width: 191px;
+  padding: 12px 18px;
+}
+.offers-list_seller-kabinet .offers-list__info {
+  width: 120px;
+}
+.offers-list_seller-kabinet .offers-list__status {
+  text-align: left;
+}
+.offers-list_seller-kabinet .offers-list__price {
+  width: inherit;
+}
+.offers-list_seller-kabinet tr:nth-child(odd) {
+  background: #f4f4fa;
+}
+.offers-list_seller-kabinet tr:last-child td {
+  border-bottom: solid 1px #ccc;
+}
+.offers-list_seller-kabinet tr .offers-list__bargain {
+  padding-right: 6px;
+}
 .offers-list_equal tr td {
   width: auto;
 }
