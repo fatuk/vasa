@@ -1413,7 +1413,7 @@ body > footer {
   position: absolute;
 }
 .input {
-  line-height: 50px;
+  line-height: 1;
   height: 50px;
   padding: 0 20px;
   border: none;
@@ -1433,24 +1433,24 @@ input[type="password"] {
 }
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 50px;
+  line-height: 1;
   font-size: 18px;
 }
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 50px;
+  line-height: 1;
   font-size: 18px;
 }
 /* Firefox 19+ */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 50px;
+  line-height: 1;
   font-size: 18px;
 }
 /* Firefox 18- */
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 50px;
+  line-height: 1;
   font-size: 18px;
 }
 .field {
@@ -1552,7 +1552,7 @@ input[type="password"] {
   font-size: 18px;
 }
 .form__label_v-center {
-  line-height: 50px;
+  line-height: 1;
 }
 .form__label_small {
   font-size: 13px;
