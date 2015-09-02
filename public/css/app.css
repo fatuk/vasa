@@ -1552,7 +1552,7 @@ input[type="password"] {
   font-size: 18px;
 }
 .form__label_v-center {
-  line-height: 1;
+  line-height: 50px;
 }
 .form__label_small {
   font-size: 13px;
@@ -1629,6 +1629,30 @@ input[type="password"] {
 }
 .form_registration .form__cell_right .field:last-of-type {
   margin-bottom: 0;
+}
+.form_seller-registration {
+  padding-bottom: 75px;
+}
+.form_seller-registration .field {
+  width: 360px;
+  margin-bottom: 26px;
+}
+.form_seller-registration .field:last-of-type + .btn {
+  margin-top: 30px;
+}
+.form_seller-registration .btn {
+  width: 360px;
+  font-weight: 700;
+  margin-top: 37px;
+}
+.form_seller-registration .container {
+  padding-left: 35px;
+}
+.form_seller-registration .form__cell_right .field:last-of-type {
+  margin-bottom: 0;
+}
+.form_seller-registration .form__value {
+  font-size: 15px;
 }
 .form_new-object {
   padding-bottom: 64px;

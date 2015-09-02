@@ -59,7 +59,7 @@
 	&__label {
 		font-size: 18px;
 		&_v-center {
-			line-height: @placeholder-height;
+			line-height: @input-height;
 		}
 		&_small {
 			font-size: 13px;
@@ -133,6 +133,36 @@
 					margin-bottom: 0;
 				}
 			}
+		}
+	}
+	&_seller-registration {
+		padding-bottom: @base*7.5;
+		.field {
+			width: @base*36;
+			margin-bottom: 26px;
+			&:last-of-type {
+				& + .btn {
+					margin-top: @base*3;
+				}
+			}
+		}
+		.btn {
+			width: @base*36;
+			font-weight: @bold;
+			margin-top: 37px;
+		}
+		.container {
+			padding-left: 35px;
+		}
+		.form__cell_right {
+			.field {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.form__value {
+			font-size: 15px;
 		}
 	}
 	&_new-object {
