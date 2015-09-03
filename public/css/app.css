@@ -1601,6 +1601,9 @@ input[type="password"] {
   -webkit-transition: color 0.1s;
   transition: color 0.1s;
 }
+.form__link_right {
+  float: right;
+}
 .form__symlink {
   border-bottom: dashed 1px rgba(0, 108, 168, 0.4);
   color: #006ca8;
@@ -1672,11 +1675,8 @@ input[type="password"] {
 .form_manage-subscribe .container {
   padding-left: 35px;
 }
-.form_manage-subscribe .form__cell_left {
-  width: 29.333333%;
-}
 .form_manage-subscribe .form__cell_right {
-  width: 70.666667%;
+  padding-right: 30px;
 }
 .form_manage-subscribe .form__cell_right .field:last-of-type {
   margin-bottom: 0;

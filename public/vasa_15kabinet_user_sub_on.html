@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VaSa - vasa_15kabinet_user_reply</title>
+	<title>VaSa - vasa_15kabinet_user_sub_on</title>
 
 	<link rel="icon" type="image/png" href="img/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,400italic,100,300,700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -139,7 +139,7 @@
 					</ul>
 				</div>
 			</div>
-			<!-- Partial: user-tabs -->
+			<!-- Partial: user-tabs-sub-on -->
 			<div class="container">
 				<!-- User tabs -->
 				<div class="tabs tabs_no-margin-top js-tabs">
@@ -562,74 +562,28 @@
 					</div>
 					<div class="tabs__content" data-tab="tab3">
 						<div class="tabs__frame">
-							<!-- Partial: manage-subscribe -->
+							<!-- Partial: manage-subscribe-sub-on -->
 							<div class="manage-subscribe">
 								<div class="form form_manage-subscribe">
 									<form action="#">
-										<!-- Title -->
+										<!-- Controls -->
 										<div class="form__row">
 											<div class="form__cell form__cell_right">
-												<a href="#" class="form__link">
-													Назад
-												</a>
-												<h2 class="form__title">
+												<a href="#" class="form__link form__link_right">
 													Управление подписками
-												</h2>
+												</a>
 											</div>
 										</div>
 										<!-- Info row -->
 										<div class="form__row">
-											<div class="form__cell form__cell_left"></div>
-											<div class="form__cell form__cell_right">
-												<div class="form__value">
-													При переходе с одной активной подписки на другую <br>
-													остаток средств между подписками не переводится
-												</div>
-											</div>
-										</div>
-										<!-- Type row -->
-										<div class="form__row">
 											<div class="form__cell form__cell_left">
 												<div class="form__label">
-													Я:
+													Текущая подписка:
 												</div>
 											</div>
 											<div class="form__cell form__cell_right">
-												<div class="field field_wide">
-													<label class="radio">
-														<input type="radio" class="input" name="radio">
-														<span class="radio__dot"></span>
-														<span class="radio__label">
-															Продавец (продам или сдам в аренду)
-														</span>
-													</label>
-												</div>
-												<div class="field field_wide">
-													<label class="radio">
-														<input type="radio" class="input" name="radio">
-														<span class="radio__dot"></span>
-														<span class="radio__label">
-															Риэлтор (продам или сдам в аренду)
-														</span>
-													</label>
-												</div>
-											</div>
-										</div>
-										<!-- Term row -->
-										<div class="form__row">
-											<div class="form__cell form__cell_left">
-												<label for="term" class="form__label form__label_v-center">
-													Срок действия подписки:
-												</label>
-											</div>
-											<div class="form__cell form__cell_right">
-												<div class="field">
-													<select class="js-select" name="estate" id="estate">
-														<option value="1">1 месяц</option>
-														<option value="2">2 месяца</option>
-														<option value="3">3 месяца</option>
-														<option value="4">1 год</option>
-													</select>
+												<div class="form__value">
+													Строительная компания
 												</div>
 											</div>
 										</div>
@@ -656,6 +610,24 @@
 											<div class="form__cell form__cell_right">
 												<div class="form__value form__value_date">
 													1.07.2015
+												</div>
+											</div>
+										</div>
+										<!-- Term row -->
+										<div class="form__row">
+											<div class="form__cell form__cell_left">
+												<label for="term" class="form__label form__label_v-center">
+													Срок действия подписки:
+												</label>
+											</div>
+											<div class="form__cell form__cell_right">
+												<div class="field">
+													<select class="js-select" name="estate" id="estate">
+														<option value="1">1 месяц</option>
+														<option value="2">2 месяца</option>
+														<option value="3">3 месяца</option>
+														<option value="4">1 год</option>
+													</select>
 												</div>
 											</div>
 										</div>
@@ -700,84 +672,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- Cluster map info -->
-			<!-- Partial: user-reply-modal -->
-			<div class="modal modal_wide modal_shadow modal_user-reply">
-				<header class="modal__header">
-					<!-- Close btn -->
-					<a href="#" class="modal__close">
-						<i class="icon icon-close-white-big"></i>
-					</a>
-					<!-- Title -->
-					<h2 class="modal__title">
-						Ответ на предложение
-					</h2>
-				</header>
-				<div class="modal__container modal__container_white">
-					<div class="form form_offer-reply">
-						<form action="#">
-							<!-- Price row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="price" class="form__label form__label_v-center">
-										Цена:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<!-- Measure input -->
-										<div class="measure-input">
-											<input type="text" id="square" class="input input_border input_wide">
-											<span class="measure-input__text">
-												руб/м<sup>2</sup>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Description row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-									<label for="description" class="form__label form__label_v-center">
-										Описание:
-									</label>
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<textarea id="description" class="textarea"></textarea>
-									</div>
-								</div>
-							</div>
-							<!-- Hide messages -->
-							<div class="form__row">
-								<div class="form__cell form__cell_left">
-			
-								</div>
-								<div class="form__cell form__cell_right">
-									<div class="field">
-										<label class="checkbox">
-											<input type="checkbox">
-											<span class="checkbox__check">
-												<i class="icon icon-check"></i>
-											</span>
-											<span class="checkbox__label">
-												Скрыть переписку
-											</span>
-										</label>
-									</div>
-								</div>
-							</div>
-							<!-- Button row -->
-							<div class="form__row">
-								<div class="form__cell form__cell_right">
-									<input type="submit" value="Ответить" class="btn btn_green">
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="overlay overlay_absolute"></div>
 		</main>
 	</div>
 	<!-- Footer -->
