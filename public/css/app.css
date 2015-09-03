@@ -1551,6 +1551,9 @@ input[type="password"] {
 .form__label {
   font-size: 18px;
 }
+.form__label sup {
+  color: #ef443b;
+}
 .form__label_v-center {
   line-height: 50px;
 }
