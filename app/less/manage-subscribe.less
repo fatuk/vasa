@@ -1,0 +1,39 @@
+@manage-subscribe-link: #3D7AAF;
+@manage-subscribe-text: #777777;
+.manage-subscribe {
+	.clearfix();
+	&__menu {
+		float: right;
+		margin-top: 14px;
+	}
+	&__menu-list {
+		list-style: none;
+		padding: 0;
+		padding-right: 9px;
+		margin: 0;
+	}
+	&__menu-item {
+		margin-bottom: 21px;
+	}
+	&__menu-link {
+		.link(@manage-subscribe-link);
+		font-size: 15px;
+		&:hover {
+			.link(lighten(@manage-subscribe-link, 15%));
+		}
+	}
+	&__menu-description {
+		color: @manage-subscribe-text;
+		font-size: 15px;
+		font-style: italic;
+		margin: 0;
+		margin-top: 5px;
+	}
+	&__empty {
+		float: left;
+		width: 100%;
+		padding: 83px 200px;
+    	padding-bottom: 229px;
+		text-align: center;
+	}
+}

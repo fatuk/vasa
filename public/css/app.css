@@ -4743,5 +4743,56 @@ input[type="password"] {
   padding: 0 53px;
   margin-top: 23px;
 }
+.manage-subscribe {
+  zoom: 1;
+}
+.manage-subscribe:before,
+.manage-subscribe:after {
+  content: "";
+  display: table;
+}
+.manage-subscribe:after {
+  clear: both;
+}
+.manage-subscribe__menu {
+  float: right;
+  margin-top: 14px;
+}
+.manage-subscribe__menu-list {
+  list-style: none;
+  padding: 0;
+  padding-right: 9px;
+  margin: 0;
+}
+.manage-subscribe__menu-item {
+  margin-bottom: 21px;
+}
+.manage-subscribe__menu-link {
+  border-bottom: solid 1px rgba(61, 122, 175, 0.4);
+  color: #3d7aaf;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  font-size: 15px;
+}
+.manage-subscribe__menu-link:hover {
+  border-bottom: solid 1px rgba(109, 160, 204, 0.4);
+  color: #6da0cc;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.manage-subscribe__menu-description {
+  color: #777777;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+  margin-top: 5px;
+}
+.manage-subscribe__empty {
+  float: left;
+  width: 100%;
+  padding: 83px 200px;
+  padding-bottom: 229px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=../css/app.css.map */
