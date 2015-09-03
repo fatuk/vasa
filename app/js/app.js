@@ -148,33 +148,13 @@ $(function () {
 	});
 
 	// Select2 estates
-	var estateData = [{
-		value: '1',
-		name: 'Квартиры',
-		children: [{
-			value: '1.1',
-			name: 'Комната'
-		}, {
-			value: '1.2',
-			name: 'Студия'
-		}, {
-			value: '1.3',
-			name: 'Комната'
-		}, {
-			value: '1.4',
-			name: '1км. квартира'
-		}, {
-			value: '1.5',
-			name: '2км. квартира'
-		}, {
-			value: '1.6',
-			name: '3км. квартира'
-		}, , {
-			value: '1.7',
-			name: '4км. квартира'
-		}]
-	}];
 	$('.js-selectEstate').select2({
+		minimumResultsForSearch: Infinity,
+		width: 'width'
+	});
+
+	// Select2
+	$('.js-select').select2({
 		minimumResultsForSearch: Infinity,
 		width: 'width'
 	});

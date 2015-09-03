@@ -1566,6 +1566,16 @@ input[type="password"] {
 .form__value {
   margin-bottom: 14px;
 }
+.form__value_strong {
+  font-weight: 700;
+  font-size: 18px !important;
+}
+.form__value_strong strong {
+  font-size: 24px;
+}
+.form__value_date {
+  font-size: 18px !important;
+}
 .form__description {
   font-size: 13px;
   color: #000;
@@ -1631,6 +1641,43 @@ input[type="password"] {
   padding-left: 35px;
 }
 .form_registration .form__cell_right .field:last-of-type {
+  margin-bottom: 0;
+}
+.form_manage-subscribe {
+  padding-bottom: 37px;
+  margin-top: 13px;
+}
+.form_manage-subscribe .form__row {
+  margin-bottom: 34px;
+}
+.form_manage-subscribe .form__title {
+  margin-top: 15px;
+  margin-bottom: 9px;
+}
+.form_manage-subscribe .form__value {
+  font-size: 15px;
+}
+.form_manage-subscribe .field {
+  width: 300px;
+  margin-bottom: 26px;
+}
+.form_manage-subscribe .field:last-of-type + .btn {
+  margin-top: 30px;
+}
+.form_manage-subscribe .btn {
+  width: 300px;
+  font-weight: 700;
+}
+.form_manage-subscribe .container {
+  padding-left: 35px;
+}
+.form_manage-subscribe .form__cell_left {
+  width: 29.333333%;
+}
+.form_manage-subscribe .form__cell_right {
+  width: 70.666667%;
+}
+.form_manage-subscribe .form__cell_right .field:last-of-type {
   margin-bottom: 0;
 }
 .form_seller-registration {
@@ -4504,7 +4551,7 @@ input[type="password"] {
 }
 .tabs {
   margin-top: 37px;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   zoom: 1;
 }
 .tabs:before,
