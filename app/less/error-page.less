@@ -26,5 +26,8 @@
 	}
 	&__link {
 		.link(@error-page-link-color);
+		&:hover {
+			.link(lighten(@error-page-link-color, 15%));
+		}
 	}
 }

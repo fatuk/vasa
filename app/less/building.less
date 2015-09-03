@@ -45,6 +45,7 @@
 		margin-bottom: 10px;
 		background: @cluster-info-title-bg;
 		padding: 12px 20px;
+		.dots();
 	}
 	&__container {
 		padding: 26px 20px;
@@ -156,6 +157,9 @@
 	}
 	&__link {
 		.link(@building-link);
+		&:hover {
+			.link(lighten(@building-link, 15%));
+		}
 	}
 	&__more {
 		width: 100%;

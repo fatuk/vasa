@@ -28,7 +28,10 @@
 	}
 	&__link {
 		display: inline-block;
-		.link(@breadcrumbs-link);
 		font-size: 15px;
+		.link(@breadcrumbs-link);
+		&:hover {
+			.link(lighten(@breadcrumbs-link, 15%));
+		}
 	}
 }

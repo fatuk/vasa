@@ -98,6 +98,7 @@
 	&__inner {
 		width: 100%;
 		tr {
+			word-break: break-all;
 			&:hover {
 				.offers-list__row-controls {
 					display: inline-block;
@@ -124,6 +125,9 @@
 			left: -32px;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+		&:hover {
+			.link(lighten(@offers-list-link, 15%));
 		}
 	}
 	&__symlink {

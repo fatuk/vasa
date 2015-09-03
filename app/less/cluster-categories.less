@@ -27,6 +27,9 @@
 		position: relative;
 		margin-right: 20px;
 		.link(@cluster-categories-link);
+		&:hover {
+			.link(lighten(@cluster-categories-link, 15%));
+		}
 	}
 	&__counter {
 		position: absolute;
