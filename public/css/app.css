@@ -1440,13 +1440,13 @@ input[type="password"] {
 }
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 1;
+  line-height: 50px;
   font-size: 18px;
 }
 /* Firefox 19+ */
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
-  line-height: 1;
+  line-height: 50px;
   font-size: 18px;
 }
 /* Firefox 18- */
