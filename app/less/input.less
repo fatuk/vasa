@@ -1,15 +1,17 @@
-@placeholder-color: rgba(0,0,0,.4);
+@placeholder-color: rgba(0, 0, 0, .4);
 @placeholder-size: 18px;
 @input-height: 50px;
 @placeholder-height: 1;
 @placeholder-opacity: .4;
 @input-border-color: #B7B7B7;
+
 .input {
 	line-height: @placeholder-height;
 	height: @input-height;
 	padding: 0 @base*2;
 	border: none;
 	border-radius: 3px;
+
 	&_wide {
 		width: 100%;
 	}
@@ -21,25 +23,36 @@
 	}
 }
 input[type="password"] {
-  -webkit-text-security: disc;
+	-webkit-text-security: disc;
 }
 ::-webkit-input-placeholder {
-	color:@placeholder-color;
+	color: @placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
 }
 ::-moz-placeholder {
-	color:@placeholder-color;
+	color: @placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	}/* Firefox 19+ */
+}
+
+/* Firefox 19+ */
 :-moz-placeholder {
-	color:@placeholder-color;
+	color: @placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
-	}/* Firefox 18- */
+}
+
+/* Firefox 18- */
 :-ms-input-placeholder {
-	color:@placeholder-color;
+	color: @placeholder-color;
 	line-height: @placeholder-height;
 	font-size: @placeholder-size;
+}
+// Hide spin for number type
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
