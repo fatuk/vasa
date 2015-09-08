@@ -1487,7 +1487,7 @@ input::-webkit-inner-spin-button {
   width: 100% !important;
 }
 .field_margin-bottom {
-  margin-bottom: 17px;
+  margin-bottom: 17px !important;
 }
 .field.error .tooltip {
   display: block;
