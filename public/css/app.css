@@ -3298,7 +3298,18 @@ input::-webkit-inner-spin-button {
 .offers-list__text {
   display: inline-block;
   position: relative;
-  padding-right: 72px;
+}
+.offers-list__text a {
+  border-bottom: solid 1px rgba(34, 106, 163, 0.4);
+  color: #226aa3;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.offers-list__text a:hover {
+  border-bottom: solid 1px rgba(59, 146, 214, 0.4);
+  color: #3b92d6;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 .offers-list__map {
   font-size: 15px;

@@ -177,7 +177,13 @@
 	&__text {
 		display: inline-block;
 		position: relative;
-		padding-right: 72px;
+		// padding-right: 72px;
+		a {
+			.link(@offers-list-link);
+			&:hover {
+				.link(lighten(@offers-list-link, 15%));
+			}
+		}
 	}
 	&__map {
 		font-size: 15px;
