@@ -3013,6 +3013,12 @@ input::-webkit-inner-spin-button {
   float: right;
   width: 240px;
 }
+.offers__column_wide {
+  width: 100% !important;
+}
+.offers__column_wide .offers-list__name {
+  width: 500px;
+}
 .pagination {
   display: inline-block;
   width: 100%;
@@ -3208,9 +3214,6 @@ input::-webkit-inner-spin-button {
 }
 .offers-list__inner {
   width: 100%;
-}
-.offers-list__inner tr {
-  word-break: break-all;
 }
 .offers-list__inner tr:hover .offers-list__row-controls {
   display: inline-block;
