@@ -1196,6 +1196,9 @@ body > footer {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.modal__title_no-margin {
+  margin-left: 0;
+}
 .modal__link {
   font-size: 15px;
   border-bottom: solid 1px rgba(176, 235, 243, 0.4);
@@ -2823,6 +2826,7 @@ input::-webkit-inner-spin-button {
   transition: color 0.1s;
 }
 .building__more {
+  display: inline-block;
   width: 100%;
   text-align: center;
   margin-top: 20px;
@@ -2954,6 +2958,9 @@ input::-webkit-inner-spin-button {
 .building_new-buildings-modal .offers-list__status {
   text-align: left;
 }
+.building_new-buildings-modal .offers-list_narrow {
+  float: left;
+}
 .building_sell-building-modal {
   border: none;
 }
@@ -2975,6 +2982,9 @@ input::-webkit-inner-spin-button {
 }
 .building_sell-building-modal .offers-list__status {
   text-align: left;
+}
+.building_margin-bottom {
+  margin-bottom: 30px;
 }
 .offers__header {
   padding: 20px;
