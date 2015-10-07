@@ -4603,6 +4603,9 @@ input::-webkit-inner-spin-button {
   padding: 4px 0;
   padding-right: 20px;
 }
+.answers__item-name a {
+  display: inline;
+}
 .answers__item-info {
   float: left;
   width: 40%;
