@@ -25,6 +25,15 @@
 input[type="password"] {
 	-webkit-text-security: disc;
 }
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance:textfield;
+}
 ::-webkit-input-placeholder {
 	color: @placeholder-color;
 	line-height: @placeholder-height;
