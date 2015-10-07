@@ -2754,15 +2754,19 @@ input::-webkit-inner-spin-button {
   line-height: 18px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 10px;
 }
 .building__company {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 5px;
 }
 .building__company .building__link {
   font-size: 15px;
+}
+.building__company:last-child {
+  margin-bottom: 0;
 }
 .building__company-text {
   font-size: 15px;
@@ -2820,6 +2824,7 @@ input::-webkit-inner-spin-button {
 .building__img {
   width: 100%;
   display: inline-block;
+  margin-bottom: 20px;
 }
 .building__link {
   border-bottom: solid 1px rgba(0, 108, 168, 0.4);
