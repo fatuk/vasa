@@ -3243,6 +3243,9 @@ input::-webkit-inner-spin-button {
   padding: 12px 10px;
   height: 49px;
 }
+.offers-list__marked-row {
+  background: #f4f4fa;
+}
 .offers-list__link {
   border-bottom: solid 1px rgba(34, 106, 163, 0.4);
   color: #226aa3;
@@ -3437,9 +3440,6 @@ input::-webkit-inner-spin-button {
 }
 .offers-list_company-kabinet .offers-list__price {
   width: inherit;
-}
-.offers-list_company-kabinet tr:nth-child(odd) {
-  background: #f4f4fa;
 }
 .offers-list_company-kabinet tr:last-child td {
   border-bottom: solid 1px #ccc;
