@@ -89,11 +89,12 @@
 		display: none;
 		position: absolute;
 		top: 50%;
-		right: 0;
-		transform: translateY(-50%);
+		right: -5px;
+		transform: translate(100%, -50%);
 	}
 	&__control {
 		vertical-align: middle;
+		border-bottom: none !important;
 	}
 	&__inner {
 		width: 100%;
@@ -242,6 +243,7 @@
 		padding: 0;
 		.offers-list__name {
 			width: 380px;
+			padding-right: 50px !important;
 		}
 		tr {
 			cursor: pointer;

@@ -29,7 +29,7 @@ gulp.task('default', [
 	'handlebars',
 	'jsConcat',
 	'pluginsConcat',
-	'sprites',
+	// 'sprites',
 	'less',
 	'watch'
 ]);
