@@ -4611,7 +4611,7 @@ input::-webkit-inner-spin-button {
 }
 .answers__item-info {
   float: left;
-  width: 40%;
+  width: 45%;
 }
 .answers__item-price {
   font-size: 20px;
@@ -4634,10 +4634,20 @@ input::-webkit-inner-spin-button {
 }
 .answers__item-date {
   float: left;
-  width: 100%;
+  clear: both;
   font-size: 13px;
   vertical-align: baseline;
   opacity: .6;
+}
+.answers__item-alert {
+  float: right;
+  max-width: 255px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  vertical-align: baseline;
+  color: #D55C5A;
 }
 .tabs {
   margin-top: 37px;
