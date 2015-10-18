@@ -3496,9 +3496,6 @@ input::-webkit-inner-spin-button {
 .offers-list_seller-kabinet .offers-list__price {
   width: inherit;
 }
-.offers-list_seller-kabinet tr:nth-child(odd) {
-  background: #F4F4FA;
-}
 .offers-list_seller-kabinet tr:last-child td {
   border-bottom: solid 1px #ccc;
 }
