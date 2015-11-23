@@ -1574,6 +1574,8 @@ input::-webkit-inner-spin-button {
 }
 .form__label {
   font-size: 18px;
+  line-height: 20px;
+  vertical-align: middle;
 }
 .form__label sup {
   color: #EF443B;
@@ -1592,6 +1594,8 @@ input::-webkit-inner-spin-button {
 }
 .form__value_strong {
   font-weight: 700;
+  line-height: 24px;
+  vertical-align: middle;
   font-size: 18px !important;
 }
 .form__value_strong strong {
